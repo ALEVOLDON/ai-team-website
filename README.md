@@ -11,15 +11,6 @@
 
 ---
 
-## 🏷️ GitHub Topics / Теги репозитория
-
-Для максимального охвата на GitHub рекомендуется добавить в **About ⚙️** репозитория следующие топики:
-```text
-ai-agents, autonomous-agents, multi-agent-systems, developer-tools, code-generation, devlog, webview2, gemini-tts, local-llm, lmstudio, ollama, deepseek, software-engineering, showcase, desktop-studio
-```
-
----
-
 <a name="-english"></a>
 ## 🇬🇧 English
 
