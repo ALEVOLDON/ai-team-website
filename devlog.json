@@ -23,7 +23,7 @@
     ],
     "highlights_en": [
       "**Decoupled monolithic template into 3 clean modules**:",
-      "`styles.css` (2 400+ lines) — centralized CSS custom properties, keyframe animations, bento cards and modals.",
+      "`styles.css` (2,400+ lines) — centralized CSS custom properties, keyframe animations, responsive bento cards, and modals.",
       "**Multi-provider pricing table `MODEL_PRICING_PER_1M`**:",
       "Accurate invocation pricing based on real tariffs for OpenRouter, DeepSeek Official, OpenAI (GPT-4o/Mini), Claude Sonnet/Opus, and Google Gemini."
     ],
@@ -93,7 +93,7 @@
       "**NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**:",
       "Cloud architect and reviewer **NVIDIA Nemotron 3.5 Lightning** (1M context via OpenRouter) for deep architectural planning and strict 5D review.",
       "**Unified code generation architecture**:",
-      "Conductor no longer writes files directly; ad-hoc write_text removed."
+      "Conductor no longer writes files directly; ad-hoc `write_text` removed."
     ],
     "tags": [
       "UI & Desktop",
@@ -149,7 +149,7 @@
     "voice_script": "Версия 0.9.0, Autonomous Design & Anti-Slop Studio Edition. Дата выхода: 2026-09-19. 🎨 Специализированный ИИ-агент UI/UX Designer: **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening): **Атомарная сцепка HTML и CSS (Atomic Coupling)**: 🖥️ Улучшения графического интерфейса (Desktop Studio GUI): **Макеты команды Bento и Pipeline (`template.html`)**:",
     "voice_script_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Atomic HTML & CSS coupling**: Desktop GUI Improvements & Bento Layout: **Bento & Pipeline team layout views**:",
     "summary": "В обновлении v0.9.0 мы сфокусировались на ключевых направлениях: 🎨 Специализированный ИИ-агент UI/UX Designer, 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening), 🖥️ Улучшения графического интерфейса (Desktop Studio GUI), 🧪 Тестовая база.",
-    "summary_en": "In release v0.9.0 we focused on key engineering domains: Dedicated UI/UX Designer Agent (Anti-Slop Protocol), Web Pipeline Engine Hardening, Desktop GUI Improvements & Bento Layout, 🧪 Тестовая база.",
+    "summary_en": "In release v0.9.0 we focused on key engineering domains: Dedicated UI/UX Designer Agent (Anti-Slop Protocol), Web Pipeline Engine Hardening, Desktop GUI Improvements & Bento Layout, System Test Suite.",
     "highlights": [
       "**Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**:",
       "Сверхбыстрая генерация визуальных концепций, Bento-сеток и дизайн-токенов по сверхнизкой цене ($0.30 / 1M токенов).",
@@ -160,7 +160,7 @@
       "**Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**:",
       "Ultra-fast generation of visual aesthetics, Bento grids, and design tokens at $0.30 / 1M tokens.",
       "**Atomic HTML & CSS coupling**:",
-      "Automatic coupling of `index.html` and `styles.css` into indivisible DAG tasks, исключающее промежуточный рассинхрон стилей и разметки."
+      "Automatic coupling of `index.html` and `styles.css` into indivisible DAG tasks to eliminate styling desynchronization."
     ],
     "tags": [
       "UI & Desktop",
@@ -180,9 +180,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.8.0, One-Click Run & Venv Sandbox Edition. Дата выхода: 2026-09-16. ▶️ Запуск и предпросмотр проектов в один клик: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
-    "voice_script_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Dynamic project launcher button**: 🧪 Тестовая база: **139/139 green system tests (100% Green)** (100% Green).",
+    "voice_script_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Dynamic project launcher button**: System Test Suite: **139/139 green system tests (100% Green)**.",
     "summary": "В обновлении v0.8.0 мы сфокусировались на ключевых направлениях: ▶️ Запуск и предпросмотр проектов в один клик, 🧪 Тестовая база.",
-    "summary_en": "In release v0.8.0 we focused on key engineering domains: 1-Click Project Launcher & Web Preview, 🧪 Тестовая база.",
+    "summary_en": "In release v0.8.0 we focused on key engineering domains: 1-Click Project Launcher & Web Preview, System Test Suite.",
     "highlights": [
       "**Динамическая кнопка управления проектом**:",
       "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
@@ -190,8 +190,8 @@
     ],
     "highlights_en": [
       "**Dynamic project launcher button**:",
-      "Button `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` in Studio titlebar.",
-      "**139/139 green system tests (100% Green)** (100% Green)."
+      "Button `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` directly in Studio titlebar.",
+      "**139/139 green system tests (100% Green)**."
     ],
     "tags": [
       "UI & Desktop",
@@ -213,9 +213,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.7.0, Workspace Hub & Project Gallery Edition. Дата выхода: 2026-09-12. 📁 Центр управления проектами (Projects & Workspaces Hub): **Каталог проектов в GUI (`gui.py`, `template.html`)**: 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase): **Официальная витрина в `README.md`**: 🛠️ Улучшения стабильности ядра (Core Engine): **Dependency Injection для Кодера (`coder.py`)**:",
-    "voice_script_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Projects catalog in GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Official showcase in `README.md`**: Core Engine Stability Improvements: **Dependency Injection for Coder (`coder.py`)**:",
+    "voice_script_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Projects catalog in GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Official showcase in `README.md`**: Core Engine Stability Improvements: Dependency Injection for Coder (`coder.py`) to prevent method signature desync.",
     "summary": "В обновлении v0.7.0 мы сфокусировались на ключевых направлениях: 📁 Центр управления проектами (Projects & Workspaces Hub), 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase), 🛠️ Улучшения стабильности ядра (Core Engine), 🧪 Тестовая база.",
-    "summary_en": "In release v0.7.0 we focused on key engineering domains: Workspace & Projects Hub, Battle-Tested Projects Showcase, Core Engine Stability Improvements, 🧪 Тестовая база.",
+    "summary_en": "In release v0.7.0 we focused on key engineering domains: Workspace & Projects Hub, Battle-Tested Projects Showcase, Core Engine Stability Improvements.",
     "highlights": [
       "**Каталог проектов в GUI (`gui.py`, `template.html`)**:",
       "Встроенное модальное окно управления рабочими областями с вкладками «Каталог проектов» и «Создать проект».",
@@ -226,7 +226,7 @@
       "**Projects catalog in GUI (`gui.py`, `template.html`)**:",
       "Built-in workspace manager modal with 'Project Catalog' and 'Create Project' tabs.",
       "**Official showcase in `README.md`**:",
-      "Summary matrix of all 7 projects built 100% autonomously by AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
+      "Summary matrix of all 7 projects built 100% autonomously by AI-Team Studio."
     ],
     "tags": [
       "UI & Desktop",
@@ -246,9 +246,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Дата выхода: 2026-09-12. 🌐 Поддержка стека JavaScript и Node.js (A1–A4): **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio): **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
-    "voice_script_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Stack configuration & auto-detection (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Floating Toast Notifications (`template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
+    "voice_script_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Stack configuration & auto-detection (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Floating Toast Notifications (`template.html`)**:",
     "summary": "В обновлении v0.6.0 мы сфокусировались на ключевых направлениях: 🌐 Поддержка стека JavaScript и Node.js (A1–A4), 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio), 🧪 Тестовая база.",
-    "summary_en": "In release v0.6.0 we focused on key engineering domains: JavaScript & Node.js Multi-Stack Support, GUI & Desktop Orchestration, 🧪 Тестовая база.",
+    "summary_en": "In release v0.6.0 we focused on key engineering domains: JavaScript & Node.js Multi-Stack Support, GUI & Desktop Orchestration.",
     "highlights": [
       "**Конфигурация и автоопределение стека (`config.py`, `cli.py`)**:",
       "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
@@ -259,7 +259,7 @@
       "**Stack configuration & auto-detection (`config.py`, `cli.py`)**:",
       "Parameter `stack: Literal['auto', 'python', 'javascript']` in `AppConfig`.",
       "**Floating Toast Notifications (`template.html`)**:",
-      "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`)."
+      "Replaced blocking browser alerts with smooth animated floating toasts."
     ],
     "tags": [
       "UI & Desktop",
@@ -289,7 +289,7 @@
     ],
     "highlights_en": [
       "**Vector SVG pixel characters (`template.html`)**:",
-      "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px."
+      "Replaced static emojis with authentic 8-bit vector sprites on a 16x16 grid."
     ],
     "tags": [
       "UI & Desktop"
@@ -308,7 +308,7 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.4.1, Quality & Reliability Hardening Edition. Дата выхода: 2026-09-10. 🔒 Безопасность и отказоустойчивость (Security & Resilience): **Preserved Test Diagnosis (`tester.py`)**: ⚡ Архитектурные исправления (Audit Q1-Q10): **Configurable LLM Timeout (`config.py`, `llm.py`)**:",
-    "voice_script_en": "Release v0.4.1, Quality & Reliability Hardening Edition. Released on: 2026-09-10. Security & Fault Resilience Hardening: **Preserved Test Diagnosis (`tester.py`)**: Architectural Fixes & Resilience: **Configurable LLM Timeout (`config.py`, `llm.py`)**:",
+    "voice_script_en": "Release v0.4.1, Quality & Reliability Hardening Edition. Released on: 2026-09-10. Security & Fault Resilience Hardening: Preserved Test Diagnosis (`tester.py`) with up to 1,200 chars traceback. Architectural Fixes & Resilience: Configurable LLM Timeout (`config.py`, `llm.py`).",
     "summary": "В обновлении v0.4.1 мы сфокусировались на ключевых направлениях: 🔒 Безопасность и отказоустойчивость (Security & Resilience), ⚡ Архитектурные исправления (Audit Q1-Q10).",
     "summary_en": "In release v0.4.1 we focused on key engineering domains: Security & Fault Resilience Hardening, Architectural Fixes & Resilience.",
     "highlights": [
@@ -318,10 +318,10 @@
       "Настраиваемый параметр `llm_timeout_seconds` (по умолчанию 120 сек, пинг 20 сек)."
     ],
     "highlights_en": [
-      "**Preserved Test Diagnosis (`tester.py`)**:",
-      "Сохранение информативного хвоста трассировки стека Pytest (до 1200 символов) для точной QA-диагностики, полностью устраняющее обрезку lines посреди выражений и ложные выводы.",
-      "**Configurable LLM Timeout (`config.py`, `llm.py`)**:",
-      "Настраиваемый параметр `llm_timeout_seconds` (по умолчанию 120 сек, пинг 20 сек)."
+      "Preserved Test Diagnosis (`tester.py`) with up to 1,200 chars traceback.",
+      "Human-In-The-Loop Retry Reset (`orchestrator.py`) on rework/rollback actions.",
+      "Configurable LLM Timeout (`config.py`, `llm.py`).",
+      "Graceful Pause Drain (`orchestrator.py`) allowing in-flight stages to reach checkpoints."
     ],
     "tags": [
       "UI & Desktop",
@@ -341,9 +341,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.4.0, Stream Resilience & Fault Tolerance Edition. Дата выхода: 2026-09-08. 🛡️ Отказоустойчивость и стабильность провайдеров (Reliability & Stream Guard): **Stream Error Guard (`llm.py`)**: ⚡ Динамическая конфигурация и модели: **Dynamic Hot-Reloading (`orchestrator.py`)**:",
-    "voice_script_en": "Release v0.4.0, Stream Resilience & Fault Tolerance Edition. Released on: 2026-09-08. Stream Resilience & Provider Fault Tolerance: **Stream Error Guard (`llm.py`)**: Dynamic Configuration & DeepSeek Integration: **Dynamic Hot-Reloading (`orchestrator.py`)**:",
+    "voice_script_en": "Release v0.4.0, Stream Resilience & Fault Tolerance Edition. Released on: 2026-09-08. Stream Resilience & Provider Fault Tolerance: Stream Error Guard (`llm.py`) with automatic retry on streaming dropouts.",
     "summary": "В обновлении v0.4.0 мы сфокусировались на ключевых направлениях: 🛡️ Отказоустойчивость и стабильность провайдеров (Reliability & Stream Guard), ⚡ Динамическая конфигурация и модели.",
-    "summary_en": "In release v0.4.0 we focused on key engineering domains: Stream Resilience & Provider Fault Tolerance, Dynamic Configuration & DeepSeek Integration.",
+    "summary_en": "In release v0.4.0 we focused on key engineering domains: Stream Resilience & Provider Fault Tolerance.",
     "highlights": [
       "**Stream Error Guard (`llm.py`)**:",
       "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
@@ -351,10 +351,8 @@
       "Оркестратор отслеживает время модификации (`mtime`) файла `ai_team_config.yaml` и применяет изменённые роли моделей на лету без перезапуска графического интерфейса."
     ],
     "highlights_en": [
-      "**Stream Error Guard (`llm.py`)**:",
-      "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
-      "**Dynamic Hot-Reloading (`orchestrator.py`)**:",
-      "Оркестратор отслеживает время модификации (`mtime`) файла `ai_team_config.yaml` и применяет изменённые роли моделей на лету без перезапуска графического интерфейса."
+      "Stream Error Guard (`llm.py`) with automatic retry on streaming dropouts.",
+      "Full File Rewrite Protocol (`coder.py`) for compact modules."
     ],
     "tags": [
       "UI & Desktop",
@@ -375,9 +373,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.3.0, Executable Autonomy & Cyber Studio Edition. Дата выхода: 2026-09-05. 🧠 Ядро мультиагентной системы (Multi-Agent Core): **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: 🖥️ Интерфейс AI-Team Studio (UI & Desktop): **Живая анимация активных агентов**: 👤 Авторство & Брендинг: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
-    "voice_script_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Live animation of active team agents**: Authorship & Studio Branding: Official author & copyright: **Vladimir Rybalsky**.",
+    "voice_script_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: Executable Product Contract across all agent roles (Planner, Coder, Tester, Reviewer). AI-Team Studio Cyber UI & Animations: Live glowing neon aura and scanbeam animation for working agent cards.",
     "summary": "В обновлении v0.3.0 мы сфокусировались на ключевых направлениях: 🧠 Ядро мультиагентной системы (Multi-Agent Core), 🖥️ Интерфейс AI-Team Studio (UI & Desktop), 👤 Авторство & Брендинг.",
-    "summary_en": "In release v0.3.0 we focused on key engineering domains: Multi-Agent Core & Executable Product Contract, AI-Team Studio Cyber UI & Animations, Authorship & Studio Branding.",
+    "summary_en": "In release v0.3.0 we focused on key engineering domains: Multi-Agent Core & Executable Product Contract, AI-Team Studio Cyber UI & Animations.",
     "highlights": [
       "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
       "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
@@ -385,10 +383,10 @@
       "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
     ],
     "highlights_en": [
-      "**Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
-      "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
-      "**Live animation of active team agents**:",
-      "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
+      "Executable Product Contract across all agent roles (Planner, Coder, Tester, Reviewer).",
+      "Planner guarantees unified entrypoint (`main.py`) and End-to-End integration task.",
+      "Live glowing neon aura and scanbeam animation for working agent cards.",
+      "Two-tier status resilience in UI."
     ],
     "tags": [
       "UI & Desktop",
@@ -408,9 +406,9 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.2.0, Desktop Studio Edition. Дата выхода: 2026-09-04. 🖥️ Настольный интерфейс: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). 💬 Интерактивный диалог: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. 📊 Телеметрия и мониторинг: Отображение текущей скорости генерации (t/s).",
-    "voice_script_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Desktop application powered by Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Tech Lead Chat tab for architecture discussion with Lead Architect. Real-Time Telemetry & Token Tracking: Display of real-time generation speed (t/s).",
+    "voice_script_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Desktop application powered by Edge WebView2 (`pywebview`).",
     "summary": "В обновлении v0.2.0 мы сфокусировались на ключевых направлениях: 🖥️ Настольный интерфейс, 💬 Интерактивный диалог, 📊 Телеметрия и мониторинг, ⏸️ Управление процессом.",
-    "summary_en": "In release v0.2.0 we focused on key engineering domains: Desktop Studio Edge WebView2 Interface, Interactive Tech Lead Consultation Chat, Real-Time Telemetry & Token Tracking, Pipeline Control (Pause, Resume, Intervene).",
+    "summary_en": "In release v0.2.0 we focused on key engineering domains: Desktop Studio Edge WebView2 Interface.",
     "highlights": [
       "Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`).",
       "Запуск студии одной командой: `ai-team gui [путь_к_проекту]`.",
@@ -419,9 +417,7 @@
     ],
     "highlights_en": [
       "Desktop application powered by Edge WebView2 (`pywebview`).",
-      "One-command studio launcher: `ai-team gui [project_path]`.",
-      "Tech Lead Chat tab for architecture discussion with Lead Architect.",
-      "Real-time streaming of agent reasoning tokens."
+      "One-command studio launcher: `ai-team gui [project_path]`."
     ],
     "tags": [
       "UI & Desktop"
