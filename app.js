@@ -20,7 +20,7 @@
       nav_showcase: "🎮 Проекты",
       nav_pricing: "💎 Доступ",
       nav_add_review: "🎙️ Добавить обзор",
-      nav_get_pro: "Получить Studio Pro",
+      nav_get_pro: "Studio Pro",
       hero_eyebrow: "Актуальный релиз v0.13.0 • Автономная разработка на GPU и в облаке",
       hero_title_1: "Ваша персональная команда",
       hero_title_2: "ИИ-инженеров",
@@ -108,7 +108,7 @@
       nav_showcase: "🎮 Projects",
       nav_pricing: "💎 Pricing",
       nav_add_review: "🎙️ Add Review",
-      nav_get_pro: "Get Studio Pro",
+      nav_get_pro: "Studio Pro",
       hero_eyebrow: "Latest Release v0.13.0 • Autonomous Engineering on GPU & Cloud",
       hero_title_1: "Your Personal Autonomous",
       hero_title_2: "AI Engineering Crew",
@@ -235,7 +235,6 @@
   }
 
   function initSite() {
-    // Version & metrics
     const ver = DATA.meta?.version || "0.13.0";
     setText("nav-version", `v${ver}`);
     setText("metric-version", `v${ver}`);
@@ -243,14 +242,12 @@
     setText("metric-tests", `${DATA.metrics?.total_tests || 167}+`);
     setText("footer-sync-time", DATA.metrics?.last_synced || "now");
 
-    // Lang buttons event
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         setLanguage(btn.getAttribute("data-lang"));
       });
     });
 
-    // Mobile Hamburger
     const hamburger = document.getElementById("mobile-hamburger");
     const drawer = document.getElementById("mobile-drawer");
     if (hamburger && drawer) {
@@ -287,7 +284,7 @@
   }
 
   /* ========================================================================
-     1. Devlog Rendering
+     1. Devlog Rendering (Bilingual)
      ======================================================================== */
   function renderDevlog() {
     const container = document.getElementById("devlog-container");
@@ -311,28 +308,34 @@
           })
           .join("");
 
-        const highlightsHtml =
-          post.highlights && post.highlights.length
-            ? `<ul class="devlog-highlights">
-                ${post.highlights.map((h) => `<li>${formatMarkdownInline(h)}</li>`).join("")}
-               </ul>`
-            : "";
+        // Двуязычные поля
+        const title = currentLang === "en" && post.title_en ? post.title_en : post.title;
+        const summary = currentLang === "en" && post.summary_en ? post.summary_en : post.summary;
+        const badge = currentLang === "en" && post.badge_en ? post.badge_en : (post.badge || "🎙️ Devlog");
+        const highlights = currentLang === "en" && post.highlights_en ? post.highlights_en : (post.highlights || []);
+        const script = currentLang === "en" && post.voice_script_en ? post.voice_script_en : (post.voice_script || summary);
+
+        const highlightsHtml = highlights.length
+          ? `<ul class="devlog-highlights">
+              ${highlights.map((h) => `<li>${formatMarkdownInline(h)}</li>`).join("")}
+             </ul>`
+          : "";
 
         const modeLabel = post.audio_url
           ? `🎵 ${currentLang === "ru" ? "Аудиозапись" : "Audio Note"} (${post.duration || "WAV/MP3"})`
           : `🎙️ ${currentLang === "ru" ? "ИИ-озвучка" : "AI Voice Digest"} (${post.duration || "TTS"})`;
 
-        const encodedScript = encodeURIComponent(post.voice_script || post.summary || post.title);
+        const encodedScript = encodeURIComponent(script);
         const encodedAudio = post.audio_url ? encodeURIComponent(post.audio_url) : "";
 
         return `
         <article class="devlog-card">
           <div class="devlog-top">
-            <span class="devlog-badge">${escapeHtml(post.badge || (currentLang === "ru" ? "🎙️ Обзор" : "🎙️ Devlog"))}</span>
+            <span class="devlog-badge">${escapeHtml(badge)}</span>
             <span class="devlog-date">${escapeHtml(post.date)} • v${escapeHtml(post.version || DATA.meta.version)}</span>
           </div>
 
-          <h3 class="devlog-title">${escapeHtml(post.title)}</h3>
+          <h3 class="devlog-title">${escapeHtml(title)}</h3>
 
           <!-- Voice player -->
           <div class="voice-player" id="${playerId}">
@@ -352,7 +355,7 @@
             </button>
           </div>
 
-          <p class="devlog-summary">${formatMarkdownInline(post.summary)}</p>
+          <p class="devlog-summary">${formatMarkdownInline(summary)}</p>
           ${highlightsHtml}
         </article>`;
       })
@@ -456,7 +459,7 @@
   };
 
   /* ========================================================================
-     3. Changelog Rendering
+     3. Changelog Rendering (Bilingual)
      ======================================================================== */
   window.filterChangelog = function (tag, btnEl) {
     currentChangelogTag = tag;
@@ -487,14 +490,17 @@
     container.innerHTML = releases
       .map((rel, idx) => {
         const isCollapsed = idx > 2 && !query;
-        const encodedVoice = encodeURIComponent(rel.voice_summary || rel.subtitle);
+        const voiceText = currentLang === "en" && rel.voice_summary_en ? rel.voice_summary_en : (rel.voice_summary || rel.subtitle);
+        const encodedVoice = encodeURIComponent(voiceText);
         const playerId = `rel-voice-${rel.version.replace(/\./g, "_")}`;
 
         const tagsHtml = (rel.tags || [])
           .map((t) => `<span class="devlog-badge" style="font-size:0.7rem; padding:0.15rem 0.55rem;">${escapeHtml(t)}</span>`)
           .join("");
 
-        const sectionsHtml = (rel.sections || [])
+        // Выбираем секции на текущем языке
+        const sections = currentLang === "en" && rel.sections_en ? rel.sections_en : (rel.sections || []);
+        const sectionsHtml = sections
           .map(
             (sec) => `
             <div class="rel-sec-box">
@@ -734,12 +740,16 @@
       version: DATA.meta?.version || "0.13.0",
       date: new Date().toISOString().slice(0, 10),
       title: title,
+      title_en: title,
       author: DATA.meta?.author || "Vladimir Rybalsky",
       badge: currentLang === "ru" ? "🎙️ Авторский обзор" : "🎙️ Voice Update",
+      badge_en: "🎙️ Voice Update",
       audio_url: recordedBlobUrl || null,
       duration: recordedBlobUrl ? "Audio Memo" : "AI Voice",
       voice_script: summary,
+      voice_script_en: summary,
       summary: summary,
+      summary_en: summary,
       highlights: [],
     };
 
