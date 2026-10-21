@@ -133,5 +133,326 @@
       "UI & Desktop",
       "LLM & Models"
     ]
+  },
+  {
+    "id": "release-0.9.0",
+    "version": "0.9.0",
+    "date": "2026-09-19",
+    "title": "Обзор релиза v0.9.0: Autonomous Design & Anti-Slop Studio Edition",
+    "title_en": "Release Overview v0.9.0: Autonomous Design & Anti-Slop Studio Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.9.0, Autonomous Design & Anti-Slop Studio Edition. Дата выхода: 2026-09-19. 🎨 Специализированный ИИ-агент UI/UX Designer: **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening): **Атомарная сцепка HTML и CSS (Atomic Coupling)**: 🖥️ Улучшения графического интерфейса (Desktop Studio GUI): **Макеты команды Bento и Pipeline (`template.html`)**:",
+    "voice_script_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Атомарная сцепка HTML и CSS (Atomic Coupling)**: Desktop GUI Improvements & Bento Layout: **Макеты команды Bento и Pipeline (`template.html`)**:",
+    "summary": "В обновлении v0.9.0 мы сфокусировались на ключевых направлениях: 🎨 Специализированный ИИ-агент UI/UX Designer, 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening), 🖥️ Улучшения графического интерфейса (Desktop Studio GUI), 🧪 Тестовая база.",
+    "summary_en": "In release v0.9.0 we focused on key engineering domains: Dedicated UI/UX Designer Agent (Anti-Slop Protocol), Web Pipeline Engine Hardening, Desktop GUI Improvements & Bento Layout, 🧪 Тестовая база.",
+    "highlights": [
+      "**Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**:",
+      "Сверхбыстрая генерация визуальных концепций, Bento-сеток и дизайн-токенов по сверхнизкой цене ($0.30 / 1M токенов).",
+      "**Атомарная сцепка HTML и CSS (Atomic Coupling)**:",
+      "Автоматическое объединение `index.html` и `styles.css` в единые неделимые задачи, исключающее промежуточный рассинхрон стилей и разметки."
+    ],
+    "highlights_en": [
+      "**Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**:",
+      "Сверхбыстрая генерация визуальных концепций, Bento-сеток и дизайн-токенов по сверхнизкой цене ($0.30 / 1M токенов).",
+      "**Атомарная сцепка HTML и CSS (Atomic Coupling)**:",
+      "Автоматическое объединение `index.html` и `styles.css` в единые неделимые задачи, исключающее промежуточный рассинхрон стилей и разметки."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "LLM & Models"
+    ]
+  },
+  {
+    "id": "release-0.8.0",
+    "version": "0.8.0",
+    "date": "2026-09-16",
+    "title": "Обзор релиза v0.8.0: One-Click Run & Venv Sandbox Edition",
+    "title_en": "Release Overview v0.8.0: One-Click Run & Venv Sandbox Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.8.0, One-Click Run & Venv Sandbox Edition. Дата выхода: 2026-09-16. ▶️ Запуск и предпросмотр проектов в один клик: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
+    "voice_script_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных tests** (100% Green).",
+    "summary": "В обновлении v0.8.0 мы сфокусировались на ключевых направлениях: ▶️ Запуск и предпросмотр проектов в один клик, 🧪 Тестовая база.",
+    "summary_en": "In release v0.8.0 we focused on key engineering domains: 1-Click Project Launcher & Web Preview, 🧪 Тестовая база.",
+    "highlights": [
+      "**Динамическая кнопка управления проектом**:",
+      "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
+      "**139/139 зелёных системных тестов** (100% Green)."
+    ],
+    "highlights_en": [
+      "**Динамическая кнопка управления проектом**:",
+      "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
+      "**139/139 зелёных системных tests** (100% Green)."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Voice AI",
+      "Security & Sandbox",
+      "Multi-Stack"
+    ]
+  },
+  {
+    "id": "release-0.7.0",
+    "version": "0.7.0",
+    "date": "2026-09-12",
+    "title": "Обзор релиза v0.7.0: Workspace Hub & Project Gallery Edition",
+    "title_en": "Release Overview v0.7.0: Workspace Hub & Project Gallery Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.7.0, Workspace Hub & Project Gallery Edition. Дата выхода: 2026-09-12. 📁 Центр управления проектами (Projects & Workspaces Hub): **Каталог проектов в GUI (`gui.py`, `template.html`)**: 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase): **Официальная витрина в `README.md`**: 🛠️ Улучшения стабильности ядра (Core Engine): **Dependency Injection для Кодера (`coder.py`)**:",
+    "voice_script_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Каталог projects в GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Официальная витрина в `README.md`**: Core Engine Stability Improvements: **Dependency Injection для Кодера (`coder.py`)**:",
+    "summary": "В обновлении v0.7.0 мы сфокусировались на ключевых направлениях: 📁 Центр управления проектами (Projects & Workspaces Hub), 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase), 🛠️ Улучшения стабильности ядра (Core Engine), 🧪 Тестовая база.",
+    "summary_en": "In release v0.7.0 we focused on key engineering domains: Workspace & Projects Hub, Battle-Tested Projects Showcase, Core Engine Stability Improvements, 🧪 Тестовая база.",
+    "highlights": [
+      "**Каталог проектов в GUI (`gui.py`, `template.html`)**:",
+      "Встроенное модальное окно управления рабочими областями с вкладками «Каталог проектов» и «Создать проект».",
+      "**Официальная витрина в `README.md`**:",
+      "Сводная интерактивная таблица всех 7 проектов, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
+    ],
+    "highlights_en": [
+      "**Каталог projects в GUI (`gui.py`, `template.html`)**:",
+      "Встроенное модальное окно управления рабочими областями с вкладками «Каталог projects» и «Создать проект».",
+      "**Официальная витрина в `README.md`**:",
+      "Сводная интерактивная таблица всех 7 projects, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Multi-Stack"
+    ]
+  },
+  {
+    "id": "release-0.6.0",
+    "version": "0.6.0",
+    "date": "2026-09-12",
+    "title": "Обзор релиза v0.6.0: Multi-Stack JavaScript & Live Orchestration Edition",
+    "title_en": "Release Overview v0.6.0: Multi-Stack JavaScript & Live Orchestration Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Дата выхода: 2026-09-12. 🌐 Поддержка стека JavaScript и Node.js (A1–A4): **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio): **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
+    "voice_script_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
+    "summary": "В обновлении v0.6.0 мы сфокусировались на ключевых направлениях: 🌐 Поддержка стека JavaScript и Node.js (A1–A4), 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio), 🧪 Тестовая база.",
+    "summary_en": "In release v0.6.0 we focused on key engineering domains: JavaScript & Node.js Multi-Stack Support, GUI & Desktop Orchestration, 🧪 Тестовая база.",
+    "highlights": [
+      "**Конфигурация и автоопределение стека (`config.py`, `cli.py`)**:",
+      "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
+      "**Плавающие уведомления (Floating Toast Notifications, `template.html`)**:",
+      "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`)."
+    ],
+    "highlights_en": [
+      "**Конфигурация и автоопределение стека (`config.py`, `cli.py`)**:",
+      "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
+      "**Плавающие уведомления (Floating Toast Notifications, `template.html`)**:",
+      "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`)."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Security & Sandbox",
+      "Multi-Stack"
+    ]
+  },
+  {
+    "id": "release-0.5.0",
+    "version": "0.5.0",
+    "date": "2026-09-11",
+    "title": "Обзор релиза v0.5.0: Retro Pixel-Art Edition",
+    "title_en": "Release Overview v0.5.0: Retro Pixel-Art Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.5.0, Retro Pixel-Art Edition. Дата выхода: 2026-09-11. 👾 8-битная анимация агентов (Pixel-Art Sprites Engine): **Векторные SVG-персонажи (`template.html`)**:",
+    "voice_script_en": "Release v0.5.0, Retro Pixel-Art Edition. Released on: 2026-09-11. 8-Bit Pixel-Art Sprites Engine: **Векторные SVG-персонажи (`template.html`)**:",
+    "summary": "В обновлении v0.5.0 мы сфокусировались на ключевых направлениях: 👾 8-битная анимация агентов (Pixel-Art Sprites Engine).",
+    "summary_en": "In release v0.5.0 we focused on key engineering domains: 8-Bit Pixel-Art Sprites Engine.",
+    "highlights": [
+      "**Векторные SVG-персонажи (`template.html`)**:",
+      "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px."
+    ],
+    "highlights_en": [
+      "**Векторные SVG-персонажи (`template.html`)**:",
+      "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px."
+    ],
+    "tags": [
+      "UI & Desktop"
+    ]
+  },
+  {
+    "id": "release-0.4.1",
+    "version": "0.4.1",
+    "date": "2026-09-10",
+    "title": "Обзор релиза v0.4.1: Quality & Reliability Hardening Edition",
+    "title_en": "Release Overview v0.4.1: Quality & Reliability Hardening Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.4.1, Quality & Reliability Hardening Edition. Дата выхода: 2026-09-10. 🔒 Безопасность и отказоустойчивость (Security & Resilience): **Preserved Test Diagnosis (`tester.py`)**: ⚡ Архитектурные исправления (Audit Q1-Q10): **Configurable LLM Timeout (`config.py`, `llm.py`)**:",
+    "voice_script_en": "Release v0.4.1, Quality & Reliability Hardening Edition. Released on: 2026-09-10. Security & Fault Resilience Hardening: **Preserved Test Diagnosis (`tester.py`)**: Architectural Fixes & Resilience: **Configurable LLM Timeout (`config.py`, `llm.py`)**:",
+    "summary": "В обновлении v0.4.1 мы сфокусировались на ключевых направлениях: 🔒 Безопасность и отказоустойчивость (Security & Resilience), ⚡ Архитектурные исправления (Audit Q1-Q10).",
+    "summary_en": "In release v0.4.1 we focused on key engineering domains: Security & Fault Resilience Hardening, Architectural Fixes & Resilience.",
+    "highlights": [
+      "**Preserved Test Diagnosis (`tester.py`)**:",
+      "Сохранение информативного хвоста трассировки стека Pytest (до 1200 символов) для точной QA-диагностики, полностью устраняющее обрезку строк посреди выражений и ложные выводы.",
+      "**Configurable LLM Timeout (`config.py`, `llm.py`)**:",
+      "Настраиваемый параметр `llm_timeout_seconds` (по умолчанию 120 сек, пинг 20 сек)."
+    ],
+    "highlights_en": [
+      "**Preserved Test Diagnosis (`tester.py`)**:",
+      "Сохранение информативного хвоста трассировки стека Pytest (до 1200 символов) для точной QA-диагностики, полностью устраняющее обрезку lines посреди выражений и ложные выводы.",
+      "**Configurable LLM Timeout (`config.py`, `llm.py`)**:",
+      "Настраиваемый параметр `llm_timeout_seconds` (по умолчанию 120 сек, пинг 20 сек)."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Security & Sandbox"
+    ]
+  },
+  {
+    "id": "release-0.4.0",
+    "version": "0.4.0",
+    "date": "2026-09-08",
+    "title": "Обзор релиза v0.4.0: Stream Resilience & Fault Tolerance Edition",
+    "title_en": "Release Overview v0.4.0: Stream Resilience & Fault Tolerance Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.4.0, Stream Resilience & Fault Tolerance Edition. Дата выхода: 2026-09-08. 🛡️ Отказоустойчивость и стабильность провайдеров (Reliability & Stream Guard): **Stream Error Guard (`llm.py`)**: ⚡ Динамическая конфигурация и модели: **Dynamic Hot-Reloading (`orchestrator.py`)**:",
+    "voice_script_en": "Release v0.4.0, Stream Resilience & Fault Tolerance Edition. Released on: 2026-09-08. Stream Resilience & Provider Fault Tolerance: **Stream Error Guard (`llm.py`)**: Dynamic Configuration & DeepSeek Integration: **Dynamic Hot-Reloading (`orchestrator.py`)**:",
+    "summary": "В обновлении v0.4.0 мы сфокусировались на ключевых направлениях: 🛡️ Отказоустойчивость и стабильность провайдеров (Reliability & Stream Guard), ⚡ Динамическая конфигурация и модели.",
+    "summary_en": "In release v0.4.0 we focused on key engineering domains: Stream Resilience & Provider Fault Tolerance, Dynamic Configuration & DeepSeek Integration.",
+    "highlights": [
+      "**Stream Error Guard (`llm.py`)**:",
+      "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
+      "**Dynamic Hot-Reloading (`orchestrator.py`)**:",
+      "Оркестратор отслеживает время модификации (`mtime`) файла `ai_team_config.yaml` и применяет изменённые роли моделей на лету без перезапуска графического интерфейса."
+    ],
+    "highlights_en": [
+      "**Stream Error Guard (`llm.py`)**:",
+      "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
+      "**Dynamic Hot-Reloading (`orchestrator.py`)**:",
+      "Оркестратор отслеживает время модификации (`mtime`) файла `ai_team_config.yaml` и применяет изменённые роли моделей на лету без перезапуска графического интерфейса."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Security & Sandbox",
+      "LLM & Models"
+    ]
+  },
+  {
+    "id": "release-0.3.0",
+    "version": "0.3.0",
+    "date": "2026-09-05",
+    "title": "Обзор релиза v0.3.0: Executable Autonomy & Cyber Studio Edition",
+    "title_en": "Release Overview v0.3.0: Executable Autonomy & Cyber Studio Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.3.0, Executable Autonomy & Cyber Studio Edition. Дата выхода: 2026-09-05. 🧠 Ядро мультиагентной системы (Multi-Agent Core): **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: 🖥️ Интерфейс AI-Team Studio (UI & Desktop): **Живая анимация активных агентов**: 👤 Авторство & Брендинг: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
+    "voice_script_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Живая анимация активных агентов**: Authorship & Studio Branding: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
+    "summary": "В обновлении v0.3.0 мы сфокусировались на ключевых направлениях: 🧠 Ядро мультиагентной системы (Multi-Agent Core), 🖥️ Интерфейс AI-Team Studio (UI & Desktop), 👤 Авторство & Брендинг.",
+    "summary_en": "In release v0.3.0 we focused on key engineering domains: Multi-Agent Core & Executable Product Contract, AI-Team Studio Cyber UI & Animations, Authorship & Studio Branding.",
+    "highlights": [
+      "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
+      "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
+      "**Живая анимация активных агентов**:",
+      "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
+    ],
+    "highlights_en": [
+      "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
+      "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
+      "**Живая анимация активных агентов**:",
+      "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Multi-Stack"
+    ]
+  },
+  {
+    "id": "release-0.2.0",
+    "version": "0.2.0",
+    "date": "2026-09-04",
+    "title": "Обзор релиза v0.2.0: Desktop Studio Edition",
+    "title_en": "Release Overview v0.2.0: Desktop Studio Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.2.0, Desktop Studio Edition. Дата выхода: 2026-09-04. 🖥️ Настольный интерфейс: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). 💬 Интерактивный диалог: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. 📊 Телеметрия и мониторинг: Отображение текущей скорости генерации (t/s).",
+    "voice_script_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. Real-Time Telemetry & Token Tracking: Отображение текущей скорости генерации (t/s).",
+    "summary": "В обновлении v0.2.0 мы сфокусировались на ключевых направлениях: 🖥️ Настольный интерфейс, 💬 Интерактивный диалог, 📊 Телеметрия и мониторинг, ⏸️ Управление процессом.",
+    "summary_en": "In release v0.2.0 we focused on key engineering domains: Desktop Studio Edge WebView2 Interface, Interactive Tech Lead Consultation Chat, Real-Time Telemetry & Token Tracking, Pipeline Control (Pause, Resume, Intervene).",
+    "highlights": [
+      "Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`).",
+      "Запуск студии одной командой: `ai-team gui [путь_к_проекту]`.",
+      "Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором.",
+      "Стриминг рассуждений агентов в реальном времени."
+    ],
+    "highlights_en": [
+      "Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`).",
+      "Запуск студии одной командой: `ai-team gui [путь_к_проекту]`.",
+      "Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором.",
+      "Стриминг рассуждений агентов в реальном времени."
+    ],
+    "tags": [
+      "UI & Desktop"
+    ]
+  },
+  {
+    "id": "release-0.1.0",
+    "version": "0.1.0",
+    "date": "2026-08-28",
+    "title": "Обзор релиза v0.1.0: Genesis Multi-Agent Loop",
+    "title_en": "Release Overview v0.1.0: Genesis Multi-Agent Loop",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "badge_en": "📦 Studio Update",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Версия 0.1.0, Genesis Multi-Agent Loop. Дата выхода: 2026-08-28. 🏗️ Архитектура ядра: Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+    "voice_script_en": "Release v0.1.0, Genesis Multi-Agent Loop. Released on: 2026-08-28. Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer): Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+    "summary": "В обновлении v0.1.0 мы сфокусировались на ключевых направлениях: 🏗️ Архитектура ядра.",
+    "summary_en": "In release v0.1.0 we focused on key engineering domains: Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer).",
+    "highlights": [
+      "Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+      "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей."
+    ],
+    "highlights_en": [
+      "Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+      "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей."
+    ],
+    "tags": [
+      "Security & Sandbox"
+    ]
   }
 ]
