@@ -18,7 +18,7 @@
       "JavaScript (Node.js)",
       "Static Web (HTML/CSS/JS)"
     ],
-    "last_synced": "2026-10-22 00:11"
+    "last_synced": "2026-10-22 00:20"
   },
   "devlog": [
     {
@@ -34,7 +34,7 @@
       "audio_url": null,
       "duration": "01:45",
       "voice_script": "Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: **Разделение монолитного шаблона на 3 чистых модуля**: 💰 Универсальный биллинг моделей & Защита бюджета: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: 🪟 Нативный UTF-8 Sandbox для Windows: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
-      "voice_script_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Разделение монолитного шаблона на 3 чистых модуля**: Multi-Provider Model Pricing & Budget Guard: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
+      "voice_script_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Decoupled monolithic template into 3 clean modules**: Multi-Provider Model Pricing & Budget Guard: **Multi-provider pricing table `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
       "summary": "В обновлении v0.13.0 мы сфокусировались на ключевых направлениях: 🧩 Модульная архитектура UI, 💰 Универсальный биллинг моделей & Защита бюджета, 🪟 Нативный UTF-8 Sandbox для Windows, 🛠️ Эргономичная панель действий и ручной ресайзер.",
       "summary_en": "In release v0.13.0 we focused on key engineering domains: Modular UI Architecture, Multi-Provider Model Pricing & Budget Guard, Native UTF-8 Windows Sandbox, Ergonomic Action Panel & Resizable Terminal.",
       "highlights": [
@@ -44,10 +44,10 @@
         "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini."
       ],
       "highlights_en": [
-        "**Разделение монолитного шаблона на 3 чистых модуля**:",
-        "`styles.css` (2 400+ строк) — централизованные CSS-переменные, анимации, адаптивные карточки и модальные окна.",
-        "**Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**:",
-        "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini."
+        "**Decoupled monolithic template into 3 clean modules**:",
+        "`styles.css` (2 400+ lines) — centralized CSS custom properties, keyframe animations, bento cards and modals.",
+        "**Multi-provider pricing table `MODEL_PRICING_PER_1M`**:",
+        "Accurate invocation pricing based on real tariffs for OpenRouter, DeepSeek Official, OpenAI (GPT-4o/Mini), Claude Sonnet/Opus, and Google Gemini."
       ],
       "tags": [
         "UI & Desktop",
@@ -68,7 +68,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Дата выхода: 2026-10-13. 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: 🧠 Динамическая инспекция студии в чате с тимлидом: **Контекстная осведомлённость Lead Architect**: 🚀 Запуск проектов на Windows в отдельном окне: **Полноценный интерактивный запуск консольных проектов**:",
-      "voice_script_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: Dynamic Studio Inspection in Tech Lead Chat: **Контекстная осведомлённость Lead Architect**: Windows Console Runner in Separate Window: **Полноценный интерактивный запуск консольных проектов**:",
+      "voice_script_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Interactive voice dialogue in Studio chat**: Dynamic Studio Inspection in Tech Lead Chat: **Lead Architect dynamic context awareness**: Windows Console Runner in Separate Window: **Full interactive console project execution**:",
       "summary": "В обновлении v0.12.0 мы сфокусировались на ключевых направлениях: 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk), 🧠 Динамическая инспекция студии в чате с тимлидом, 🚀 Запуск проектов на Windows в отдельном окне.",
       "summary_en": "In release v0.12.0 we focused on key engineering domains: Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk), Dynamic Studio Inspection in Tech Lead Chat, Windows Console Runner in Separate Window.",
       "highlights": [
@@ -78,10 +78,10 @@
         "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки."
       ],
       "highlights_en": [
-        "**Интерактивный диалог в чате студии**:",
-        "Добавлена кнопка Push-to-Talk (`🎙️ Голос` ➔ `🔴 Слушаю... (Стоп)` ➔ `⏳ Думаю...`) для живого общения с Lead Architect.",
-        "**Контекстная осведомлённость Lead Architect**:",
-        "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки."
+        "**Interactive voice dialogue in Studio chat**:",
+        "Added Push-to-Talk button (`🎙️ Mic` ➔ `🔴 Listening...` ➔ `⏳ Thinking...`) for voice dialogue with Lead Architect.",
+        "**Lead Architect dynamic context awareness**:",
+        "Tech Lead in chat receives real-time snapshots: running tasks, tech stack, workspace files, test results, and tracebacks."
       ],
       "tags": [
         "UI & Desktop",
@@ -102,7 +102,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Дата выхода: 2026-09-30. 🟢 Интеграция моделей NVIDIA & Новые Пресеты: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: ⚡ Единый Conductor через Оркестратор Студии: **Полная унификация кодогенерации**: 🧩 Модульная архитектура GUI: **Разделение монолитного `gui.py`**:",
-      "voice_script_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Полная унификация кодогенерации**: Modular Desktop GUI Architecture: **Разделение монолитного `gui.py`**:",
+      "voice_script_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Unified code generation architecture**: Modular Desktop GUI Architecture: **Monolithic `gui.py` architectural decomposition**:",
       "summary": "В обновлении v0.11.0 мы сфокусировались на ключевых направлениях: 🟢 Интеграция моделей NVIDIA & Новые Пресеты, ⚡ Единый Conductor через Оркестратор Студии, 🧩 Модульная архитектура GUI, 📦 Единая спецификация пакета и CLI Entry Point.",
       "summary_en": "In release v0.11.0 we focused on key engineering domains: NVIDIA Models Integration & Studio Presets, Unified Conductor via Studio Orchestrator, Modular Desktop GUI Architecture, Single Package Spec & CLI Entry Point.",
       "highlights": [
@@ -112,10 +112,10 @@
         "Conductor больше не пишет файлы напрямую на диск (`write_text` и разбор модельного вывода удалены)."
       ],
       "highlights_en": [
-        "**Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**:",
-        "Облачный архитектор и ревьюер **NVIDIA Nemotron 3.5 Lightning** с контекстом 1M токенов (через OpenRouter) для глубокого проектирования и строгого 5D-ревью.",
-        "**Полная унификация кодогенерации**:",
-        "Conductor больше не пишет файлы напрямую на диск (`write_text` и разбор модельного вывода удалены)."
+        "**NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**:",
+        "Cloud architect and reviewer **NVIDIA Nemotron 3.5 Lightning** (1M context via OpenRouter) for deep architectural planning and strict 5D review.",
+        "**Unified code generation architecture**:",
+        "Conductor no longer writes files directly; ad-hoc write_text removed."
       ],
       "tags": [
         "UI & Desktop",
@@ -229,62 +229,62 @@
         {
           "title": "Modular UI Architecture",
           "items": [
-            "**Разделение монолитного шаблона на 3 чистых модуля**:",
-            "`styles.css` (2 400+ строк) — централизованные CSS-переменные, анимации, адаптивные карточки и модальные окна.",
-            "`layout.html` (1 300+ строк) — семантическая разметка экранов, сайдбаров и канбан-доски.",
-            "`app.js` (2 200+ строк) — клиентская логика, двусторонний мост с `pywebview.api`, рендеринг графа задач и телеметрии.",
-            "**Автоматический сборщик бандла `load_ui_html()`**:",
-            "Динамическая компиляция модулей при запуске студии с сохранением обратной совместимости с `pywebview` и unit-тестами."
+            "**Decoupled monolithic template into 3 clean modules**:",
+            "`styles.css` (2 400+ lines) — centralized CSS custom properties, keyframe animations, bento cards and modals.",
+            "`layout.html` (1 300+ lines) — semantic markup of screens, sidebars, and reactive DAG board.",
+            "`app.js` (2 200+ lines) — client-side logic, bidirectional pywebview.api bridge, DAG task graph rendering and live telemetry.",
+            "**Automatic bundle compiler `load_ui_html()`**:",
+            "Dynamic module compilation on Studio startup preserving 100% backwards compatibility with pywebview and test suites."
           ]
         },
         {
           "title": "Multi-Provider Model Pricing & Budget Guard",
           "items": [
-            "**Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**:",
-            "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini.",
-            "Нулевая стоимость (`$0.00`) для локальных моделей (LM Studio, Ollama) и бесплатных тиров (Groq, NVIDIA NIM, Google AI Studio Free).",
-            "**Пошаговое накопление стоимости вызовов**:",
-            "В `LLMClient.generate()` стоимость каждого запроса рассчитывается по фактической модели агента и фиксируется в `TelemetryStats.estimated_cost_usd` и `current_task_cost_usd`.",
-            "**Автоматический предохранитель бюджета (`Budget Guard`)**:",
-            "Автоматическая пауза выполнения задачи при превышении установленного лимита `max_budget_per_task_usd` с информативным предупреждением в логах.",
-            "**Живой баланс для DeepSeek Official и OpenRouter**:",
-            "В фоновом режиме опрашивается баланс не только OpenRouter (`/api/v1/credits`), но и DeepSeek Official API (`/user/balance`) с конвертацией валют."
+            "**Multi-provider pricing table `MODEL_PRICING_PER_1M`**:",
+            "Accurate invocation pricing based on real tariffs for OpenRouter, DeepSeek Official, OpenAI (GPT-4o/Mini), Claude Sonnet/Opus, and Google Gemini.",
+            "Zero cost (`$0.00`) for local on-device models (LM Studio, Ollama) and free cloud tiers (Groq, NVIDIA NIM, Google AI Studio Free).",
+            "**Step-by-step cost accumulation**:",
+            "В `LLMClient.generate()` every prompt cost is computed from active agent model and recorded in `TelemetryStats.estimated_cost_usd` и `current_task_cost_usd`.",
+            "**Automated Budget Guard fuse (`Budget Guard`)**:",
+            "Automatic workflow pause when exceeding configured limit `max_budget_per_task_usd` with actionable warnings in log terminal.",
+            "**Live balance tracking for DeepSeek Official and OpenRouter**:",
+            "Background polling of live credits not only from OpenRouter (`/api/v1/credits`), but also DeepSeek Official API (`/user/balance`) with currency conversion."
           ]
         },
         {
           "title": "Native UTF-8 Windows Sandbox",
           "items": [
-            "**Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
-            "Принудительная инициализация `PYTHONIOENCODING=utf-8` и `PYTHONUTF8=1` для всех дочерних процессов песочницы на Windows.",
-            "Консольные игры и приложения на базе `Rich`, псевдографики (`█`, рамки, таблицы) и Unicode больше не падают с ошибкой `UnicodeEncodeError`."
+            "**`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
+            "Forced initialization of `PYTHONIOENCODING=utf-8` and `PYTHONUTF8=1` across all Windows sandbox child processes.",
+            "Terminal games and apps built with `Rich`, box-drawing borders (`█`), and Unicode no longer crash with `UnicodeEncodeError`."
           ]
         },
         {
           "title": "Ergonomic Action Panel & Resizable Terminal",
           "items": [
-            "**Ручка изменения высоты панели мышкой (Draggable Resize Handle)**:",
-            "Интерактивная верхняя граница (`ns-resize`) с подсветкой позволяет вытягивать окно `ACTION REQUIRED` на любую высоту (от 120px до 85% экрана).",
-            "Выбранная высота автоматически запоминается в `localStorage`.",
-            "**Кнопка сворачивания логов (`↕️ Свернуть лог`)**:",
-            "Мгновенное сворачивание блока ошибки в компактную плашку высотой 94px и быстрое разворачивание обратно.",
-            "**Внутренний скроллинг стектрейсов**:",
-            "Длинные pytest-логи и tracebacks теперь скроллятся внутри аккуратного моноширинного блока и никогда не раздувают окно приложения."
+            "**Interactive mouse drag resize handle (Draggable Resize Handle)**:",
+            "Highlighted interactive top border (`ns-resize`) enables stretching `ACTION REQUIRED` panel from 120px up to 85% screen height.",
+            "Selected custom height is automatically persisted in `localStorage`.",
+            "**Log collapse button (`↕️ Toggle Logs`)**:",
+            "Instant collapse of error blocks into compact 94px strip and fast expansion.",
+            "**Internal viewport scrolling for stack traces**:",
+            "Lengthy pytest logs and tracebacks scroll cleanly inside fixed monospace containers without expanding the app window."
           ]
         },
         {
           "title": "Settings Modal Modernization",
           "items": [
-            "**Удалены дублирующиеся кнопки пресетов**:",
-            "Настройки теперь посвящены исключительно вводу API-ключей, базам URL и лимитам, без дублирования функционала главного экрана.",
-            "**Прямая поддержка Google Gemini**:",
-            "Добавлена плашка провайдера `Google Gemini Direct` с валидацией ключей.",
-            "**Живые индикаторы статуса**:",
-            "Зелёные точки наличия ключей `🟢` и цветные бейджи провайдеров для каждой роли команды."
+            "**Removed redundant preset buttons from settings modal**:",
+            "Settings modal now focuses strictly on API keys, base URLs, and budget limits.",
+            "**Native direct Google Gemini provider support**:",
+            "Added `Google Gemini Direct` provider card with live key validation.",
+            "**Live status indicators**:",
+            "Key availability status dots `🟢` and colorful provider badges for every team role."
           ]
         }
       ],
       "voice_summary": "Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: **Разделение монолитного шаблона на 3 чистых модуля**: 💰 Универсальный биллинг моделей & Защита бюджета: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: 🪟 Нативный UTF-8 Sandbox для Windows: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
-      "voice_summary_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Разделение монолитного шаблона на 3 чистых модуля**: Multi-Provider Model Pricing & Budget Guard: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
+      "voice_summary_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Decoupled monolithic template into 3 clean modules**: Multi-Provider Model Pricing & Budget Guard: **Multi-provider pricing table `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
       "audio_file": null,
       "is_latest": true
     },
@@ -334,37 +334,37 @@
         {
           "title": "Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk)",
           "items": [
-            "**Интерактивный диалог в чате студии**:",
-            "Добавлена кнопка Push-to-Talk (`🎙️ Голос` ➔ `🔴 Слушаю... (Стоп)` ➔ `⏳ Думаю...`) для живого общения с Lead Architect.",
-            "Потоковая запись звука с микрофона с программным автогейном (нормализация до 15x), обеспечивающая распознавание даже на тихих USB-микрофонах (Fifine и др.).",
-            "Распознавание русской речи через мультимодальный **Gemini Audio STT** (`input_audio`).",
-            "**Синтез речи через Gemini 3.8 Flash TTS & Умный каскадный пул**:",
-            "Высококачественная естественная озвучка на русском языке (голос `Puck`, 24kHz PCM / WAV).",
-            "Отказоустойчивый пул моделей при исчерпании лимитов Free Tier (`429 RESOURCE_EXHAUSTED`): каскад `gemini-3.8-flash-lite-tts` ➔ `gemini-3.1-flash-tts-preview` ➔ `gemini-2.5-flash-preview-tts` для непрерывного синтеза без задержек.",
-            "**Стабилизация аудиопотока и Mute**:",
-            "Защита от дублей и зацикливания: кулдаун-дедупликация (окно 8 секунд) для повторных реплик.",
-            "Мгновенная аппаратная очистка аудиоочереди через `winsound.SND_PURGE` при включении Mute и перезапуске студии."
+            "**Interactive voice dialogue in Studio chat**:",
+            "Added Push-to-Talk button (`🎙️ Mic` ➔ `🔴 Listening...` ➔ `⏳ Thinking...`) for voice dialogue with Lead Architect.",
+            "Streaming microphone audio capture with software auto-gain (up to 15x normalization) for quiet USB microphones.",
+            "Multimodal speech recognition via **Gemini Audio STT** (`input_audio`).",
+            "**Speech synthesis via Gemini 3.8 Flash TTS & smart cascade fallback pool**:",
+            "High-fidelity natural voice narration (voice `Puck`, 24kHz PCM / WAV).",
+            "Resilient fallback pool on Free Tier quota limits (`429`): cascades through `gemini-3.8-flash-lite-tts` ➔ `gemini-3.1-flash` ➔ `gemini-2.5-flash`.",
+            "**Audio stream stabilization & hardware Mute**:",
+            "Duplicate and loop protection: 8-second cooldown window for consecutive announcements.",
+            "Instant hardware audio buffer flush via `winsound.SND_PURGE` on Mute toggle and studio reload."
           ]
         },
         {
           "title": "Dynamic Studio Inspection in Tech Lead Chat",
           "items": [
-            "**Контекстная осведомлённость Lead Architect**:",
-            "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки.",
-            "Тимлид мгновенно отвечает на вопросы об архитектуре и статусе разработки голосом и текстом."
+            "**Lead Architect dynamic context awareness**:",
+            "Tech Lead in chat receives real-time snapshots: running tasks, tech stack, workspace files, test results, and tracebacks.",
+            "Tech Lead answers questions about architecture and project status instantly out loud and in text."
           ]
         },
         {
           "title": "Windows Console Runner in Separate Window",
           "items": [
-            "**Полноценный интерактивный запуск консольных проектов**:",
-            "Добавлен флаг `subprocess.CREATE_NEW_CONSOLE` при запуске CLI-приложений на Windows.",
-            "Консольные инструменты больше не блокируют фоновые потоки и открываются в нативном окне командной строки для ввода пользователя."
+            "**Full interactive console project execution**:",
+            "Added `subprocess.CREATE_NEW_CONSOLE` flag when running CLI applications on Windows.",
+            "Terminal CLI tools open in separate Command Prompt windows with keyboard input support without blocking background threads."
           ]
         }
       ],
       "voice_summary": "Версия 0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Дата выхода: 2026-10-13. 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: 🧠 Динамическая инспекция студии в чате с тимлидом: **Контекстная осведомлённость Lead Architect**: 🚀 Запуск проектов на Windows в отдельном окне: **Полноценный интерактивный запуск консольных проектов**:",
-      "voice_summary_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: Dynamic Studio Inspection in Tech Lead Chat: **Контекстная осведомлённость Lead Architect**: Windows Console Runner in Separate Window: **Полноценный интерактивный запуск консольных проектов**:",
+      "voice_summary_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Interactive voice dialogue in Studio chat**: Dynamic Studio Inspection in Tech Lead Chat: **Lead Architect dynamic context awareness**: Windows Console Runner in Separate Window: **Full interactive console project execution**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -431,54 +431,54 @@
         {
           "title": "NVIDIA Models Integration & Studio Presets",
           "items": [
-            "**Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**:",
-            "Облачный архитектор и ревьюер **NVIDIA Nemotron 3.5 Lightning** с контекстом 1M токенов (через OpenRouter) для глубокого проектирования и строгого 5D-ревью.",
-            "Локальный кодер и тестер **Mistral-NeMo-12B-Instruct** (контекст 128k токенов) на локальном GPU (RTX 3050 8GB через LM Studio) с нулевой утечкой кода.",
-            "Дизайнер интерфейсов **Google Gemini 3.5 Flash-Lite**.",
-            "**100% Оффлайн Пресет NVIDIA Local (`nvidia-local`)**:",
-            "Полностью локальный цикл разработки на **Mistral-NeMo-12B** через LM Studio для всех ролей команды без выхода в сеть.",
-            "**Интеграция в интерфейс**:",
-            "Добавлены кнопки быстрого переключения на пресеты NVIDIA в настройках и выпадающем меню Studio."
+            "**NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**:",
+            "Cloud architect and reviewer **NVIDIA Nemotron 3.5 Lightning** (1M context via OpenRouter) for deep architectural planning and strict 5D review.",
+            "Local coder and tester **Mistral-NeMo-12B-Instruct** (128k context) running on on-device GPU with zero code telemetry.",
+            "UI/UX Designer powered by **Google Gemini 3.5 Flash-Lite**.",
+            "**100% Offline NVIDIA Local preset (`nvidia-local`)**:",
+            "Fully local autonomous cycle powered by **Mistral-NeMo-12B** via LM Studio without external internet access.",
+            "**Desktop GUI Integration**:",
+            "Added 1-click NVIDIA preset buttons in settings and studio menu."
           ]
         },
         {
           "title": "Unified Conductor via Studio Orchestrator",
           "items": [
-            "**Полная унификация кодогенерации**:",
-            "Conductor больше не пишет файлы напрямую на диск (`write_text` и разбор модельного вывода удалены).",
-            "В репозитории действует единый путь записи кода: `CoderAgent` → `edit_protocol` → `WorkspaceSandbox`.",
-            "Команда `conductor` — это специализированный гибридный терминальный вход в `Orchestrator` студии с in-memory пресетом `gemini-conductor` (Google Gemini Flash для планирования + локальная LM Studio для кодинга).",
-            "Запуск проектов (`conductor run`) унифицирован с логикой студии через `WorkspaceSandbox` и использует изолированный виртуальный Python проекта (`.venv`).",
-            "Устранено дублирование: устаревшие `conductor.py` и `conductor_demo.py` в корне проекта удалены."
+            "**Unified code generation architecture**:",
+            "Conductor no longer writes files directly; ad-hoc write_text removed.",
+            "Repository strictly enforces single code writing pipeline: `CoderAgent` → `edit_protocol` → `WorkspaceSandbox`.",
+            "CLI command `conductor` provides hybrid terminal entry into Studio `Orchestrator` with in-memory `gemini-conductor` preset.",
+            "Project execution (`conductor run`) unified with studio logic and isolated `.venv` sandbox.",
+            "Removed duplicates: legacy `conductor.py` and `conductor_demo.py` deleted."
           ]
         },
         {
           "title": "Modular Desktop GUI Architecture",
           "items": [
-            "**Разделение монолитного `gui.py`**:",
-            "Класс `DesktopBridge` разбит на 4 независимых миксина: `ProjectsMixin`, `SettingsMixin`, `RunnerMixin`, `ChatMixin`.",
-            "Размер основного файла `gui.py` сокращён с 1700+ до ~400 строк при 100% сохранении сигнатур методов JS API."
+            "**Monolithic `gui.py` architectural decomposition**:",
+            "Class `DesktopBridge` decomposed into 4 clean mixins: `ProjectsMixin`, `SettingsMixin`, `RunnerMixin`, `ChatMixin`.",
+            "Main `gui.py` reduced from 1,700+ to ~400 lines while maintaining 100% JS API compatibility."
           ]
         },
         {
           "title": "Single Package Spec & CLI Entry Point",
           "items": [
-            "**`pyproject.toml` как единый источник правды**:",
-            "Консольная команда `conductor` зарегистрирована в `[project.scripts]` (`ai_team.conductor:main`).",
-            "Упрощён `setup.py` до минимального forwarder'а без дублирования версий и зависимостей.",
-            "Удалены устаревшие сборочные артефакты `dist/` и `build/`."
+            "**`pyproject.toml` as single source of truth**:",
+            "CLI command `conductor` registered in `[project.scripts]` (`ai_team.conductor:main`).",
+            "Streamlined `setup.py` to minimal forwarder without duplication.",
+            "Cleaned up legacy build artifacts in `dist/` and `build/`."
           ]
         },
         {
           "title": "System & Unit Test Suite",
           "items": [
-            "Новый модульный набор тестов `tests/test_conductor.py` (валидация делегирования в оркестратор, проверка отсутствия прямой записи файлов и in-memory пресетов).",
-            "Полный набор системных тестов: **167/167 Passed (100% Green)**."
+            "Новый модульный набор tests `tests/test_conductor.py` (валидация делегирования в оркестратор, проверка отсутствия прямой записи файлов и in-memory пресетов).",
+            "Полный набор системных tests: **167/167 Passed (100% Green)**."
           ]
         }
       ],
       "voice_summary": "Версия 0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Дата выхода: 2026-09-30. 🟢 Интеграция моделей NVIDIA & Новые Пресеты: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: ⚡ Единый Conductor через Оркестратор Студии: **Полная унификация кодогенерации**: 🧩 Модульная архитектура GUI: **Разделение монолитного `gui.py`**:",
-      "voice_summary_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Полная унификация кодогенерации**: Modular Desktop GUI Architecture: **Разделение монолитного `gui.py`**:",
+      "voice_summary_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Unified code generation architecture**: Modular Desktop GUI Architecture: **Monolithic `gui.py` architectural decomposition**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -602,7 +602,7 @@
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**154/154 зелёных системных тестов** (100% Green, валидация маршрутизации пресетов, Google-провайдера и мульти-агентных матриц)."
+            "**154/154 зелёных системных tests** (100% Green, валидация маршрутизации пресетов, Google-провайдера и мульти-агентных матриц)."
           ]
         }
       ],
@@ -699,7 +699,7 @@
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**153/153 зелёных системных тестов** (100% Green, расширенное покрытие синтаксических валидаторов, DoD-гейтов и защиты портов)."
+            "**153/153 зелёных системных tests** (100% Green, расширенное покрытие синтаксических валидаторов, DoD-гейтов и защиты портов)."
           ]
         }
       ],
@@ -746,7 +746,7 @@
             "**Динамическая кнопка управления проектом**:",
             "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
             "Автоматическое распознавание точки входа (Web HTTP сервер, Pygame аркада, консольное приложение, Node.js).",
-            "**Изолированная песочница виртуального окружения (`.venv`)**:",
+            "**Изолированная sandbox виртуального окружения (`.venv`)**:",
             "Автоматическое исполнение команд через локальный `.venv` проекта без загрязнения хост-системы.",
             "Безопасное управление портами и предотвращение коллизий сетевых сервисов.",
             "**Команды управления через Tech Lead Chat**:",
@@ -756,12 +756,12 @@
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**139/139 зелёных системных тестов** (100% Green)."
+            "**139/139 зелёных системных tests** (100% Green)."
           ]
         }
       ],
       "voice_summary": "Версия 0.8.0, One-Click Run & Venv Sandbox Edition. Дата выхода: 2026-09-16. ▶️ Запуск и предпросмотр проектов в один клик: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
-      "voice_summary_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
+      "voice_summary_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных tests** (100% Green).",
       "audio_file": null,
       "is_latest": false
     },
@@ -824,20 +824,20 @@
         {
           "title": "Workspace & Projects Hub",
           "items": [
-            "**Каталог проектов в GUI (`gui.py`, `template.html`)**:",
-            "Встроенное модальное окно управления рабочими областями с вкладками «Каталог проектов» и «Создать проект».",
-            "Автоматическое обнаружение проектов в каталоге `AI Studio Projects`, родительских папках и истории недавних запусков.",
-            "Карточки проектов с цветовыми бейджами стека (`🐍 Python` vs `🟨 Node.js`), статусом готовности, счетчиком задач и токенов.",
-            "Быстрый поиск и фильтрация проектов по имени, стеку и целям разработки.",
+            "**Каталог projects в GUI (`gui.py`, `template.html`)**:",
+            "Встроенное модальное окно управления рабочими областями с вкладками «Каталог projects» и «Создать проект».",
+            "Автоматическое обнаружение projects в каталоге `AI Studio Projects`, родительских папках и истории недавних запусков.",
+            "Карточки projects с цветовыми бейджами стека (`🐍 Python` vs `🟨 Node.js`), статусом готовности, счетчиком задач и токенов.",
+            "Быстрый поиск и фильтрация projects по имени, стеку и целям разработки.",
             "**Динамический переключатель воркспейсов (`DesktopBridge.switch_workspace`)**:",
             "Мгновенное переключение активного рабочего пространства прямо из интерфейса без перезапуска приложения.",
-            "Сохранение и перенос активных настроек моделей и API-ключей при смене проектов.",
+            "Сохранение и перенос активных настроек моделей и API-ключей при смене projects.",
             "**Создание проекта в 1 клик (`DesktopBridge.create_project`)**:",
             "Быстрое создание изолированного проекта с автоматическим копированием рабочей конфигурации и активацией.",
             "**Открытие в Проводнике (`DesktopBridge.open_in_explorer`)**:",
             "Быстрый доступ к папке любого проекта в проводнике ОС (`os.startfile`).",
             "**Умная фильтрация временных каталогов (`gui.py`, `is_ephemeral_workspace`)**:",
-            "Строгая изоляция временных каталогов `pytest` и `Temp`, исключающая загрязнение истории проектов.",
+            "Строгая изоляция временных каталогов `pytest` и `Temp`, исключающая загрязнение истории projects.",
             "Устранение жестко закодированных путей пользователя в пользу кроссплатформенного `Path.home()`."
           ]
         },
@@ -845,8 +845,8 @@
           "title": "Battle-Tested Projects Showcase",
           "items": [
             "**Официальная витрина в `README.md`**:",
-            "Сводная интерактивная таблица всех 7 проектов, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js).",
-            "Архитектурный разбор ключевых проектов с метриками стоимости (всего $0.008 за проект на Node.js)."
+            "Сводная интерактивная таблица всех 7 projects, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js).",
+            "Архитектурный разбор ключевых projects с метриками стоимости (всего $0.008 за проект на Node.js)."
           ]
         },
         {
@@ -855,7 +855,7 @@
             "**Dependency Injection для Кодера (`coder.py`)**:",
             "Внедрение полного кода зависимых модулей для предотвращения рассинхрона сигнатур методов.",
             "**Сохранение стектрейсов Тестировщика (`tester.py`)**:",
-            "Интеллектуальное форматирование вывода ошибок с приоритетом на упавшие ассерты вместо слепой обрезки хвоста лога.",
+            "Интеллектуальное форматирование вывода errors с приоритетом на упавшие ассерты вместо слепой обрезки хвоста лога.",
             "**Опция CLI `--goal` / `-g` (`cli.py`, `gui.py`)**:",
             "Возможность прямой передачи цели в графический интерфейс при запуске из консоли."
           ]
@@ -863,12 +863,12 @@
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**134/134 зелёных системных тестов** (100% Green, расширенное покрытие моста GUI и управления проектами)."
+            "**134/134 зелёных системных tests** (100% Green, расширенное покрытие моста GUI и управления проектами)."
           ]
         }
       ],
       "voice_summary": "Версия 0.7.0, Workspace Hub & Project Gallery Edition. Дата выхода: 2026-09-12. 📁 Центр управления проектами (Projects & Workspaces Hub): **Каталог проектов в GUI (`gui.py`, `template.html`)**: 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase): **Официальная витрина в `README.md`**: 🛠️ Улучшения стабильности ядра (Core Engine): **Dependency Injection для Кодера (`coder.py`)**:",
-      "voice_summary_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Каталог проектов в GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Официальная витрина в `README.md`**: Core Engine Stability Improvements: **Dependency Injection для Кодера (`coder.py`)**:",
+      "voice_summary_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Каталог projects в GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Официальная витрина в `README.md`**: Core Engine Stability Improvements: **Dependency Injection для Кодера (`coder.py`)**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -931,19 +931,19 @@
             "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
             "Автоматическое определение стека по ключевым файлам воркспейса (`package.json`, `index.js` vs `pyproject.toml`, `requirements.txt`).",
             "Наследование стека при инициализации через `ai-team init`.",
-            "**Безопасная песочница для Node.js (`sandbox.py`)**:",
+            "**Безопасная sandbox для Node.js (`sandbox.py`)**:",
             "Разрешён контролируемый запуск `node`, `npm` и `npx`.",
             "Внедрена строгая превентивная блокировка пакетных установок (`npm install`, `npm i`, `npm add`) с понятным предупреждением для предотвращения бесконтрольной модификации хоста.",
             "**Синтаксическая валидация и самовосстановление (`edit_protocol.py`)**:",
             "Предварительная валидация JS-файлов через `node --check` при патчинге и создании файлов.",
             "Автоматический откат к предыдущей версии при обнаружении `SyntaxError` с логированием подробного диагностического сообщения.",
-            "**Нативный раннер тестов и дымовые тесты (`tester.py`)**:",
+            "**Нативный раннер tests и дымовые тесты (`tester.py`)**:",
             "Распознавание тестовых файлов JavaScript (`*.test.js`, `*.spec.js`, `test-*.js`, `test.js`).",
-            "Выполнение тестов через нативный тестовый раннер Node.js (`node --test`) и `npm test`.",
+            "Выполнение tests через нативный тестовый раннер Node.js (`node --test`) и `npm test`.",
             "Автоматический дымовой запуск точек входа (`index.js`).",
             "**Контракт запускаемости и ревью (`planner.py`, `coder.py`, `reviewer.py`, `orchestrator.py`)**:",
             "Адаптация системных промптов Архитектора и Кодера под стек JavaScript (гарантия входной точки `index.js`, тесты `node --test`).",
-            "Проверка AST/regex функций и классов в JS файлах в `ReviewerAgent`, подтверждение факта запуска тестов.",
+            "Проверка AST/regex функций и классов в JS файлах в `ReviewerAgent`, подтверждение факта запуска tests.",
             "Расширение Definition of Done (DoD) Launch Gate в `Orchestrator` на запуск JavaScript-приложений без сбоев."
           ]
         },
@@ -961,12 +961,12 @@
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов)."
+            "**134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects)."
           ]
         }
       ],
       "voice_summary": "Версия 0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Дата выхода: 2026-09-12. 🌐 Поддержка стека JavaScript и Node.js (A1–A4): **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio): **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
-      "voice_summary_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
+      "voice_summary_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
       "audio_file": null,
       "is_latest": false
     },
@@ -1063,7 +1063,7 @@
           "title": "Security & Fault Resilience Hardening",
           "items": [
             "**Preserved Test Diagnosis (`tester.py`)**:",
-            "Сохранение информативного хвоста трассировки стека Pytest (до 1200 символов) для точной QA-диагностики, полностью устраняющее обрезку строк посреди выражений и ложные выводы.",
+            "Сохранение информативного хвоста трассировки стека Pytest (до 1200 символов) для точной QA-диагностики, полностью устраняющее обрезку lines посреди выражений и ложные выводы.",
             "**Human-In-The-Loop Retry Reset (`orchestrator.py`)**:",
             "Корректный сброс счётчиков `test_retries`, `review_reworks` и `replan_count` при ручном вмешательстве оператора через действия Rework и Rollback.",
             "**AST CodeGuard Protection (`code_guard.py`)**:",
@@ -1071,7 +1071,7 @@
             "**Safe Git Identity & Scoped Commits (`git_manager.py`)**:",
             "Автоматическая локальная установка идентичности бота (`AI-Team Bot` / `ai-team@local`) без перезаписи глобального `git config` разработчика; таймаут 30 секунд на Git-операции.",
             "**Floating-Point Test Guidance (`coder.py`)**:",
-            "В системный промпт Кодера добавлено правило использования `pytest.approx(expected, abs=0.01)` и округления `round(..., 2)` для предотвращения ложных падений тестов из-за погрешностей `float`."
+            "В системный промпт Кодера added правило использования `pytest.approx(expected, abs=0.01)` и округления `round(..., 2)` для предотвращения ложных падений tests из-за погрешностей `float`."
           ]
         },
         {
@@ -1134,7 +1134,7 @@
             "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
             "Внедрён механизм мгновенного авто-повтора (до 3 попыток) без сброса контекста, полностью исключающий попадание обрезанного кода в проект.",
             "**Full File Rewrite Protocol (`coder.py`)**:",
-            "Агенту Coder разрешено использовать протокол полной замены (`*** BEGIN FILE`) для компактных модулей (до 350 строк).",
+            "Агенту Coder разрешено использовать протокол полной замены (`*** BEGIN FILE`) для компактных модулей (до 350 lines).",
             "Устранены ошибки несовпадения блоков поиска и замены (`search pattern does not match`), возникавшие при малейшем сдвиге форматирования.",
             "**Resilient Fuzzy Patching (`sandbox.py`)**:",
             "Алгоритм наложения патчей оснащён fallback-сопоставлением, нечувствительным к хвостовым пробелам и пустым строкам."
@@ -1210,7 +1210,7 @@
             "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
             "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
             "**Coder (Разработчик)**: Обязан оснащать главные файлы блоком `if __name__ == '__main__':`, обрабатывать события ОС и клавиши выхода в GUI/играх (Pygame, Tkinter), предотвращая зависания окон Windows.",
-            "**Tester (Тестировщик)**: Добавлен автоматический **Smoke-тест запуска** (`python -c \"import main\"` в headless-режиме) для гарантии того, что приложение не падает на старте.",
+            "**Tester (Тестировщик)**: added автоматический **Smoke-тест запуска** (`python -c \"import main\"` в headless-режиме) для гарантии того, что приложение не падает на старте.",
             "**Reviewer (Ревьюер)**: Внедрен критерий **Launchability Check** — запрет на сдачу задач без рабочего запуска из коробки."
           ]
         },
@@ -1226,7 +1226,7 @@
             "Исправлен регистронезависимый парсер статусов `TaskState` (`RUNNING`, `TESTING`, `REVIEWING`, `REWORK`).",
             "Клиентский fallback-детектор в JavaScript, определяющий активного агента по дереву задач и потоку логов.",
             "**Вкладка «История версий»**:",
-            "Добавлен интерактивный раздел со всеми релизами и описанием изменений прямо в модальном окне «О программе & FAQ».",
+            "added интерактивный раздел со всеми релизами и описанием изменений прямо в модальном окне «О программе & FAQ».",
             "**Компактный заголовок**:",
             "Фиксированная высота шапки (54px) с защитой от раздувания длинными формулировками целей и всплывающей подсказкой.",
             "**Интеграция с Windows**:",
@@ -1350,7 +1350,7 @@
           "items": [
             "Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
             "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей.",
-            "Автоматический запуск тестов Pytest в изолированной песочнице (`sandbox`).",
+            "Автоматический запуск tests Pytest в изолированной sandbox (`sandbox`).",
             "Создание Git-контрольных точек (checkpoints) перед каждым изменением с возможностью безопасного отката при неудачных тестах.",
             "Поддержка локальных нейросетей через LM Studio и Ollama, а также облачных API (OpenRouter, Groq, OpenAI).",
             "Механизм Human Intervention при превышении лимита повторных попыток."

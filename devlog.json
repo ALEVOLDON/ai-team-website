@@ -12,7 +12,7 @@
     "audio_url": null,
     "duration": "01:45",
     "voice_script": "Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: **Разделение монолитного шаблона на 3 чистых модуля**: 💰 Универсальный биллинг моделей & Защита бюджета: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: 🪟 Нативный UTF-8 Sandbox для Windows: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
-    "voice_script_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Разделение монолитного шаблона на 3 чистых модуля**: Multi-Provider Model Pricing & Budget Guard: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
+    "voice_script_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Decoupled monolithic template into 3 clean modules**: Multi-Provider Model Pricing & Budget Guard: **Multi-provider pricing table `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
     "summary": "В обновлении v0.13.0 мы сфокусировались на ключевых направлениях: 🧩 Модульная архитектура UI, 💰 Универсальный биллинг моделей & Защита бюджета, 🪟 Нативный UTF-8 Sandbox для Windows, 🛠️ Эргономичная панель действий и ручной ресайзер.",
     "summary_en": "In release v0.13.0 we focused on key engineering domains: Modular UI Architecture, Multi-Provider Model Pricing & Budget Guard, Native UTF-8 Windows Sandbox, Ergonomic Action Panel & Resizable Terminal.",
     "highlights": [
@@ -22,10 +22,10 @@
       "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini."
     ],
     "highlights_en": [
-      "**Разделение монолитного шаблона на 3 чистых модуля**:",
-      "`styles.css` (2 400+ строк) — централизованные CSS-переменные, анимации, адаптивные карточки и модальные окна.",
-      "**Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**:",
-      "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini."
+      "**Decoupled monolithic template into 3 clean modules**:",
+      "`styles.css` (2 400+ lines) — centralized CSS custom properties, keyframe animations, bento cards and modals.",
+      "**Multi-provider pricing table `MODEL_PRICING_PER_1M`**:",
+      "Accurate invocation pricing based on real tariffs for OpenRouter, DeepSeek Official, OpenAI (GPT-4o/Mini), Claude Sonnet/Opus, and Google Gemini."
     ],
     "tags": [
       "UI & Desktop",
@@ -46,7 +46,7 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Дата выхода: 2026-10-13. 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: 🧠 Динамическая инспекция студии в чате с тимлидом: **Контекстная осведомлённость Lead Architect**: 🚀 Запуск проектов на Windows в отдельном окне: **Полноценный интерактивный запуск консольных проектов**:",
-    "voice_script_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Интерактивный диалог в чате студии**: Dynamic Studio Inspection in Tech Lead Chat: **Контекстная осведомлённость Lead Architect**: Windows Console Runner in Separate Window: **Полноценный интерактивный запуск консольных проектов**:",
+    "voice_script_en": "Release v0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Released on: 2026-10-13. Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk): **Interactive voice dialogue in Studio chat**: Dynamic Studio Inspection in Tech Lead Chat: **Lead Architect dynamic context awareness**: Windows Console Runner in Separate Window: **Full interactive console project execution**:",
     "summary": "В обновлении v0.12.0 мы сфокусировались на ключевых направлениях: 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk), 🧠 Динамическая инспекция студии в чате с тимлидом, 🚀 Запуск проектов на Windows в отдельном окне.",
     "summary_en": "In release v0.12.0 we focused on key engineering domains: Two-Way Voice Dialogue (Voice 2.0 & Push-to-Talk), Dynamic Studio Inspection in Tech Lead Chat, Windows Console Runner in Separate Window.",
     "highlights": [
@@ -56,10 +56,10 @@
       "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки."
     ],
     "highlights_en": [
-      "**Интерактивный диалог в чате студии**:",
-      "Добавлена кнопка Push-to-Talk (`🎙️ Голос` ➔ `🔴 Слушаю... (Стоп)` ➔ `⏳ Думаю...`) для живого общения с Lead Architect.",
-      "**Контекстная осведомлённость Lead Architect**:",
-      "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки."
+      "**Interactive voice dialogue in Studio chat**:",
+      "Added Push-to-Talk button (`🎙️ Mic` ➔ `🔴 Listening...` ➔ `⏳ Thinking...`) for voice dialogue with Lead Architect.",
+      "**Lead Architect dynamic context awareness**:",
+      "Tech Lead in chat receives real-time snapshots: running tasks, tech stack, workspace files, test results, and tracebacks."
     ],
     "tags": [
       "UI & Desktop",
@@ -80,7 +80,7 @@
     "audio_url": null,
     "duration": "01:20",
     "voice_script": "Версия 0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Дата выхода: 2026-09-30. 🟢 Интеграция моделей NVIDIA & Новые Пресеты: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: ⚡ Единый Conductor через Оркестратор Студии: **Полная унификация кодогенерации**: 🧩 Модульная архитектура GUI: **Разделение монолитного `gui.py`**:",
-    "voice_script_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Полная унификация кодогенерации**: Modular Desktop GUI Architecture: **Разделение монолитного `gui.py`**:",
+    "voice_script_en": "Release v0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Released on: 2026-09-30. NVIDIA Models Integration & Studio Presets: **NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**: Unified Conductor via Studio Orchestrator: **Unified code generation architecture**: Modular Desktop GUI Architecture: **Monolithic `gui.py` architectural decomposition**:",
     "summary": "В обновлении v0.11.0 мы сфокусировались на ключевых направлениях: 🟢 Интеграция моделей NVIDIA & Новые Пресеты, ⚡ Единый Conductor через Оркестратор Студии, 🧩 Модульная архитектура GUI, 📦 Единая спецификация пакета и CLI Entry Point.",
     "summary_en": "In release v0.11.0 we focused on key engineering domains: NVIDIA Models Integration & Studio Presets, Unified Conductor via Studio Orchestrator, Modular Desktop GUI Architecture, Single Package Spec & CLI Entry Point.",
     "highlights": [
@@ -90,10 +90,10 @@
       "Conductor больше не пишет файлы напрямую на диск (`write_text` и разбор модельного вывода удалены)."
     ],
     "highlights_en": [
-      "**Матрица NVIDIA Nemotron Matrix (`nvidia-nemotron`)**:",
-      "Облачный архитектор и ревьюер **NVIDIA Nemotron 3.5 Lightning** с контекстом 1M токенов (через OpenRouter) для глубокого проектирования и строгого 5D-ревью.",
-      "**Полная унификация кодогенерации**:",
-      "Conductor больше не пишет файлы напрямую на диск (`write_text` и разбор модельного вывода удалены)."
+      "**NVIDIA Nemotron Matrix preset (`nvidia-nemotron`)**:",
+      "Cloud architect and reviewer **NVIDIA Nemotron 3.5 Lightning** (1M context via OpenRouter) for deep architectural planning and strict 5D review.",
+      "**Unified code generation architecture**:",
+      "Conductor no longer writes files directly; ad-hoc write_text removed."
     ],
     "tags": [
       "UI & Desktop",
