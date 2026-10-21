@@ -79,12 +79,14 @@ html, body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.55rem;
   text-decoration: none;
   color: var(--text-main);
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .brand-logo {
@@ -1227,6 +1229,25 @@ html, body {
   }
   .nav-container {
     padding: 0.6rem 0.85rem;
+    gap: 0.4rem;
+  }
+  .brand {
+    font-size: 0.95rem;
+    gap: 0.4rem;
+  }
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .version-pill {
+    display: none;
+  }
+  .nav-actions {
+    gap: 0.4rem;
+  }
+  .btn-primary.btn-sm {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.78rem;
   }
   .hero {
     padding: 1.85rem 0 1.5rem;
@@ -1340,13 +1361,11 @@ html, body {
     gap: 0.6rem;
   }
   .tag-filters {
-    overflow-x: auto;
-    padding-bottom: 0.25rem;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
   }
   .filter-chip {
-    white-space: nowrap;
     padding: 0.35rem 0.75rem;
     font-size: 0.76rem;
   }
