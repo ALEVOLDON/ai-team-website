@@ -18,7 +18,7 @@
       "JavaScript (Node.js)",
       "Static Web (HTML/CSS/JS)"
     ],
-    "last_synced": "2026-10-22 00:23"
+    "last_synced": "2026-10-22 00:43"
   },
   "devlog": [
     {
@@ -136,7 +136,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.10.0, Gemini Conductor & Free Cloud Studio Edition. Дата выхода: 2026-09-25. ⚡ Автономный гибридный терминал Conductor: **Концепция гибридного ИИ с абсолютной приватностью исходного кода**: ✨ Официальная интеграция прямого Google Gemini API (100% Free Tier): **Прямой нативный провайдер `google` без сторонних наценок**: 🎛️ Мульти-агентные пресеты в 1 клик: **Предопределённые командные матрицы ролей**:",
-      "voice_script_en": "Release v0.10.0, Gemini Conductor & Free Cloud Studio Edition. Released on: 2026-09-25. Autonomous Hybrid Conductor CLI: **Концепция гибридного ИИ с абсолютной приватностью исходного кода**: Direct Google Gemini API Integration (Free Tier): **Прямой нативный провайдер `google` без сторонних наценок**: 1-Click Multi-Agent Presets: **Предопределённые командные матрицы ролей**:",
+      "voice_script_en": "Release v0.10.0, Gemini Conductor & Free Cloud Studio Edition. Released on: 2026-09-25. Autonomous Hybrid Conductor CLI: **Hybrid AI architecture with absolute source code privacy**: Direct Google Gemini API Integration (Free Tier): **Direct native `google` provider with zero third-party markups**: 1-Click Multi-Agent Presets: **Predefined team role matrices**:",
       "summary": "В обновлении v0.10.0 мы сфокусировались на ключевых направлениях: ⚡ Автономный гибридный терминал Conductor, ✨ Официальная интеграция прямого Google Gemini API (100% Free Tier), 🎛️ Мульти-агентные пресеты в 1 клик, 📊 Мульти-ролевой учёт расходов и реального баланса.",
       "summary_en": "In release v0.10.0 we focused on key engineering domains: Autonomous Hybrid Conductor CLI, Direct Google Gemini API Integration (Free Tier), 1-Click Multi-Agent Presets, Multi-Role Expense & Credit Tracking.",
       "highlights": [
@@ -146,10 +146,10 @@
         "Поддержка официальных моделей Google AI Studio: `gemini-flash-latest`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`."
       ],
       "highlights_en": [
-        "**Концепция гибридного ИИ с абсолютной приватностью исходного кода**:",
-        "Облачный архитектор **Google Cloud Gemini Flash** отвечает исключительно за высокоуровневое проектирование и структуру проекта (DAG-спецификации, без передачи исходного кода в облако).",
-        "**Прямой нативный провайдер `google` без сторонних наценок**:",
-        "Поддержка официальных моделей Google AI Studio: `gemini-flash-latest`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`."
+        "**Hybrid AI architecture with absolute source code privacy**:",
+        "Cloud architect **Google Cloud Gemini Flash** handles high-level DAG decomposition without sending source code to the cloud.",
+        "**Direct native `google` provider with zero third-party markups**:",
+        "Official Google AI Studio models support: `gemini-flash-latest`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`."
       ],
       "tags": [
         "UI & Desktop",
@@ -169,7 +169,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.9.0, Autonomous Design & Anti-Slop Studio Edition. Дата выхода: 2026-09-19. 🎨 Специализированный ИИ-агент UI/UX Designer: **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening): **Атомарная сцепка HTML и CSS (Atomic Coupling)**: 🖥️ Улучшения графического интерфейса (Desktop Studio GUI): **Макеты команды Bento и Pipeline (`template.html`)**:",
-      "voice_script_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Атомарная сцепка HTML и CSS (Atomic Coupling)**: Desktop GUI Improvements & Bento Layout: **Макеты команды Bento и Pipeline (`template.html`)**:",
+      "voice_script_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Atomic HTML & CSS coupling**: Desktop GUI Improvements & Bento Layout: **Bento & Pipeline team layout views**:",
       "summary": "В обновлении v0.9.0 мы сфокусировались на ключевых направлениях: 🎨 Специализированный ИИ-агент UI/UX Designer, 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening), 🖥️ Улучшения графического интерфейса (Desktop Studio GUI), 🧪 Тестовая база.",
       "summary_en": "In release v0.9.0 we focused on key engineering domains: Dedicated UI/UX Designer Agent (Anti-Slop Protocol), Web Pipeline Engine Hardening, Desktop GUI Improvements & Bento Layout, 🧪 Тестовая база.",
       "highlights": [
@@ -179,10 +179,10 @@
         "Автоматическое объединение `index.html` и `styles.css` в единые неделимые задачи, исключающее промежуточный рассинхрон стилей и разметки."
       ],
       "highlights_en": [
-        "**Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**:",
-        "Сверхбыстрая генерация визуальных концепций, Bento-сеток и дизайн-токенов по сверхнизкой цене ($0.30 / 1M токенов).",
-        "**Атомарная сцепка HTML и CSS (Atomic Coupling)**:",
-        "Автоматическое объединение `index.html` и `styles.css` в единые неделимые задачи, исключающее промежуточный рассинхрон стилей и разметки."
+        "**Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**:",
+        "Ultra-fast generation of visual aesthetics, Bento grids, and design tokens at $0.30 / 1M tokens.",
+        "**Atomic HTML & CSS coupling**:",
+        "Automatic coupling of `index.html` and `styles.css` into indivisible DAG tasks, исключающее промежуточный рассинхрон стилей и разметки."
       ],
       "tags": [
         "UI & Desktop",
@@ -202,7 +202,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.8.0, One-Click Run & Venv Sandbox Edition. Дата выхода: 2026-09-16. ▶️ Запуск и предпросмотр проектов в один клик: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
-      "voice_script_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных tests** (100% Green).",
+      "voice_script_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Dynamic project launcher button**: 🧪 Тестовая база: **139/139 green system tests (100% Green)** (100% Green).",
       "summary": "В обновлении v0.8.0 мы сфокусировались на ключевых направлениях: ▶️ Запуск и предпросмотр проектов в один клик, 🧪 Тестовая база.",
       "summary_en": "In release v0.8.0 we focused on key engineering domains: 1-Click Project Launcher & Web Preview, 🧪 Тестовая база.",
       "highlights": [
@@ -211,9 +211,9 @@
         "**139/139 зелёных системных тестов** (100% Green)."
       ],
       "highlights_en": [
-        "**Динамическая кнопка управления проектом**:",
-        "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
-        "**139/139 зелёных системных tests** (100% Green)."
+        "**Dynamic project launcher button**:",
+        "Button `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` in Studio titlebar.",
+        "**139/139 green system tests (100% Green)** (100% Green)."
       ],
       "tags": [
         "UI & Desktop",
@@ -235,7 +235,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.7.0, Workspace Hub & Project Gallery Edition. Дата выхода: 2026-09-12. 📁 Центр управления проектами (Projects & Workspaces Hub): **Каталог проектов в GUI (`gui.py`, `template.html`)**: 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase): **Официальная витрина в `README.md`**: 🛠️ Улучшения стабильности ядра (Core Engine): **Dependency Injection для Кодера (`coder.py`)**:",
-      "voice_script_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Каталог projects в GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Официальная витрина в `README.md`**: Core Engine Stability Improvements: **Dependency Injection для Кодера (`coder.py`)**:",
+      "voice_script_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Projects catalog in GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Official showcase in `README.md`**: Core Engine Stability Improvements: **Dependency Injection for Coder (`coder.py`)**:",
       "summary": "В обновлении v0.7.0 мы сфокусировались на ключевых направлениях: 📁 Центр управления проектами (Projects & Workspaces Hub), 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase), 🛠️ Улучшения стабильности ядра (Core Engine), 🧪 Тестовая база.",
       "summary_en": "In release v0.7.0 we focused on key engineering domains: Workspace & Projects Hub, Battle-Tested Projects Showcase, Core Engine Stability Improvements, 🧪 Тестовая база.",
       "highlights": [
@@ -245,10 +245,10 @@
         "Сводная интерактивная таблица всех 7 проектов, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
       ],
       "highlights_en": [
-        "**Каталог projects в GUI (`gui.py`, `template.html`)**:",
-        "Встроенное модальное окно управления рабочими областями с вкладками «Каталог projects» и «Создать проект».",
-        "**Официальная витрина в `README.md`**:",
-        "Сводная интерактивная таблица всех 7 projects, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
+        "**Projects catalog in GUI (`gui.py`, `template.html`)**:",
+        "Built-in workspace manager modal with 'Project Catalog' and 'Create Project' tabs.",
+        "**Official showcase in `README.md`**:",
+        "Summary matrix of all 7 projects built 100% autonomously by AI-Team Studio (от аркады Battle City до трекера привычек на Node.js)."
       ],
       "tags": [
         "UI & Desktop",
@@ -268,7 +268,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Дата выхода: 2026-09-12. 🌐 Поддержка стека JavaScript и Node.js (A1–A4): **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio): **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
-      "voice_script_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
+      "voice_script_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Stack configuration & auto-detection (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Floating Toast Notifications (`template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
       "summary": "В обновлении v0.6.0 мы сфокусировались на ключевых направлениях: 🌐 Поддержка стека JavaScript и Node.js (A1–A4), 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio), 🧪 Тестовая база.",
       "summary_en": "In release v0.6.0 we focused on key engineering domains: JavaScript & Node.js Multi-Stack Support, GUI & Desktop Orchestration, 🧪 Тестовая база.",
       "highlights": [
@@ -278,9 +278,9 @@
         "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`)."
       ],
       "highlights_en": [
-        "**Конфигурация и автоопределение стека (`config.py`, `cli.py`)**:",
-        "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
-        "**Плавающие уведомления (Floating Toast Notifications, `template.html`)**:",
+        "**Stack configuration & auto-detection (`config.py`, `cli.py`)**:",
+        "Parameter `stack: Literal['auto', 'python', 'javascript']` in `AppConfig`.",
+        "**Floating Toast Notifications (`template.html`)**:",
         "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`)."
       ],
       "tags": [
@@ -302,7 +302,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.5.0, Retro Pixel-Art Edition. Дата выхода: 2026-09-11. 👾 8-битная анимация агентов (Pixel-Art Sprites Engine): **Векторные SVG-персонажи (`template.html`)**:",
-      "voice_script_en": "Release v0.5.0, Retro Pixel-Art Edition. Released on: 2026-09-11. 8-Bit Pixel-Art Sprites Engine: **Векторные SVG-персонажи (`template.html`)**:",
+      "voice_script_en": "Release v0.5.0, Retro Pixel-Art Edition. Released on: 2026-09-11. 8-Bit Pixel-Art Sprites Engine: **Vector SVG pixel characters (`template.html`)**:",
       "summary": "В обновлении v0.5.0 мы сфокусировались на ключевых направлениях: 👾 8-битная анимация агентов (Pixel-Art Sprites Engine).",
       "summary_en": "In release v0.5.0 we focused on key engineering domains: 8-Bit Pixel-Art Sprites Engine.",
       "highlights": [
@@ -310,7 +310,7 @@
         "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px."
       ],
       "highlights_en": [
-        "**Векторные SVG-персонажи (`template.html`)**:",
+        "**Vector SVG pixel characters (`template.html`)**:",
         "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px."
       ],
       "tags": [
@@ -397,7 +397,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.3.0, Executable Autonomy & Cyber Studio Edition. Дата выхода: 2026-09-05. 🧠 Ядро мультиагентной системы (Multi-Agent Core): **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: 🖥️ Интерфейс AI-Team Studio (UI & Desktop): **Живая анимация активных агентов**: 👤 Авторство & Брендинг: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
-      "voice_script_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Живая анимация активных агентов**: Authorship & Studio Branding: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
+      "voice_script_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Live animation of active team agents**: Authorship & Studio Branding: Official author & copyright: **Vladimir Rybalsky**.",
       "summary": "В обновлении v0.3.0 мы сфокусировались на ключевых направлениях: 🧠 Ядро мультиагентной системы (Multi-Agent Core), 🖥️ Интерфейс AI-Team Studio (UI & Desktop), 👤 Авторство & Брендинг.",
       "summary_en": "In release v0.3.0 we focused on key engineering domains: Multi-Agent Core & Executable Product Contract, AI-Team Studio Cyber UI & Animations, Authorship & Studio Branding.",
       "highlights": [
@@ -407,9 +407,9 @@
         "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
       ],
       "highlights_en": [
-        "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
+        "**Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
         "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
-        "**Живая анимация активных агентов**:",
+        "**Live animation of active team agents**:",
         "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple)."
       ],
       "tags": [
@@ -430,7 +430,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.2.0, Desktop Studio Edition. Дата выхода: 2026-09-04. 🖥️ Настольный интерфейс: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). 💬 Интерактивный диалог: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. 📊 Телеметрия и мониторинг: Отображение текущей скорости генерации (t/s).",
-      "voice_script_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. Real-Time Telemetry & Token Tracking: Отображение текущей скорости генерации (t/s).",
+      "voice_script_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Desktop application powered by Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Tech Lead Chat tab for architecture discussion with Lead Architect. Real-Time Telemetry & Token Tracking: Display of real-time generation speed (t/s).",
       "summary": "В обновлении v0.2.0 мы сфокусировались на ключевых направлениях: 🖥️ Настольный интерфейс, 💬 Интерактивный диалог, 📊 Телеметрия и мониторинг, ⏸️ Управление процессом.",
       "summary_en": "In release v0.2.0 we focused on key engineering domains: Desktop Studio Edge WebView2 Interface, Interactive Tech Lead Consultation Chat, Real-Time Telemetry & Token Tracking, Pipeline Control (Pause, Resume, Intervene).",
       "highlights": [
@@ -440,10 +440,10 @@
         "Стриминг рассуждений агентов в реальном времени."
       ],
       "highlights_en": [
-        "Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`).",
-        "Запуск студии одной командой: `ai-team gui [путь_к_проекту]`.",
-        "Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором.",
-        "Стриминг рассуждений агентов в реальном времени."
+        "Desktop application powered by Edge WebView2 (`pywebview`).",
+        "One-command studio launcher: `ai-team gui [project_path]`.",
+        "Tech Lead Chat tab for architecture discussion with Lead Architect.",
+        "Real-time streaming of agent reasoning tokens."
       ],
       "tags": [
         "UI & Desktop"
@@ -462,7 +462,7 @@
       "audio_url": null,
       "duration": "01:20",
       "voice_script": "Версия 0.1.0, Genesis Multi-Agent Loop. Дата выхода: 2026-08-28. 🏗️ Архитектура ядра: Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
-      "voice_script_en": "Release v0.1.0, Genesis Multi-Agent Loop. Released on: 2026-08-28. Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer): Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+      "voice_script_en": "Release v0.1.0, Genesis Multi-Agent Loop. Released on: 2026-08-28. Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer): Core autonomous development loop: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
       "summary": "В обновлении v0.1.0 мы сфокусировались на ключевых направлениях: 🏗️ Архитектура ядра.",
       "summary_en": "In release v0.1.0 we focused on key engineering domains: Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer).",
       "highlights": [
@@ -470,8 +470,8 @@
         "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей."
       ],
       "highlights_en": [
-        "Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
-        "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей."
+        "Core autonomous development loop: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+        "Task decomposition into a Directed Acyclic Graph (DAG) with dependency tracking."
       ],
       "tags": [
         "Security & Sandbox"
@@ -793,8 +793,8 @@
         {
           "title": "System & Unit Test Suite",
           "items": [
-            "Новый модульный набор tests `tests/test_conductor.py` (валидация делегирования в оркестратор, проверка отсутствия прямой записи файлов и in-memory пресетов).",
-            "Полный набор системных tests: **167/167 Passed (100% Green)**."
+            "New modular test suite `tests/test_conductor.py` (валидация делегирования в оркестратор, проверка отсутствия прямой записи файлов и in-memory пресетов).",
+            "Full system test suite: 100% Green: **167/167 Passed (100% Green)**."
           ]
         }
       ],
@@ -873,62 +873,62 @@
         {
           "title": "Autonomous Hybrid Conductor CLI",
           "items": [
-            "**Концепция гибридного ИИ с абсолютной приватностью исходного кода**:",
-            "Облачный архитектор **Google Cloud Gemini Flash** отвечает исключительно за высокоуровневое проектирование и структуру проекта (DAG-спецификации, без передачи исходного кода в облако).",
-            "Локальный исполнитель **Gemma 4** (через LM Studio на локальном GPU) создаёт и пишет 100% рабочего исходного кода прямо на диске.",
-            "**Интерактивный терминальный CLI-интерфейс**:",
-            "Поддержка команд: `conductor \"build <цель>\"`, `conductor run`, `conductor files`, `conductor audit <file>`.",
-            "Динамический расчет времени генерации, скорости токенов (tok/s) и раздельная прозрачная телеметрия стоимости."
+            "**Hybrid AI architecture with absolute source code privacy**:",
+            "Cloud architect **Google Cloud Gemini Flash** handles high-level DAG decomposition without sending source code to the cloud.",
+            "Local runner **Gemma 4** on local GPU writes 100% of executable source code directly on device.",
+            "**Interactive terminal CLI interface**:",
+            "Support for commands: `conductor \"build <goal>\"`, `conductor run`, `conductor files`, `conductor audit <file>`.",
+            "Dynamic generation throughput (tok/s) and separate transparent cost tracking."
           ]
         },
         {
           "title": "Direct Google Gemini API Integration (Free Tier)",
           "items": [
-            "**Прямой нативный провайдер `google` без сторонних наценок**:",
-            "Поддержка официальных моделей Google AI Studio: `gemini-flash-latest`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`.",
-            "Полноценная работа в рамках официального бесплатного тарифа (Free Tier, $0.00) с щедрыми лимитами (до 15 RPM).",
-            "Автоматический каскадный откат (fallback) между моделями Google при пиковых нагрузках (503 Service Unavailable)."
+            "**Direct native `google` provider with zero third-party markups**:",
+            "Official Google AI Studio models support: `gemini-flash-latest`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`.",
+            "Full operation under official Free Tier ($0.00) with generous quotas (up to 15 RPM).",
+            "Automatic cascading fallback across Google models on peak server load (503)."
           ]
         },
         {
           "title": "1-Click Multi-Agent Presets",
           "items": [
-            "**Предопределённые командные матрицы ролей**:",
+            "**Predefined team role matrices**:",
             "`gemini-conductor`: Cloud Gemini (Архитектор + Дизайнер) + On-Device Gemma 4 (Кодер, Тестер, Ревьюер).",
             "`deepseek-v4`: матрица моделей DeepSeek V4 Pro и Flash для высоконагруженной разработки.",
             "`local-only`: 100% автономная оффлайн работа всех ролей на локальном LM Studio.",
-            "**Поддержка в CLI и GUI**:",
-            "Команда `ai-team preset <name>` и флаг `ai-team init --preset <name>`.",
-            "Интерактивные кнопки быстрого применения пресетов в модальном окне настроек."
+            "**CLI and GUI support**:",
+            "Command `ai-team preset <name>` and flag `ai-team init --preset <name>`.",
+            "Interactive 1-click preset buttons in settings modal."
           ]
         },
         {
           "title": "Multi-Role Expense & Credit Tracking",
           "items": [
-            "**Полное сканирование ролей команды**:",
-            "Проверка провайдеров по всем ролям команды (`planner`, `designer`, `coder`, `tester`, `reviewer`), исключающая ложное скрытие облачных трат при локальном `default_model`.",
-            "Фоновый запрос актуального баланса (`credits`) и остатка лимита ключа (`auth/key`) OpenRouter при использовании платных облачных моделей.",
-            "Раздельные честные индикаторы: **`$0.00 (Local)`** (100% GPU), **`$0.00 (Free Tier)`** (Google AI Direct / Groq) и **`$X.XX ($Y.YY rem)`** (OpenRouter)."
+            "**Full team roles scan across all agents**:",
+            "Provider verification across all agents (`planner`, `designer`, `coder`, `tester`, `reviewer`), исключающая ложное скрытие облачных трат при локальном `default_model`.",
+            "Background polling of live credits and key limits from OpenRouter при использовании платных облачных моделей.",
+            "Distinct transparent badges: **`$0.00 (Local)`** (100% GPU) and **`$0.00 (Free Tier)`** (Google AI Direct / Groq) и **`$X.XX ($Y.YY rem)`** (OpenRouter)."
           ]
         },
         {
           "title": "Intelligent Oscillation & Replan Recovery",
           "items": [
-            "**Интеграция Replan при вмешательстве оператора**:",
-            "При ручном откате заблокированной задачи оркестратор автоматически запускает Архитектора для упрощения и декомпозиции задачи на минимальные работающие модули.",
-            "**Снижение контекстного бюджета для локальных 7B-8B моделей**:",
-            "Компактный формат передачи SVG-иконок и сжатый сниппет-бюджет (до 2500 символов) для надежной кодогенерации на видеокартах класса RTX 3050 (8GB VRAM)."
+            "**Replan integration during operator intervention**:",
+            "When rolling back stuck tasks, orchestrator triggers Architect for DAG decomposition для упрощения и декомпозиции задачи на минимальные работающие модули.",
+            "**Context budget compression for local 7B-8B models**:",
+            "Compact SVG icon representation and compressed context snippet budgeting (до 2500 символов) для надежной кодогенерации на видеокартах класса RTX 3050 (8GB VRAM)."
           ]
         },
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**154/154 зелёных системных tests** (100% Green, валидация маршрутизации пресетов, Google-провайдера и мульти-агентных матриц)."
+            "**154/154 green system tests (100% Green)** (100% Green, валидация маршрутизации пресетов, Google-провайдера и мульти-агентных матриц)."
           ]
         }
       ],
       "voice_summary": "Версия 0.10.0, Gemini Conductor & Free Cloud Studio Edition. Дата выхода: 2026-09-25. ⚡ Автономный гибридный терминал Conductor: **Концепция гибридного ИИ с абсолютной приватностью исходного кода**: ✨ Официальная интеграция прямого Google Gemini API (100% Free Tier): **Прямой нативный провайдер `google` без сторонних наценок**: 🎛️ Мульти-агентные пресеты в 1 клик: **Предопределённые командные матрицы ролей**:",
-      "voice_summary_en": "Release v0.10.0, Gemini Conductor & Free Cloud Studio Edition. Released on: 2026-09-25. Autonomous Hybrid Conductor CLI: **Концепция гибридного ИИ с абсолютной приватностью исходного кода**: Direct Google Gemini API Integration (Free Tier): **Прямой нативный провайдер `google` без сторонних наценок**: 1-Click Multi-Agent Presets: **Предопределённые командные матрицы ролей**:",
+      "voice_summary_en": "Release v0.10.0, Gemini Conductor & Free Cloud Studio Edition. Released on: 2026-09-25. Autonomous Hybrid Conductor CLI: **Hybrid AI architecture with absolute source code privacy**: Direct Google Gemini API Integration (Free Tier): **Direct native `google` provider with zero third-party markups**: 1-Click Multi-Agent Presets: **Predefined team role matrices**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -986,46 +986,46 @@
         {
           "title": "Dedicated UI/UX Designer Agent (Anti-Slop Protocol)",
           "items": [
-            "**Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**:",
-            "Сверхбыстрая генерация визуальных концепций, Bento-сеток и дизайн-токенов по сверхнизкой цене ($0.30 / 1M токенов).",
-            "Строгий **Anti-Slop протокол**: абсолютный запрет смайликов/эмодзи в веб-верстке, генерация чистых векторных SVG-иконок.",
-            "Модульные палитры, CSS-переменные, типографика и правила визуального контраста.",
-            "Контекстный бюджет до 20 000 символов для глубокого понимания существующей верстки."
+            "**Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**:",
+            "Ultra-fast generation of visual aesthetics, Bento grids, and design tokens at $0.30 / 1M tokens.",
+            "Strict **Anti-Slop protocol**: total ban of emoji in web UI, generating clean vector SVG icons.",
+            "Modular palettes, CSS variables, typography tokens, and visual contrast rules.",
+            "Context budget up to 20,000 characters for deep understanding of existing layout."
           ]
         },
         {
           "title": "Web Pipeline Engine Hardening",
           "items": [
-            "**Атомарная сцепка HTML и CSS (Atomic Coupling)**:",
-            "Автоматическое объединение `index.html` и `styles.css` в единые неделимые задачи, исключающее промежуточный рассинхрон стилей и разметки.",
-            "**Синтаксические стражи реального времени (`edit_protocol.py`)**:",
-            "Встроенный `_HTMLEditValidator` (на базе `html.parser.HTMLParser`) для проверки валидности теговой структуры.",
-            "Встроенный `validate_css_syntax` для контроля баланса фигурных скобок `{` и `}` с очисткой комментариев и строковых литералов.",
-            "Автоматический защитный откат (auto-revert) затронутых файлов при любых синтаксических ошибках.",
-            "**Гарантия непустых планов и сохранение стека (`planner.py`)**:",
-            "Устранение зависаний при пустых ответах от структурированных LLM с синтезом гарантированной задачи.",
+            "**Atomic HTML & CSS coupling**:",
+            "Automatic coupling of `index.html` and `styles.css` into indivisible DAG tasks, исключающее промежуточный рассинхрон стилей и разметки.",
+            "**Real-time syntax guards (`edit_protocol.py`)**:",
+            "Built-in `_HTMLEditValidator` for HTML tag structure verification.",
+            "Built-in `validate_css_syntax` for CSS bracket balance validation с очисткой комментариев и строковых литералов.",
+            "Automatic rollback (auto-revert) of touched files on any syntax errors.",
+            "**Guaranteed non-empty execution plans and stack retention**:",
+            "Elimination of deadlocks from empty responses from structured LLMs с синтезом гарантированной задачи.",
             "Строгий запрет на галлюцинации чужих стеков (React `.jsx` в ванильных веб-проектах) при репланировании.",
-            "**Строгий аудит качества UI/UX (`reviewer.py`)**:",
-            "Автоматическая проверка на эмодзи-слоп, соответствие CSS-классов и семантику HTML. При нарушении — автоматический возврат на доработку с оценкой < 7.0."
+            "**Strict UI/UX quality audit (`reviewer.py`)**:",
+            "Automated check for emoji-slop, CSS class matching, and semantic HTML. При нарушении — автоматический возврат на доработку с оценкой < 7.0."
           ]
         },
         {
           "title": "Desktop GUI Improvements & Bento Layout",
           "items": [
-            "**Макеты команды Bento и Pipeline (`template.html`)**:",
-            "Переключение между пирамидальной Bento-сеткой (1+2+2) и последовательным Pipeline-потоком (1x5).",
-            "Отображение статусов и карточек всех 5 агентов в реальном времени."
+            "**Bento & Pipeline team layout views**:",
+            "Switching between pyramid Bento grid (1+2+2) and sequential Pipeline flow (1x5).",
+            "Real-time status display across all 5 autonomous agents."
           ]
         },
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**153/153 зелёных системных tests** (100% Green, расширенное покрытие синтаксических валидаторов, DoD-гейтов и защиты портов)."
+            "**153/153 green system tests (100% Green)** (100% Green, расширенное покрытие синтаксических валидаторов, DoD-гейтов и защиты портов)."
           ]
         }
       ],
       "voice_summary": "Версия 0.9.0, Autonomous Design & Anti-Slop Studio Edition. Дата выхода: 2026-09-19. 🎨 Специализированный ИИ-агент UI/UX Designer: **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: 🛡️ Железобетонная надежность веб-пайплайна (Engine Hardening): **Атомарная сцепка HTML и CSS (Atomic Coupling)**: 🖥️ Улучшения графического интерфейса (Desktop Studio GUI): **Макеты команды Bento и Pipeline (`template.html`)**:",
-      "voice_summary_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Роль ведущего дизайнера интерфейсов на Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Атомарная сцепка HTML и CSS (Atomic Coupling)**: Desktop GUI Improvements & Bento Layout: **Макеты команды Bento и Pipeline (`template.html`)**:",
+      "voice_summary_en": "Release v0.9.0, Autonomous Design & Anti-Slop Studio Edition. Released on: 2026-09-19. Dedicated UI/UX Designer Agent (Anti-Slop Protocol): **Lead UI/UX Designer role powered by Google Gemini 3.5 Flash Lite**: Web Pipeline Engine Hardening: **Atomic HTML & CSS coupling**: Desktop GUI Improvements & Bento Layout: **Bento & Pipeline team layout views**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -1064,25 +1064,25 @@
         {
           "title": "1-Click Project Launcher & Web Preview",
           "items": [
-            "**Динамическая кнопка управления проектом**:",
-            "Кнопка `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` прямо в шапке Студии.",
-            "Автоматическое распознавание точки входа (Web HTTP сервер, Pygame аркада, консольное приложение, Node.js).",
-            "**Изолированная sandbox виртуального окружения (`.venv`)**:",
-            "Автоматическое исполнение команд через локальный `.venv` проекта без загрязнения хост-системы.",
-            "Безопасное управление портами и предотвращение коллизий сетевых сервисов.",
-            "**Команды управления через Tech Lead Chat**:",
-            "Голосовые и текстовые команды для запуска и остановки сервисов через интерактивного Архитектора."
+            "**Dynamic project launcher button**:",
+            "Button `▶️ Run Project` / `⏹️ Stop` / `🌐 Preview Web` in Studio titlebar.",
+            "Automatic entrypoint detection (Web HTTP, Pygame arcade, CLI apps, Node.js).",
+            "**Isolated virtual environment (.venv) sandbox**:",
+            "Automatic command execution via isolated project `.venv` without polluting host OS.",
+            "Safe port allocation and port conflict prevention.",
+            "**Project control directives via Tech Lead Chat**:",
+            "Voice and text directives to run and stop applications through Lead Architect."
           ]
         },
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**139/139 зелёных системных tests** (100% Green)."
+            "**139/139 green system tests (100% Green)** (100% Green)."
           ]
         }
       ],
       "voice_summary": "Версия 0.8.0, One-Click Run & Venv Sandbox Edition. Дата выхода: 2026-09-16. ▶️ Запуск и предпросмотр проектов в один клик: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных тестов** (100% Green).",
-      "voice_summary_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Динамическая кнопка управления проектом**: 🧪 Тестовая база: **139/139 зелёных системных tests** (100% Green).",
+      "voice_summary_en": "Release v0.8.0, One-Click Run & Venv Sandbox Edition. Released on: 2026-09-16. 1-Click Project Launcher & Web Preview: **Dynamic project launcher button**: 🧪 Тестовая база: **139/139 green system tests (100% Green)** (100% Green).",
       "audio_file": null,
       "is_latest": false
     },
@@ -1145,19 +1145,19 @@
         {
           "title": "Workspace & Projects Hub",
           "items": [
-            "**Каталог projects в GUI (`gui.py`, `template.html`)**:",
-            "Встроенное модальное окно управления рабочими областями с вкладками «Каталог projects» и «Создать проект».",
-            "Автоматическое обнаружение projects в каталоге `AI Studio Projects`, родительских папках и истории недавних запусков.",
-            "Карточки projects с цветовыми бейджами стека (`🐍 Python` vs `🟨 Node.js`), статусом готовности, счетчиком задач и токенов.",
-            "Быстрый поиск и фильтрация projects по имени, стеку и целям разработки.",
-            "**Динамический переключатель воркспейсов (`DesktopBridge.switch_workspace`)**:",
-            "Мгновенное переключение активного рабочего пространства прямо из интерфейса без перезапуска приложения.",
+            "**Projects catalog in GUI (`gui.py`, `template.html`)**:",
+            "Built-in workspace manager modal with 'Project Catalog' and 'Create Project' tabs.",
+            "Automatic project discovery across workspace directories and recent history.",
+            "Project cards with stack badges (`🐍 Python` vs `🟨 Node.js`), task counts and tokens.",
+            "Fast search and filtering by project name, stack, and goals.",
+            "**Dynamic workspace switcher (`DesktopBridge.switch_workspace`)**:",
+            "Instant workspace hot-swap directly from GUI without restarting.",
             "Сохранение и перенос активных настроек моделей и API-ключей при смене projects.",
-            "**Создание проекта в 1 клик (`DesktopBridge.create_project`)**:",
-            "Быстрое создание изолированного проекта с автоматическим копированием рабочей конфигурации и активацией.",
-            "**Открытие в Проводнике (`DesktopBridge.open_in_explorer`)**:",
+            "**1-Click project creation (`DesktopBridge.create_project`)**:",
+            "Instant isolated project initialization with automatic config cloning.",
+            "**Open in File Explorer (`DesktopBridge.open_in_explorer`)**:",
             "Быстрый доступ к папке любого проекта в проводнике ОС (`os.startfile`).",
-            "**Умная фильтрация временных каталогов (`gui.py`, `is_ephemeral_workspace`)**:",
+            "**Smart ephemeral directory filtering (`is_ephemeral_workspace`)**:",
             "Строгая изоляция временных каталогов `pytest` и `Temp`, исключающая загрязнение истории projects.",
             "Устранение жестко закодированных путей пользователя в пользу кроссплатформенного `Path.home()`."
           ]
@@ -1165,31 +1165,31 @@
         {
           "title": "Battle-Tested Projects Showcase",
           "items": [
-            "**Официальная витрина в `README.md`**:",
-            "Сводная интерактивная таблица всех 7 projects, полностью созданных AI-Team Studio (от аркады Battle City до трекера привычек на Node.js).",
-            "Архитектурный разбор ключевых projects с метриками стоимости (всего $0.008 за проект на Node.js)."
+            "**Official showcase in `README.md`**:",
+            "Summary matrix of all 7 projects built 100% autonomously by AI-Team Studio (от аркады Battle City до трекера привычек на Node.js).",
+            "Architectural breakdown of battle-tested projects ($0.008 per Node.js project)."
           ]
         },
         {
           "title": "Core Engine Stability Improvements",
           "items": [
-            "**Dependency Injection для Кодера (`coder.py`)**:",
+            "**Dependency Injection for Coder (`coder.py`)**:",
             "Внедрение полного кода зависимых модулей для предотвращения рассинхрона сигнатур методов.",
-            "**Сохранение стектрейсов Тестировщика (`tester.py`)**:",
+            "**Preserved QA tester stack traces (`tester.py`)**:",
             "Интеллектуальное форматирование вывода errors с приоритетом на упавшие ассерты вместо слепой обрезки хвоста лога.",
-            "**Опция CLI `--goal` / `-g` (`cli.py`, `gui.py`)**:",
+            "**CLI option `--goal` / `-g` (`cli.py`, `gui.py`)**:",
             "Возможность прямой передачи цели в графический интерфейс при запуске из консоли."
           ]
         },
         {
           "title": "🧪 Тестовая база",
           "items": [
-            "**134/134 зелёных системных tests** (100% Green, расширенное покрытие моста GUI и управления проектами)."
+            "**134/134 green system tests (100% Green)** (100% Green, расширенное покрытие моста GUI и управления проектами)."
           ]
         }
       ],
       "voice_summary": "Версия 0.7.0, Workspace Hub & Project Gallery Edition. Дата выхода: 2026-09-12. 📁 Центр управления проектами (Projects & Workspaces Hub): **Каталог проектов в GUI (`gui.py`, `template.html`)**: 🎮 Витрина боевых проектов в документации (Battle-Tested Showcase): **Официальная витрина в `README.md`**: 🛠️ Улучшения стабильности ядра (Core Engine): **Dependency Injection для Кодера (`coder.py`)**:",
-      "voice_summary_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Каталог projects в GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Официальная витрина в `README.md`**: Core Engine Stability Improvements: **Dependency Injection для Кодера (`coder.py`)**:",
+      "voice_summary_en": "Release v0.7.0, Workspace Hub & Project Gallery Edition. Released on: 2026-09-12. Workspace & Projects Hub: **Projects catalog in GUI (`gui.py`, `template.html`)**: Battle-Tested Projects Showcase: **Official showcase in `README.md`**: Core Engine Stability Improvements: **Dependency Injection for Coder (`coder.py`)**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -1248,21 +1248,21 @@
         {
           "title": "JavaScript & Node.js Multi-Stack Support",
           "items": [
-            "**Конфигурация и автоопределение стека (`config.py`, `cli.py`)**:",
-            "Параметр `stack: Literal[\"auto\", \"python\", \"javascript\"]` в `AppConfig`.",
-            "Автоматическое определение стека по ключевым файлам воркспейса (`package.json`, `index.js` vs `pyproject.toml`, `requirements.txt`).",
+            "**Stack configuration & auto-detection (`config.py`, `cli.py`)**:",
+            "Parameter `stack: Literal['auto', 'python', 'javascript']` in `AppConfig`.",
+            "Automatic stack resolution by analyzing project marker files (`package.json`, `index.js` vs `pyproject.toml`, `requirements.txt`).",
             "Наследование стека при инициализации через `ai-team init`.",
-            "**Безопасная sandbox для Node.js (`sandbox.py`)**:",
-            "Разрешён контролируемый запуск `node`, `npm` и `npx`.",
-            "Внедрена строгая превентивная блокировка пакетных установок (`npm install`, `npm i`, `npm add`) с понятным предупреждением для предотвращения бесконтрольной модификации хоста.",
-            "**Синтаксическая валидация и самовосстановление (`edit_protocol.py`)**:",
-            "Предварительная валидация JS-файлов через `node --check` при патчинге и создании файлов.",
-            "Автоматический откат к предыдущей версии при обнаружении `SyntaxError` с логированием подробного диагностического сообщения.",
-            "**Нативный раннер tests и дымовые тесты (`tester.py`)**:",
-            "Распознавание тестовых файлов JavaScript (`*.test.js`, `*.spec.js`, `test-*.js`, `test.js`).",
-            "Выполнение tests через нативный тестовый раннер Node.js (`node --test`) и `npm test`.",
-            "Автоматический дымовой запуск точек входа (`index.js`).",
-            "**Контракт запускаемости и ревью (`planner.py`, `coder.py`, `reviewer.py`, `orchestrator.py`)**:",
+            "**Safe sandbox execution for Node.js (`sandbox.py`)**:",
+            "Allowed controlled execution of `node`, `npm`, and `npx`.",
+            "Strict preventive blocking of arbitrary package installation commands (`npm install`) с понятным предупреждением для предотвращения бесконтрольной модификации хоста.",
+            "**Syntax validation & auto-revert (`edit_protocol.py`)**:",
+            "Pre-validation of JS files via `node --check` during patching and file creation.",
+            "Automatic rollback to previous checkpoint on `SyntaxError` с логированием подробного диагностического сообщения.",
+            "**Native test runner and smoke testing (`tester.py`)**:",
+            "Recognition of JavaScript test patterns (`*.test.js`, `*.spec.js`, `test.js`).",
+            "Execution via native Node.js test runner (`node --test`) and `npm test`.",
+            "Automated smoke launch verification of entrypoints (`index.js`).",
+            "**Launchability contract & review gates across all agents**:",
             "Адаптация системных промптов Архитектора и Кодера под стек JavaScript (гарантия входной точки `index.js`, тесты `node --test`).",
             "Проверка AST/regex функций и классов в JS файлах в `ReviewerAgent`, подтверждение факта запуска tests.",
             "Расширение Definition of Done (DoD) Launch Gate в `Orchestrator` на запуск JavaScript-приложений без сбоев."
@@ -1271,11 +1271,11 @@
         {
           "title": "GUI & Desktop Orchestration",
           "items": [
-            "**Плавающие уведомления (Floating Toast Notifications, `template.html`)**:",
+            "**Floating Toast Notifications (`template.html`)**:",
             "Замена стандартных блокирующих браузерных `alert()` на анимированные неблокирующие тосты (`success`, `error`, `info`).",
-            "**Сквозная динамическая перезагрузка конфигурации (`gui.py`)**:",
+            "**Dynamic live hot-reload of configuration (`gui.py`)**:",
             "Автоматическая передача изменений из `ai_team_config.yaml` прямо в активный экземпляр `Orchestrator` на лету при изменении файла на диске.",
-            "**Изоляция JS API WebView2 (`gui.py`)**:",
+            "**WebView2 JS API boundary isolation (`gui.py`)**:",
             "Сокрытие внутреннего объекта оркестратора от рекурсивной интроспекции `pywebview`, исключающее задержки загрузки страницы."
           ]
         },
@@ -1287,7 +1287,7 @@
         }
       ],
       "voice_summary": "Версия 0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Дата выхода: 2026-09-12. 🌐 Поддержка стека JavaScript и Node.js (A1–A4): **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: 🖥️ Интерфейс и оркестрация (GUI & Desktop Studio): **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных тестов** (песочница Node, контракты стека, DoD launch gate, каталог проектов).",
-      "voice_summary_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Конфигурация и автоопределение стека (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Плавающие уведомления (Floating Toast Notifications, `template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
+      "voice_summary_en": "Release v0.6.0, Multi-Stack JavaScript & Live Orchestration Edition. Released on: 2026-09-12. JavaScript & Node.js Multi-Stack Support: **Stack configuration & auto-detection (`config.py`, `cli.py`)**: GUI & Desktop Orchestration: **Floating Toast Notifications (`template.html`)**: 🧪 Тестовая база: **134/134 зеленых системных tests** (sandbox Node, контракты стека, DoD launch gate, каталог projects).",
       "audio_file": null,
       "is_latest": false
     },
@@ -1321,23 +1321,23 @@
         {
           "title": "8-Bit Pixel-Art Sprites Engine",
           "items": [
-            "**Векторные SVG-персонажи (`template.html`)**:",
+            "**Vector SVG pixel characters (`template.html`)**:",
             "Полная замена стандартных статичных эмодзи (`📐`, `💻`, `🧪`, `🔍`) в карточках автономной команды на аутентичные 8-битные векторные спрайты, спроектированные на модульной сетке 16×16 px.",
-            "**Реактивные двухфазные анимации (Dual-State Keyframes)**:",
+            "**Reactive dual-state animations (Dual-State Keyframes)**:",
             "**IDLE (Ожидание)**: Спокойное попиксельное дыхание и покачивание `@keyframes pixelIdleBob steps(2)` для всех агентов; мерцание курсора терминала у Кодера (`cursorBlink`).",
             "**ACTIVE (В работе)**: Динамическое переключение эффектов при получении карточкой класса `.active`:",
             "*Planner*: Разворачивание голографического чертежа и неоновые искры мыслей (`plannerSparks`).",
             "*Coder*: Яростный стук рук по клавиатуре (`coderTyping`) и бегущие строчки кода на зеленом CRT-мониторе (`matrixScroll`).",
             "*Tester*: Кипение химического раствора (`liquidBoil`) и всплывающие пиксельные пузырьки газа (`bubbleUp1/2`).",
             "*Reviewer*: Сканирование кода горизонтальным лазерным лучом сквозь увеличительную линзу (`laserScan`) и пульсация визора (`visorPulse`).",
-            "**Pixel-Perfect Rendering**:",
-            "Применение CSS-свойств `shape-rendering: crispEdges` и `image-rendering: pixelated` для идеальной четкости граней без размытия на экранах высокого разрешения (Full HD, 2K, 4K Retina).",
+            "**Pixel-perfect crisp vector rendering**:",
+            "Applied `shape-rendering: crispEdges` and `image-rendering: pixelated` для идеальной четкости граней без размытия на экранах высокого разрешения (Full HD, 2K, 4K Retina).",
             "100% автономная реализация на чистом SVG/CSS без внешних GIF/PNG файлов, стабильные 60 FPS с аппаратным ускорением в WebView2."
           ]
         }
       ],
       "voice_summary": "Версия 0.5.0, Retro Pixel-Art Edition. Дата выхода: 2026-09-11. 👾 8-битная анимация агентов (Pixel-Art Sprites Engine): **Векторные SVG-персонажи (`template.html`)**:",
-      "voice_summary_en": "Release v0.5.0, Retro Pixel-Art Edition. Released on: 2026-09-11. 8-Bit Pixel-Art Sprites Engine: **Векторные SVG-персонажи (`template.html`)**:",
+      "voice_summary_en": "Release v0.5.0, Retro Pixel-Art Edition. Released on: 2026-09-11. 8-Bit Pixel-Art Sprites Engine: **Vector SVG pixel characters (`template.html`)**:",
       "audio_file": null,
       "is_latest": false
     },
@@ -1390,7 +1390,7 @@
             "**AST CodeGuard Protection (`code_guard.py`)**:",
             "Блокировка опасных низкоуровневых импортов (`subprocess`, `ctypes`, `socket`, `winreg`) на уровне AST-дерева до компиляции и запуска кода.",
             "**Safe Git Identity & Scoped Commits (`git_manager.py`)**:",
-            "Автоматическая локальная установка идентичности бота (`AI-Team Bot` / `ai-team@local`) без перезаписи глобального `git config` разработчика; таймаут 30 секунд на Git-операции.",
+            "Автоматическая локальная установка идентичности бота (`AI-Team Bot` / `ai-team@local`) без перезаписи глобального `git config` разработчика; таймаут 30 seconds на Git-операции.",
             "**Floating-Point Test Guidance (`coder.py`)**:",
             "В системный промпт Кодера added правило использования `pytest.approx(expected, abs=0.01)` и округления `round(..., 2)` для предотвращения ложных падений tests из-за погрешностей `float`."
           ]
@@ -1404,7 +1404,7 @@
             "При паузе конвейера текущие запущенные стадии корректно доходят до контрольной точки без запуска новых задач.",
             "**Persistent Oscillation Guard (`oscillation.py`)**:",
             "Долговечное сохранение состояния защиты от зацикливаний в `.ai/oscillation.json` с атомарной записью.",
-            "**107 Green System Tests**:",
+            "**107 Green System Tests (100% Green)**:",
             "Полный прогон тестового набора `pytest tests/ -v` (107/107 passed, 100% green)."
           ]
         }
@@ -1453,7 +1453,7 @@
           "items": [
             "**Stream Error Guard (`llm.py`)**:",
             "Реализован автоматический перехват аппаратных сбоев стриминга (`finish_reason == \"error\"`), характерных для перегруженных узлов (Cloudflare Workers / OpenRouter).",
-            "Внедрён механизм мгновенного авто-повтора (до 3 попыток) без сброса контекста, полностью исключающий попадание обрезанного кода в проект.",
+            "Внедрён механизм мгновенного авто-повтора (до 3 retries) без сброса контекста, полностью исключающий попадание обрезанного кода в проект.",
             "**Full File Rewrite Protocol (`coder.py`)**:",
             "Агенту Coder разрешено использовать протокол полной замены (`*** BEGIN FILE`) для компактных модулей (до 350 lines).",
             "Устранены ошибки несовпадения блоков поиска и замены (`search pattern does not match`), возникавшие при малейшем сдвиге форматирования.",
@@ -1466,7 +1466,7 @@
           "items": [
             "**Dynamic Hot-Reloading (`orchestrator.py`)**:",
             "Оркестратор отслеживает время модификации (`mtime`) файла `ai_team_config.yaml` и применяет изменённые роли моделей на лету без перезапуска графического интерфейса.",
-            "**Интеграция DeepSeek V3**:",
+            "**DeepSeek V3 model integration and recommendation**:",
             "Штатная поддержка и рекомендация модели `deepseek/deepseek-chat` (контекст 160k токенов, высокая скорость генерации, стоимость $0.14/1M токенов)."
           ]
         }
@@ -1528,7 +1528,7 @@
         {
           "title": "Multi-Agent Core & Executable Product Contract",
           "items": [
-            "**Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
+            "**Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов:",
             "**Planner (Архитектор)**: Обязан включать единую точку входа (`main.py`) и завершающую сквозную задачу интеграции (`End-to-End Integration & Launcher`), собирающую модули, интерфейсы и циклы событий.",
             "**Coder (Разработчик)**: Обязан оснащать главные файлы блоком `if __name__ == '__main__':`, обрабатывать события ОС и клавиши выхода в GUI/играх (Pygame, Tkinter), предотвращая зависания окон Windows.",
             "**Tester (Тестировщик)**: added автоматический **Smoke-тест запуска** (`python -c \"import main\"` в headless-режиме) для гарантии того, что приложение не падает на старте.",
@@ -1538,34 +1538,34 @@
         {
           "title": "AI-Team Studio Cyber UI & Animations",
           "items": [
-            "**Живая анимация активных агентов**:",
+            "**Live animation of active team agents**:",
             "Неоновая аура и пульсирующий контур для карточек работающих агентов (Cyan, Emerald, Amber, Purple).",
             "Голографический сканирующий лазерный луч (`@keyframes scanBeam`), непрерывно пробегающий по карточке.",
             "Дышащее фоновое свечение (`ambientPulse`) и радарные волны (`pingRadar`).",
             "Уникальная физическая анимация для каждой иконки: наклон чертежного угольника (Planner), пружинящий ноутбук (Coder), бурлящая колба (Tester), сканирующая лупа (Reviewer).",
-            "**Двухуровневая отказоустойчивость статусов**:",
+            "**Two-tier status resilience in UI**:",
             "Исправлен регистронезависимый парсер статусов `TaskState` (`RUNNING`, `TESTING`, `REVIEWING`, `REWORK`).",
             "Клиентский fallback-детектор в JavaScript, определяющий активного агента по дереву задач и потоку логов.",
-            "**Вкладка «История версий»**:",
+            "**Interactive Changelog tab in GUI**:",
             "added интерактивный раздел со всеми релизами и описанием изменений прямо в модальном окне «О программе & FAQ».",
-            "**Компактный заголовок**:",
+            "**Compact fixed header bar**:",
             "Фиксированная высота шапки (54px) с защитой от раздувания длинными формулировками целей и всплывающей подсказкой.",
-            "**Интеграция с Windows**:",
+            "**Native Windows taskbar integration**:",
             "Нативная иконка в панели задач Windows (`icon.ico`).",
             "Устранено дублирование названия окна и логотипа.",
-            "**Чат с техлидом (Tech Lead Chat)**:",
+            "**Tech Lead Consultation Chat**:",
             "Кнопки быстрого копирования решений и применения плана в качестве цели («🚀 Apply as Goal») в один клик."
           ]
         },
         {
           "title": "Authorship & Studio Branding",
           "items": [
-            "Официальный разработчик и правообладатель: **Vladimir Rybalsky**."
+            "Official author & copyright: **Vladimir Rybalsky**."
           ]
         }
       ],
       "voice_summary": "Версия 0.3.0, Executable Autonomy & Cyber Studio Edition. Дата выхода: 2026-09-05. 🧠 Ядро мультиагентной системы (Multi-Agent Core): **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: 🖥️ Интерфейс AI-Team Studio (UI & Desktop): **Живая анимация активных агентов**: 👤 Авторство & Брендинг: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
-      "voice_summary_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Живая анимация активных агентов**: Authorship & Studio Branding: Официальный разработчик и правообладатель: **Vladimir Rybalsky**.",
+      "voice_summary_en": "Release v0.3.0, Executable Autonomy & Cyber Studio Edition. Released on: 2026-09-05. Multi-Agent Core & Executable Product Contract: **Executable Product Contract across all agent roles**: Внедрен универсальный контракт запускаемого продукта во все 4 роли агентов: AI-Team Studio Cyber UI & Animations: **Live animation of active team agents**: Authorship & Studio Branding: Official author & copyright: **Vladimir Rybalsky**.",
       "audio_file": null,
       "is_latest": false
     },
@@ -1612,36 +1612,36 @@
         {
           "title": "Desktop Studio Edge WebView2 Interface",
           "items": [
-            "Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`).",
-            "Запуск студии одной командой: `ai-team gui [путь_к_проекту]`.",
-            "Разделение рабочей области на списки задач, активных агентов и терминал логов.",
-            "Модальное окно «О программе & FAQ» с документацией и руководством по агентам."
+            "Desktop application powered by Edge WebView2 (`pywebview`).",
+            "One-command studio launcher: `ai-team gui [project_path]`.",
+            "Clean layout split into task DAG, active agents, and live log terminal.",
+            "About & FAQ modal with documentation and agent guide."
           ]
         },
         {
           "title": "Interactive Tech Lead Consultation Chat",
           "items": [
-            "Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором.",
-            "Стриминг рассуждений агентов в реальном времени."
+            "Tech Lead Chat tab for architecture discussion with Lead Architect.",
+            "Real-time streaming of agent reasoning tokens."
           ]
         },
         {
           "title": "Real-Time Telemetry & Token Tracking",
           "items": [
-            "Отображение текущей скорости генерации (t/s).",
-            "Подсчет потраченных токенов и расчет реальной стоимости вызовов API.",
-            "Мониторинг оставшихся квот провайдера (TPM / RPM)."
+            "Display of real-time generation speed (t/s).",
+            "Token counter and real API cost calculation.",
+            "Provider quota monitoring (TPM / RPM)."
           ]
         },
         {
           "title": "Pipeline Control (Pause, Resume, Intervene)",
           "items": [
-            "Кнопки паузы (`Pause`), возобновления (`Resume`) и подтверждения вмешательства оператора (`Unblock & Resume`)."
+            "Control buttons for Pause, Resume, and Unblock Intervention (`Unblock & Resume`)."
           ]
         }
       ],
       "voice_summary": "Версия 0.2.0, Desktop Studio Edition. Дата выхода: 2026-09-04. 🖥️ Настольный интерфейс: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). 💬 Интерактивный диалог: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. 📊 Телеметрия и мониторинг: Отображение текущей скорости генерации (t/s).",
-      "voice_summary_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Полноценное десктопное приложение на базе движка Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Вкладка **Tech Lead Chat** для свободного обсуждения архитектуры проекта с ведущим архитектором. Real-Time Telemetry & Token Tracking: Отображение текущей скорости генерации (t/s).",
+      "voice_summary_en": "Release v0.2.0, Desktop Studio Edition. Released on: 2026-09-04. Desktop Studio Edge WebView2 Interface: Desktop application powered by Edge WebView2 (`pywebview`). Interactive Tech Lead Consultation Chat: Tech Lead Chat tab for architecture discussion with Lead Architect. Real-Time Telemetry & Token Tracking: Display of real-time generation speed (t/s).",
       "audio_file": null,
       "is_latest": false
     },
@@ -1669,17 +1669,17 @@
         {
           "title": "Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer)",
           "items": [
-            "Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
-            "Разделение задач на направленный ациклический граф (DAG) с контролем зависимостей.",
-            "Автоматический запуск tests Pytest в изолированной sandbox (`sandbox`).",
-            "Создание Git-контрольных точек (checkpoints) перед каждым изменением с возможностью безопасного отката при неудачных тестах.",
-            "Поддержка локальных нейросетей через LM Studio и Ollama, а также облачных API (OpenRouter, Groq, OpenAI).",
-            "Механизм Human Intervention при превышении лимита повторных попыток."
+            "Core autonomous development loop: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+            "Task decomposition into a Directed Acyclic Graph (DAG) with dependency tracking.",
+            "Automated Pytest execution in an isolated sandbox.",
+            "Git checkpoints before every change with safe rollback on test failures.",
+            "Support for on-device models via LM Studio & Ollama, and cloud APIs (OpenRouter, Groq, OpenAI).",
+            "Human Intervention escalation mechanism on retry limit overflow."
           ]
         }
       ],
       "voice_summary": "Версия 0.1.0, Genesis Multi-Agent Loop. Дата выхода: 2026-08-28. 🏗️ Архитектура ядра: Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
-      "voice_summary_en": "Release v0.1.0, Genesis Multi-Agent Loop. Released on: 2026-08-28. Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer): Базовый цикл автономной разработки: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
+      "voice_summary_en": "Release v0.1.0, Genesis Multi-Agent Loop. Released on: 2026-08-28. Core Multi-Agent Loop (Planner, Coder, Tester, Reviewer): Core autonomous development loop: Planner ➔ Coder ➔ Tester ➔ Reviewer.",
       "audio_file": null,
       "is_latest": false
     }
