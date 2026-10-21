@@ -120,3 +120,9 @@ graph TD
 
 **Создатель, архитектор и разработчик:** **Vladimir Rybalsky**  
 👉 **Интерактивная презентация и голосовые обзоры:** [alevoldon.github.io/ai-team-website](https://alevoldon.github.io/ai-team-website/)
+
+---
+
+## 📄 Лицензия
+
+Веб-приложение витрины и презентационный слой распространяются под лицензией **MIT License**. Подробнее см. в файле [`LICENSE`](LICENSE).

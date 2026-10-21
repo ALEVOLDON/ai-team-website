@@ -120,3 +120,9 @@ Projects built, tested, and verified 100% autonomously by AI-Team Studio without
 
 **Author, Founder & Architect:** **Vladimir Rybalsky**  
 👉 **Live Web App & Voice Demos:** [alevoldon.github.io/ai-team-website](https://alevoldon.github.io/ai-team-website/)
+
+---
+
+## 📄 License
+
+Showcase website and presentation layer distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
