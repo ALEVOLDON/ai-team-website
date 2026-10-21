@@ -557,13 +557,124 @@
 
   <footer class="footer">
     <div class="container">
-      <p data-i18n="footer_copy">
-        ⚡ <b>AI-Team Studio</b> — Autonomous Multi-Agent Development Studio • Создатель и правообладатель: <b>Vladimir Rybalsky</b>
-      </p>
-      <p style="margin-top:0.35rem; font-size:0.76rem;">
-        <span data-i18n="footer_sync">Сайт автоматически синхронизируется скриптом python sync_website.py. Последняя синхронизация:</span>
-        <span id="footer-sync-time">—</span>
-      </p>
+      <!-- Top Status Strip -->
+      <div class="footer-status-bar">
+        <div class="footer-status-left">
+          <div class="footer-status-indicator">
+            <span class="footer-status-dot"></span>
+            <span data-i18n="footer_status_label">СИСТЕМНЫЙ СТАТУС: В СЕТИ</span>
+          </div>
+          <span class="footer-badge-pill">🔒 100% Offline / Local LLM</span>
+          <span class="footer-badge-pill">⚡ Pytest 186/186 Passed</span>
+          <span class="footer-badge-pill">🛡️ Zero Data Leakage</span>
+        </div>
+        <div class="footer-status-right">
+          <span>AI-Team Studio v0.13.0 Stable • Windows WebView2</span>
+        </div>
+      </div>
+
+      <!-- Main Footer 4 Columns -->
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Architecture -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span>AI-Team Studio</span>
+          </div>
+          <p class="footer-brand-desc" data-i18n="footer_tagline">
+            Автономная мультиагентная студия десктопной разработки на локальных LLM (Ollama, LM Studio). Декомпозиция задач, UI-дизайн, написание чистого кода, тесты в UTF-8 песочнице и безопасные Git-коммиты.
+          </p>
+          <div class="footer-author-card">
+            <div class="footer-author-avatar">VR</div>
+            <div class="footer-author-meta">
+              <div class="footer-author-name" data-i18n="footer_author_badge">Автор и архитектор: Владимир Рыбальский</div>
+              <div class="footer-author-role" data-i18n="footer_author_sub">Team Lead & Инженер AI-Team Studio</div>
+            </div>
+          </div>
+          <div class="footer-security-note" data-i18n="footer_dual_repo">
+            🛡️ Dual-Repo изоляция: Исходный код ядра студии полностью защищен от публикации в открытый веб.
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation / Product -->
+        <div class="footer-col">
+          <div class="footer-col-heading" data-i18n="footer_col_product">Продукт</div>
+          <ul class="footer-link-list">
+            <li><a href="#studio-demo" data-i18n="footer_nav_demo">🕹️ Интерактивная песочница</a></li>
+            <li><a href="#devlog" data-i18n="footer_nav_devlog">🎙️ Голосовой девлог релизов</a></li>
+            <li><a href="#changelog" data-i18n="footer_nav_changelog">📜 Журнал всех 14 версий</a></li>
+            <li><a href="#showcase" data-i18n="footer_nav_showcase">🎮 Готовые проекты студии</a></li>
+            <li><a href="#pricing" data-i18n="footer_nav_pricing">💎 Early Bird Лицензии</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Agents Crew -->
+        <div class="footer-col">
+          <div class="footer-col-heading" data-i18n="footer_col_agents">ИИ-агенты студии</div>
+          <ul class="footer-link-list">
+            <li>
+              <button class="footer-agent-btn" onclick="location.href='#studio-demo'; if(window.selectDemoAgent) window.selectDemoAgent('planner');">
+                <span data-i18n="footer_agent_planner">🧠 Lead Architect (Planner)</span>
+                <span class="footer-agent-pill">DAG</span>
+              </button>
+            </li>
+            <li>
+              <button class="footer-agent-btn" onclick="location.href='#studio-demo'; if(window.selectDemoAgent) window.selectDemoAgent('designer');">
+                <span data-i18n="footer_agent_designer">🎨 UI/UX Designer</span>
+                <span class="footer-agent-pill">CSS/UI</span>
+              </button>
+            </li>
+            <li>
+              <button class="footer-agent-btn" onclick="location.href='#studio-demo'; if(window.selectDemoAgent) window.selectDemoAgent('coder');">
+                <span data-i18n="footer_agent_coder">💻 Senior Implementation Coder</span>
+                <span class="footer-agent-pill">Code</span>
+              </button>
+            </li>
+            <li>
+              <button class="footer-agent-btn" onclick="location.href='#studio-demo'; if(window.selectDemoAgent) window.selectDemoAgent('tester');">
+                <span data-i18n="footer_agent_tester">🧪 QA Sandbox Tester</span>
+                <span class="footer-agent-pill">Pytest</span>
+              </button>
+            </li>
+            <li>
+              <button class="footer-agent-btn" onclick="location.href='#studio-demo'; if(window.selectDemoAgent) window.selectDemoAgent('reviewer');">
+                <span data-i18n="footer_agent_reviewer">🛡️ Tech Lead Code Reviewer</span>
+                <span class="footer-agent-pill">Gate</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Ecosystem & Links -->
+        <div class="footer-col">
+          <div class="footer-col-heading" data-i18n="footer_col_ecosystem">Экосистема & Код</div>
+          <ul class="footer-link-list">
+            <li><a href="https://github.com/ALEVOLDON/ai-team-website" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_repo">🌐 GitHub репозиторий витрины</a></li>
+            <li><a href="https://github.com/ALEVOLDON/ai-team-website#readme" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_readme">📄 Публичная документация (README)</a></li>
+            <li><a href="#changelog" data-i18n="footer_eco_sync">🔄 Скрипт синхронизации (sync_website.py)</a></li>
+            <li><a href="#pricing" data-i18n="footer_eco_author">👤 Связаться с создателем (Rybalsky)</a></li>
+            <li><a href="https://github.com/ALEVOLDON/ai-team-website/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_mit">📜 Лицензия витрины: MIT Open Showcase</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <div><span data-i18n="footer_copy_left">© 2026 Vladimir Rybalsky. AI-Team Studio. Все права защищены.</span></div>
+          <div style="font-size:0.73rem; color:var(--text-muted);">
+            <span data-i18n="footer_sync_prefix">Сайт синхронизирован автоматически без раскрытия закрытых исходников. Обновлено: </span>
+            <span id="footer-sync-time" style="color:var(--cyan); font-family:var(--font-mono);">—</span>
+          </div>
+        </div>
+        <div class="footer-bottom-links">
+          <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <span data-i18n="footer_back_to_top">Наверх ↑</span>
+          </button>
+        </div>
+      </div>
     </div>
   </footer>
 
