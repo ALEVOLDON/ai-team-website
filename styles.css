@@ -181,8 +181,9 @@ body {
   font-size: 1.1rem;
 }
 
+/* Mobile Drawer */
 .mobile-menu-drawer {
-  display: none;
+  display: none !important;
   flex-direction: column;
   background: rgba(6, 9, 17, 0.98);
   border-bottom: 1px solid var(--border-subtle);
@@ -191,7 +192,7 @@ body {
 }
 
 .mobile-menu-drawer.open {
-  display: flex;
+  display: flex !important;
 }
 
 .mobile-menu-drawer a {
