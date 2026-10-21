@@ -1,0 +1,101 @@
+[
+  {
+    "id": "release-0.13.0",
+    "version": "0.13.0",
+    "date": "2026-10-21",
+    "title": "Обзор релиза v0.13.0: Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "🚀 Новый релиз",
+    "audio_url": null,
+    "duration": "01:45",
+    "voice_script": "Привет! На связи Владимир. Рассказываю, как обстоят дела в AI-Team Studio с выходом версии 0.13.0 (Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector). Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: Разделение монолитного шаблона на 3 чистых модуля: 💰 Универсальный биллинг моделей & Защита бюджета: Мультипровайдерная таблица цен MODEL_PRICING_PER_1M: 🪟 Нативный UTF-8 Sandbox для Windows: Защита от сбоев кодировки cp1251 (Charmap Error Prevention):",
+    "summary": "В обновлении v0.13.0 мы сфокусировались на ключевых направлениях: 🧩 Модульная архитектура UI, 💰 Универсальный биллинг моделей & Защита бюджета, 🪟 Нативный UTF-8 Sandbox для Windows, 🛠️ Эргономичная панель действий и ручной ресайзер.",
+    "highlights": [
+      "<b>Разделение монолитного шаблона на 3 чистых модуля</b>:",
+      "<code>styles.css</code> (2 400+ строк) — централизованные CSS-переменные, анимации, адаптивные карточки и модальные окна.",
+      "<b>Мультипровайдерная таблица цен <code>MODEL_PRICING_PER_1M</code></b>:",
+      "Точный подсчет стоимости по фактическим тарифам для OpenRouter, DeepSeek Official, OpenAI (GPT-4o / Mini), Anthropic Claude (Sonnet / Opus) и Google Gemini.",
+      "<b>Защита от сбоев кодировки <code>cp1251</code> (Charmap Error Prevention)</b>:"
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Security & Sandbox",
+      "LLM & Models"
+    ]
+  },
+  {
+    "id": "release-0.12.0",
+    "version": "0.12.0",
+    "date": "2026-10-13",
+    "title": "Обзор релиза v0.12.0: Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Привет! На связи Владимир. Рассказываю, как обстоят дела в AI-Team Studio с выходом версии 0.12.0 (Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner). Версия 0.12.0, Voice Announcer 2.0, Interactive Push-to-Talk & Windows Runner. Дата выхода: 2026-10-13. 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk): Интерактивный диалог в чате студии: 🧠 Динамическая инспекция студии в чате с тимлидом: Контекстная осведомлённость Lead Architect: 🚀 Запуск проектов на Windows в отдельном окне: Полноценный интерактивный запуск консольных проектов:",
+    "summary": "В обновлении v0.12.0 мы сфокусировались на ключевых направлениях: 🎙️ Двусторонняя голосовая связь (Voice 2.0 & Push-to-Talk), 🧠 Динамическая инспекция студии в чате с тимлидом, 🚀 Запуск проектов на Windows в отдельном окне.",
+    "highlights": [
+      "<b>Интерактивный диалог в чате студии</b>:",
+      "Добавлена кнопка Push-to-Talk (<code>🎙️ Голос</code> ➔ <code>🔴 Слушаю... (Стоп)</code> ➔ <code>⏳ Думаю...</code>) для живого общения с Lead Architect.",
+      "<b>Контекстная осведомлённость Lead Architect</b>:",
+      "Тимлид в чате получает динамический снимок реального состояния студии под капотом: текущие запущенные задачи, стек технологий, список файлов проекта, статус последнего прогона тестов и ошибки.",
+      "<b>Полноценный интерактивный запуск консольных проектов</b>:"
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Voice AI",
+      "LLM & Models"
+    ]
+  },
+  {
+    "id": "release-0.11.0",
+    "version": "0.11.0",
+    "date": "2026-09-30",
+    "title": "Обзор релиза v0.11.0: NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Привет! На связи Владимир. Рассказываю, как обстоят дела в AI-Team Studio с выходом версии 0.11.0 (NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture). Версия 0.11.0, NVIDIA Nemotron Matrix, Unified Conductor & Modular Studio Architecture. Дата выхода: 2026-09-30. 🟢 Интеграция моделей NVIDIA & Новые Пресеты: Матрица NVIDIA Nemotron Matrix (nvidia-nemotron): ⚡ Единый Conductor через Оркестратор Студии: Полная унификация кодогенерации: 🧩 Модульная архитектура GUI: Разделение монолитного gui.py:",
+    "summary": "В обновлении v0.11.0 мы сфокусировались на ключевых направлениях: 🟢 Интеграция моделей NVIDIA & Новые Пресеты, ⚡ Единый Conductor через Оркестратор Студии, 🧩 Модульная архитектура GUI, 📦 Единая спецификация пакета и CLI Entry Point.",
+    "highlights": [
+      "<b>Матрица NVIDIA Nemotron Matrix (<code>nvidia-nemotron</code>)</b>:",
+      "Облачный архитектор и ревьюер <b>NVIDIA Nemotron 3.5 Lightning</b> с контекстом 1M токенов (через OpenRouter) для глубокого проектирования и строгого 5D-ревью.",
+      "<b>Полная унификация кодогенерации</b>:",
+      "Conductor больше не пишет файлы напрямую на диск (<code>write_text</code> и разбор модельного вывода удалены).",
+      "<b>Разделение монолитного <code>gui.py</code></b>:"
+    ],
+    "tags": [
+      "UI & Desktop",
+      "Security & Sandbox",
+      "LLM & Models"
+    ]
+  },
+  {
+    "id": "release-0.10.0",
+    "version": "0.10.0",
+    "date": "2026-09-25",
+    "title": "Обзор релиза v0.10.0: Gemini Conductor & Free Cloud Studio Edition",
+    "author": "Vladimir Rybalsky",
+    "type": "voice_and_text",
+    "badge": "📦 Обновление студии",
+    "audio_url": null,
+    "duration": "01:20",
+    "voice_script": "Привет! На связи Владимир. Рассказываю, как обстоят дела в AI-Team Studio с выходом версии 0.10.0 (Gemini Conductor & Free Cloud Studio Edition). Версия 0.10.0, Gemini Conductor & Free Cloud Studio Edition. Дата выхода: 2026-09-25. ⚡ Автономный гибридный терминал Conductor: Концепция гибридного ИИ с абсолютной приватностью исходного кода: ✨ Официальная интеграция прямого Google Gemini API (100% Free Tier): Прямой нативный провайдер google без сторонних наценок: 🎛️ Мульти-агентные пресеты в 1 клик: Предопределённые командные матрицы ролей:",
+    "summary": "В обновлении v0.10.0 мы сфокусировались на ключевых направлениях: ⚡ Автономный гибридный терминал Conductor, ✨ Официальная интеграция прямого Google Gemini API (100% Free Tier), 🎛️ Мульти-агентные пресеты в 1 клик, 📊 Мульти-ролевой учёт расходов и реального баланса.",
+    "highlights": [
+      "<b>Концепция гибридного ИИ с абсолютной приватностью исходного кода</b>:",
+      "Облачный архитектор <b>Google Cloud Gemini Flash</b> отвечает исключительно за высокоуровневое проектирование и структуру проекта (DAG-спецификации, без передачи исходного кода в облако).",
+      "<b>Прямой нативный провайдер <code>google</code> без сторонних наценок</b>:",
+      "Поддержка официальных моделей Google AI Studio: <code>gemini-flash-latest</code>, <code>gemini-3.5-flash-lite</code>, <code>gemini-3.5-flash</code>, <code>gemini-3.8-flash</code>.",
+      "<b>Предопределённые командные матрицы ролей</b>:"
+    ],
+    "tags": [
+      "UI & Desktop",
+      "LLM & Models"
+    ]
+  }
+]

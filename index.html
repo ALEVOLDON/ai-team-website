@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Team Studio — Автономная мульти-агентная студия разработки</title>
+  <meta name="description" content="Официальная презентация, голосовой дневник разработки и история версий AI-Team Studio от Владимира Рыбальского." />
+  <link rel="icon" href="assets/icon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="assets/icon.png" alt="AI-Team Studio" class="brand-logo" onerror="this.style.display='none'" />
+        <span>AI-Team Studio</span>
+        <span class="version-pill" id="nav-version">v0.13.0</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#studio-demo">Интерактивное демо</a>
+        <a href="#devlog">🎙️ Голосовые обзоры</a>
+        <a href="#changelog">📜 История версий</a>
+        <a href="#showcase">🎮 Проекты</a>
+        <a href="#pricing">💎 Доступ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" onclick="openRecorderModal()">
+          🎙️ Добавить обзор
+        </button>
+        <a href="#pricing" class="btn btn-primary btn-sm">
+          Получить Studio Pro
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный экран (Hero) -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span class="pulse-dot"></span>
+        <span id="hero-release-banner">Актуальный релиз v0.13.0 • Автономная разработка на GPU и в облаке</span>
+      </div>
+
+      <h1>
+        Ваша персональная команда <span class="gradient-text">ИИ-инженеров</span> в одном десктопном окне
+      </h1>
+
+      <p class="hero-subtitle">
+        Вы ставите цель как Team Lead — 5 специализированных агентов проектируют архитектуру (DAG), создают дизайн, пишут чистый код, прогоняют реальные тесты в песочнице и коммитят результат в Git. С живой голосовой озвучкой и расходами от <b>$0.00</b>.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary" onclick="playLatestReleaseVoice()">
+          🔊 Слушать голосовой обзор свежей версии
+        </button>
+        <a href="#changelog" class="btn btn-secondary">
+          📜 Смотреть историю всех 14 релизов
+        </a>
+        <button class="btn btn-secondary" onclick="runDemoSimulation()">
+          ⚡ Запустить симуляцию команды
+        </button>
+      </div>
+
+      <!-- Живая статистика из репозитория -->
+      <div class="metrics-strip">
+        <div class="metric-card">
+          <div class="metric-value" id="metric-version">v0.13.0</div>
+          <div class="metric-label">Актуальная сборка</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="metric-releases">14</div>
+          <div class="metric-label">Мажорных обновлений</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="metric-tests">167+</div>
+          <div class="metric-label">Системных тестов Pytest</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">5 Агентов</div>
+          <div class="metric-label">Architect • Designer • Coder • QA • Lead</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: #34d399;">$0.008</div>
+          <div class="metric-label">Средняя цена создания проекта</div>
+        </div>
+      </div>
+
+      <!-- Интерактивный симулятор окна AI-Team Studio с настоящими 8-битными спрайтами -->
+      <div class="studio-showcase-window" id="studio-demo">
+        <div class="window-titlebar">
+          <div class="window-dots">
+            <span class="win-dot red"></span>
+            <span class="win-dot yellow"></span>
+            <span class="win-dot green"></span>
+            <span class="window-title" style="margin-left: 0.5rem;">
+              ⚡ AI-Team Desktop Studio (WebView2) — Кликните на любого агента или запустите демо-цикл
+            </span>
+          </div>
+          <div class="studio-controls">
+            <button class="btn btn-secondary btn-sm" onclick="runDemoSimulation()" id="sim-btn">
+              ▶️ Запустить рабочий цикл
+            </button>
+          </div>
+        </div>
+
+        <div class="studio-body">
+          <!-- Карточки 5 агентов с оригинальными SVG-спрайтами из студии -->
+          <div class="agents-grid">
+            <!-- 1. Planner -->
+            <div class="agent-card agent-planner active" id="demo-agent-planner" onclick="selectDemoAgent('planner')">
+              <div class="agent-meta">
+                <div class="agent-icon-box">
+                  <svg class="pixel-agent-sprite" viewBox="0 0 16 16">
+                    <rect class="planner-spark" x="4" y="0" width="1" height="1" fill="#7dd3fc"/>
+                    <rect class="planner-spark" x="11" y="1" width="1" height="1" fill="#bae6fd"/>
+                    <rect class="planner-spark" x="8" y="0" width="1" height="1" fill="#ffffff"/>
+                    <rect x="5" y="2" width="6" height="1" fill="#0369a1"/>
+                    <rect x="4" y="3" width="8" height="1" fill="#0284c7"/>
+                    <rect x="5" y="4" width="6" height="2" fill="#fed7aa"/>
+                    <rect x="6" y="4" width="1" height="1" fill="#0f172a"/>
+                    <rect x="9" y="4" width="1" height="1" fill="#0f172a"/>
+                    <rect x="4" y="6" width="8" height="2" fill="#0284c7"/>
+                    <rect x="3" y="8" width="10" height="2" fill="#0369a1"/>
+                    <rect x="3" y="9" width="1" height="2" fill="#fed7aa"/>
+                    <rect x="12" y="9" width="1" height="2" fill="#fed7aa"/>
+                    <rect x="4" y="10" width="8" height="3" fill="#075985"/>
+                    <rect class="blueprint-glow" x="5" y="11" width="6" height="1" fill="#38bdf8"/>
+                    <rect x="4" y="10" width="1" height="3" fill="#7dd3fc"/>
+                    <rect x="11" y="10" width="1" height="3" fill="#7dd3fc"/>
+                    <rect x="5" y="14" width="2" height="1" fill="#0f172a"/>
+                    <rect x="9" y="14" width="2" height="1" fill="#0f172a"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="agent-info-title">Planner <span style="font-size:0.65rem; background:rgba(56,189,248,0.2); color:#38bdf8; padding:1px 5px; border-radius:4px;">LEAD</span></div>
+                  <div class="agent-role-sub">Архитектура & Граф DAG</div>
+                  <span class="agent-model-badge">gemini-3.5-flash / nemotron</span>
+                </div>
+              </div>
+              <span class="agent-state-pill" id="state-planner">ACTIVE</span>
+            </div>
+
+            <!-- 2. Designer -->
+            <div class="agent-card agent-designer" id="demo-agent-designer" onclick="selectDemoAgent('designer')">
+              <div class="agent-meta">
+                <div class="agent-icon-box">
+                  <svg class="pixel-agent-sprite" viewBox="0 0 16 16">
+                    <rect x="5" y="1" width="6" height="2" fill="#be185d"/>
+                    <rect x="4" y="2" width="8" height="1" fill="#db2777"/>
+                    <rect x="11" y="0" width="2" height="2" fill="#f472b6"/>
+                    <rect x="5" y="3" width="6" height="3" fill="#fed7aa"/>
+                    <rect x="6" y="4" width="1" height="1" fill="#0f172a"/>
+                    <rect x="9" y="4" width="1" height="1" fill="#0f172a"/>
+                    <rect x="4" y="6" width="8" height="2" fill="#f43f5e"/>
+                    <rect x="3" y="8" width="10" height="4" fill="#881337"/>
+                    <rect x="3" y="10" width="5" height="4" fill="#92400e"/>
+                    <rect x="4" y="11" width="1" height="1" fill="#38bdf8"/>
+                    <rect x="6" y="11" width="1" height="1" fill="#10b981"/>
+                    <rect x="5" y="12" width="1" height="1" fill="#facc15"/>
+                    <rect x="10" y="9" width="4" height="1" fill="#cbd5e1"/>
+                    <rect class="designer-sparkle" x="13" y="8" width="2" height="2" fill="#f472b6"/>
+                    <rect x="5" y="14" width="2" height="1" fill="#0f172a"/>
+                    <rect x="9" y="14" width="2" height="1" fill="#0f172a"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="agent-info-title">Designer</div>
+                  <div class="agent-role-sub">UI/UX Токены & Anti-Slop SVG</div>
+                  <span class="agent-model-badge">gemini-3.5-flash-lite</span>
+                </div>
+              </div>
+              <span class="agent-state-pill" id="state-designer">IDLE</span>
+            </div>
+
+            <!-- 3. Coder -->
+            <div class="agent-card agent-coder" id="demo-agent-coder" onclick="selectDemoAgent('coder')">
+              <div class="agent-meta">
+                <div class="agent-icon-box">
+                  <svg class="pixel-agent-sprite" viewBox="0 0 16 16">
+                    <rect x="6" y="1" width="4" height="1" fill="#047857"/>
+                    <rect x="5" y="2" width="6" height="2" fill="#059669"/>
+                    <rect x="5" y="4" width="6" height="2" fill="#fed7aa"/>
+                    <rect x="6" y="4" width="1" height="1" fill="#10b981"/>
+                    <rect x="9" y="4" width="1" height="1" fill="#10b981"/>
+                    <rect x="4" y="6" width="8" height="2" fill="#059669"/>
+                    <rect x="2" y="7" width="12" height="7" fill="#022c22"/>
+                    <rect x="3" y="8" width="10" height="5" fill="#064e3b"/>
+                    <g class="coder-code-line">
+                      <rect x="4" y="9" width="4" height="1" fill="#34d399"/>
+                      <rect x="9" y="9" width="3" height="1" fill="#6ee7b7"/>
+                      <rect x="4" y="11" width="6" height="1" fill="#10b981"/>
+                      <rect x="11" y="11" width="1" height="1" fill="#a7f3d0"/>
+                    </g>
+                    <g class="coder-hands">
+                      <rect x="4" y="14" width="2" height="1" fill="#fed7aa"/>
+                      <rect x="10" y="14" width="2" height="1" fill="#fed7aa"/>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <div class="agent-info-title">Coder</div>
+                  <div class="agent-role-sub">Написание кода (Local GPU / Cloud)</div>
+                  <span class="agent-model-badge">gemma-4 / deepseek-v3</span>
+                </div>
+              </div>
+              <span class="agent-state-pill" id="state-coder">IDLE</span>
+            </div>
+
+            <!-- 4. Tester -->
+            <div class="agent-card agent-tester" id="demo-agent-tester" onclick="selectDemoAgent('tester')">
+              <div class="agent-meta">
+                <div class="agent-icon-box">
+                  <svg class="pixel-agent-sprite" viewBox="0 0 16 16">
+                    <rect class="tester-bubble" x="12" y="3" width="1" height="1" fill="#fef08a"/>
+                    <rect class="tester-bubble" x="10" y="4" width="1" height="1" fill="#ffffff"/>
+                    <rect class="tester-bubble" x="13" y="1" width="1" height="1" fill="#fde047"/>
+                    <rect x="3" y="2" width="5" height="2" fill="#78350f"/>
+                    <rect x="3" y="4" width="5" height="2" fill="#fed7aa"/>
+                    <rect x="4" y="4" width="1" height="1" fill="#0284c7"/>
+                    <rect x="6" y="4" width="1" height="1" fill="#0284c7"/>
+                    <rect x="2" y="6" width="7" height="6" fill="#f8fafc"/>
+                    <rect x="4" y="6" width="3" height="3" fill="#e2e8f0"/>
+                    <rect x="3" y="12" width="2" height="2" fill="#334155"/>
+                    <rect x="6" y="12" width="2" height="2" fill="#334155"/>
+                    <rect x="8" y="8" width="2" height="1" fill="#fed7aa"/>
+                    <rect x="11" y="6" width="2" height="2" fill="#94a3b8"/>
+                    <rect x="10" y="8" width="4" height="1" fill="#94a3b8"/>
+                    <rect x="9" y="9" width="6" height="5" fill="#64748b"/>
+                    <g class="tester-liquid">
+                      <rect x="10" y="10" width="4" height="1" fill="#fcd34d"/>
+                      <rect x="10" y="11" width="4" height="2" fill="#f59e0b"/>
+                      <rect x="11" y="13" width="2" height="1" fill="#d97706"/>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <div class="agent-info-title">QA Tester</div>
+                  <div class="agent-role-sub">UTF-8 Sandbox • Pytest • Node</div>
+                  <span class="agent-model-badge">sandbox-runner</span>
+                </div>
+              </div>
+              <span class="agent-state-pill" id="state-tester">IDLE</span>
+            </div>
+
+            <!-- 5. Reviewer -->
+            <div class="agent-card agent-reviewer" id="demo-agent-reviewer" onclick="selectDemoAgent('reviewer')">
+              <div class="agent-meta">
+                <div class="agent-icon-box">
+                  <svg class="pixel-agent-sprite" viewBox="0 0 16 16">
+                    <rect x="3" y="1" width="7" height="2" fill="#3b0764"/>
+                    <rect x="2" y="3" width="9" height="1" fill="#581c87"/>
+                    <rect x="3" y="2" width="7" height="1" fill="#a855f7"/>
+                    <rect x="3" y="4" width="6" height="2" fill="#fed7aa"/>
+                    <rect class="reviewer-visor" x="5" y="4" width="3" height="1" fill="#c084fc"/>
+                    <rect x="2" y="6" width="7" height="6" fill="#4c1d95"/>
+                    <rect x="4" y="6" width="2" height="3" fill="#6b21a8"/>
+                    <rect x="3" y="12" width="2" height="2" fill="#1e1b4b"/>
+                    <rect x="6" y="12" width="2" height="2" fill="#1e1b4b"/>
+                    <rect x="9" y="5" width="5" height="1" fill="#7c3aed"/>
+                    <rect x="8" y="6" width="7" height="5" fill="#6d28d9"/>
+                    <rect x="9" y="6" width="5" height="5" fill="#1e1b4b"/>
+                    <rect x="11" y="8" width="1" height="1" fill="#e9d5ff"/>
+                    <g class="reviewer-laser">
+                      <rect x="9" y="8" width="5" height="1" fill="#f0abfc"/>
+                      <rect x="11" y="8" width="1" height="1" fill="#ffffff"/>
+                    </g>
+                    <rect x="12" y="11" width="2" height="3" fill="#4c1d95"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="agent-info-title">Tech Lead Reviewer</div>
+                  <div class="agent-role-sub">5D Scorecard & Scoped Git</div>
+                  <span class="agent-model-badge">5D Quality Matrix</span>
+                </div>
+              </div>
+              <span class="agent-state-pill" id="state-reviewer">IDLE</span>
+            </div>
+          </div>
+
+          <!-- Терминал живых логов и 5D матрица оценки -->
+          <div class="studio-RightPanel">
+            <div class="terminal-log-box" id="demo-logs">
+              <div class="log-line">
+                <span class="log-time">[23:30:01]</span>
+                <span class="log-tag planner">[PLANNER]</span>
+                <span>Декомпозиция цели в граф задач (4 узла DAG)...</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">[23:30:04]</span>
+                <span class="log-tag designer">[DESIGNER]</span>
+                <span>Генерация дизайн-токенов и чистых SVG-иконок (Anti-Slop)...</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">[23:30:09]</span>
+                <span class="log-tag coder">[CODER]</span>
+                <span>Запись модулей через защищённый протокол в UTF-8 песочницу...</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">[23:30:14]</span>
+                <span class="log-tag tester">[TESTER]</span>
+                <span>Прогон pytest: 22/22 passed (100% Green) + Smoke Launch OK!</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">[23:30:17]</span>
+                <span class="log-tag reviewer">[REVIEWER]</span>
+                <span>Вердикт 5D Matrix: 9.4/10 (APPROVE) ➔ git commit feat(TASK-01)</span>
+              </div>
+            </div>
+
+            <div class="scorecard-5d">
+              <div class="scorecard-header">
+                <span>🎯 5D Tech Lead Scorecard</span>
+                <span style="color: #34d399;" id="demo-verdict">VERDICT: APPROVE (9.4 / 10)</span>
+              </div>
+              <div class="score-bars">
+                <div class="score-axis">Quality<strong>9.5</strong></div>
+                <div class="score-axis">Tests<strong>10.0</strong></div>
+                <div class="score-axis">Arch<strong>9.2</strong></div>
+                <div class="score-axis">Reqs<strong>9.5</strong></div>
+                <div class="score-axis">Security<strong>9.0</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="window-statusbar">
+          <span>🟢 Studio Ready • Preset: <b>Gemini Conductor (Hybrid Local GPU + Cloud)</b></span>
+          <span>⚡ Speed: <b>48.6 tok/s</b> • Cost: <b style="color:#34d399;">$0.000 (Local / Free Tier)</b> • Voice: <b>Gemini 3.8 Flash TTS 🎙️</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         РАЗДЕЛ 1: Дневник разработки — Голосовые и текстовые обзоры (Devlog)
+         ====================================================================== -->
+    <section class="section" id="devlog">
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2>🎙️ Дневник разработки (Голосовые и текстовые обзоры)</h2>
+          <p>Свежие сводки о том, как обстоят дела в студии: слушайте в формате аудио-дайджеста или читайте текстовый разбор</p>
+        </div>
+        <button class="btn btn-secondary" onclick="openRecorderModal()">
+          🎙️ Записать новый голосовой обзор
+        </button>
+      </div>
+
+      <div class="devlog-grid" id="devlog-container">
+        <!-- Заполняется автоматически из site_data.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         РАЗДЕЛ 2: Авто-обновляемая История Версий (Changelog Timeline)
+         ====================================================================== -->
+    <section class="section" id="changelog">
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2>📜 История версий и эволюция студии</h2>
+          <p>Автоматически синхронизируется с <code>CHANGELOG.md</code> и <code>pyproject.toml</code> при выходе каждого релиза</p>
+        </div>
+        <div style="display: flex; gap: 0.6rem;">
+          <button class="btn btn-secondary btn-sm" onclick="toggleAllReleases(false)">Развернуть все</button>
+          <button class="btn btn-secondary btn-sm" onclick="toggleAllReleases(true)">Свернуть все</button>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="tag-filters" id="changelog-tags">
+          <button class="filter-chip active" onclick="filterChangelog('ALL', this)">Все релизы</button>
+          <button class="filter-chip" onclick="filterChangelog('UI & Desktop', this)">🖥️ UI & Desktop</button>
+          <button class="filter-chip" onclick="filterChangelog('Voice AI', this)">🎙️ Voice AI</button>
+          <button class="filter-chip" onclick="filterChangelog('LLM & Models', this)">🧠 LLM & Биллинг</button>
+          <button class="filter-chip" onclick="filterChangelog('Security & Sandbox', this)">🔒 Песочница</button>
+          <button class="filter-chip" onclick="filterChangelog('Multi-Stack', this)">🌐 Multi-Stack</button>
+        </div>
+        <input type="text" class="search-input" id="changelog-search" placeholder="🔍 Поиск по версиям и фичам..." oninput="renderChangelog()" />
+      </div>
+
+      <div class="timeline" id="changelog-timeline">
+        <!-- Заполняется автоматически из site_data.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         РАЗДЕЛ 3: Витрина Боевых Проектов (Battle-Tested Showcase)
+         ====================================================================== -->
+    <section class="section" id="showcase">
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2>🎮 Проекты, созданные студией на 100% автономно</h2>
+          <p>Каждый проект спроектирован, написан и протестирован командой ИИ-агентов без единой строчки ручного кода</p>
+        </div>
+        <div class="tag-filters">
+          <button class="filter-chip active" onclick="filterProjects('all', this)">Все стеки (7)</button>
+          <button class="filter-chip" onclick="filterProjects('python', this)">🐍 Python (6)</button>
+          <button class="filter-chip" onclick="filterProjects('javascript', this)">🟨 Node.js (1)</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="showcase-container">
+        <!-- Заполняется автоматически из site_data.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         РАЗДЕЛ 4: Тарифы и Экономика (Почему закрытый коммерческий код)
+         ====================================================================== -->
+    <section class="section" id="pricing">
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2>💎 Доступ к AI-Team Studio & Модель BYOK</h2>
+          <p>Никаких ежемесячных подписок по $20/мес. Платите один раз за студию и используйте свои локальные видеокарты или облачные ключи по себестоимости</p>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Тариф 1 -->
+        <div class="price-card">
+          <div>
+            <div class="devlog-badge" style="display:inline-block; margin-bottom:0.8rem;">Демо & Обзоры</div>
+            <h3>Public Showcase</h3>
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1.25rem;">
+              Открытый дневник разработки, голосовые сводки и демонстрация возможностей студии.
+            </p>
+            <div class="price-amount">$0 <span>/ открытый доступ</span></div>
+          </div>
+          <ul class="price-features">
+            <li>✅ Доступ ко всем голосовым и текстовым обзорам</li>
+            <li>✅ Полный Changelog и архитектурные разборы</li>
+            <li>✅ Примеры сгенерированных боевых проектов</li>
+            <li>✅ Уведомления о выходе новых версий</li>
+          </ul>
+          <a href="#devlog" class="btn btn-secondary" style="justify-content:center;">Читать дневник</a>
+        </div>
+
+        <!-- Тариф 2 (Флагман) -->
+        <div class="price-card featured">
+          <span class="popular-ribbon">🔥 EARLY BIRD ДОСТУП</span>
+          <div>
+            <div class="devlog-badge" style="display:inline-block; margin-bottom:0.8rem;">Пожизненная лицензия</div>
+            <h3>AI-Team Pro Studio</h3>
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1.25rem;">
+              Полная десктопная студия под Windows с голосовым тимлидом, 5 агентами и песочницей.
+            </p>
+            <div class="price-amount">$19 <span>разово (вместо $29)</span></div>
+          </div>
+          <ul class="price-features">
+            <li>✅ Нативное Desktop GUI приложение (WebView2)</li>
+            <li>✅ Все 5 агентов (Planner, Designer, Coder, QA, Reviewer)</li>
+            <li>✅ Голосовой чат Push-to-Talk (Gemini 3.8 Flash TTS)</li>
+            <li>✅ 100% приватная работа на локальном GPU (LM Studio / Ollama)</li>
+            <li>✅ Пресеты Gemini Conductor, NVIDIA Nemotron, DeepSeek</li>
+            <li>✅ Все обновления студии включены</li>
+          </ul>
+          <button class="btn btn-primary" style="justify-content:center;" onclick="alert('Для получения раннего доступа к AI-Team Studio Pro свяжитесь с автором: Vladimir Rybalsky')">
+            🚀 Забронировать Early Bird ($19)
+          </button>
+        </div>
+
+        <!-- Тариф 3 -->
+        <div class="price-card">
+          <div>
+            <div class="devlog-badge" style="display:inline-block; margin-bottom:0.8rem;">Для команд и студий</div>
+            <h3>Team / Agency Edition</h3>
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1.25rem;">
+              Расширенная лицензия с кастомными ролями агентов и приоритетной поддержкой.
+            </p>
+            <div class="price-amount">$49 <span>/ пожизненно</span></div>
+          </div>
+          <ul class="price-features">
+            <li>✅ Всё из тарифа Pro Studio</li>
+            <li>✅ Мульти-стек (Python, Node.js, Web + будущие Go/Rust)</li>
+            <li>✅ Настройка собственных системных промптов и ролей</li>
+            <li>✅ Приоритетная поддержка от создателя студии</li>
+          </ul>
+          <button class="btn btn-secondary" style="justify-content:center;" onclick="alert('Свяжитесь с автором для корпоративной лицензии Team Edition.')">
+            Связаться с автором
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно для записи голосового или текстового обзора прямо в браузере -->
+  <div class="modal-backdrop" id="recorder-modal">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+        <h3>🎙️ Студия записи обзора (Devlog Creator)</h3>
+        <button class="btn btn-secondary btn-sm" onclick="closeRecorderModal()">✕</button>
+      </div>
+      <p style="color:var(--text-secondary); font-size:0.86rem; margin-bottom:1rem;">
+        Запишите голосовой комментарий с микрофона или напишите текстовый апдейт. Вы можете сразу послушать его и сохранить файл в папку <code>website/audio/</code>!
+      </p>
+
+      <div class="form-group">
+        <label>Заголовок обзора</label>
+        <input type="text" id="post-title" class="form-control" placeholder="Например: Как идут дела с версией 0.14 и новые фичи" />
+      </div>
+
+      <div class="form-group">
+        <label>Текстовая сводка (или тезисы для озвучки)</label>
+        <textarea id="post-summary" class="form-control" rows="3" placeholder="Коротко расскажите, что нового сделали в студии..."></textarea>
+      </div>
+
+      <div class="recorder-box">
+        <div id="rec-status" style="font-family:var(--font-mono); font-size:0.84rem; color:var(--cyan); margin-bottom:0.75rem;">
+          Готов к записи с микрофона
+        </div>
+        <div style="display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+          <button class="btn btn-primary btn-sm" id="btn-start-rec" onclick="startBrowserRecording()">
+            🔴 Начать запись голоса
+          </button>
+          <button class="btn btn-secondary btn-sm" id="btn-stop-rec" onclick="stopBrowserRecording()" style="display:none;">
+            ⏹️ Остановить запись
+          </button>
+          <a id="download-audio-link" class="btn btn-secondary btn-sm" style="display:none;">
+            💾 Скачать аудиофайл для папки website/audio/
+          </a>
+        </div>
+        <audio id="recorded-audio-preview" controls style="margin-top:0.85rem; width:100%; display:none;"></audio>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:0.75rem;">
+        <button class="btn btn-secondary btn-sm" onclick="closeRecorderModal()">Отмена</button>
+        <button class="btn btn-primary btn-sm" onclick="publishLocalPost()">✨ Добавить обзор на страницу</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        ⚡ <b>AI-Team Studio</b> — Autonomous Multi-Agent Development Studio • Создатель и правообладатель: <b>Vladimir Rybalsky</b>
+      </p>
+      <p style="margin-top:0.4rem; font-size:0.78rem;">
+        Сайт автоматически синхронизируется скриптом <code>python sync_website.py</code> из метаданных проекта без публикации закрытого исходного кода.
+        Последняя синхронизация: <span id="footer-sync-time">—</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Авто-сгенерированные данные проекта -->
+  <script src="data/site_data.js"></script>
+  <!-- Логика интерфейса, аудиоплеера и симулятора -->
+  <script src="app.js"></script>
+</body>
+</html>
