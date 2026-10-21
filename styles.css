@@ -1230,27 +1230,72 @@ body {
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 0.85rem;
+  }
+  .nav-container {
+    padding: 0.6rem 0.85rem;
   }
   .hero {
-    padding: 2.25rem 0 1.75rem;
+    padding: 1.85rem 0 1.5rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.74rem;
+    padding: 0.3rem 0.75rem;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.35;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
   .hero-cta-group {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.6rem;
   }
   .hero-cta-group .btn {
     width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
   }
   .metrics-strip {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
   }
-  .agents-grid {
-    grid-template-columns: 1fr;
+  .metric-card {
+    padding: 0.75rem 0.5rem;
+  }
+  .metric-value {
+    font-size: 1.35rem;
+  }
+  .metric-label {
+    font-size: 0.72rem;
+  }
+  .studio-body {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+  .agent-card {
+    padding: 0.65rem 0.75rem;
+  }
+  .agent-info-title {
+    font-size: 0.85rem;
+  }
+  .agent-role-sub {
+    font-size: 0.7rem;
+  }
+  .agent-model-badge {
+    font-size: 0.62rem;
   }
   .window-titlebar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.6rem 0.75rem;
   }
   .studio-controls {
     width: 100%;
@@ -1258,24 +1303,86 @@ body {
   .studio-controls .btn {
     width: 100%;
   }
+  .score-bars {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.2rem;
+  }
+  .score-axis {
+    padding: 0.25rem 0.1rem;
+    font-size: 0.58rem;
+  }
+  .score-axis strong {
+    font-size: 0.72rem;
+  }
+  .window-statusbar {
+    font-size: 0.68rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .featured-devlog-hero {
+    padding: 1.15rem 1rem;
+    border-radius: var(--radius-md);
+  }
+  .featured-title {
+    font-size: 1.15rem;
+  }
+  .voice-player {
+    padding: 0.65rem;
+    gap: 0.5rem;
+  }
+  .wave-bars {
+    gap: 1.5px;
+  }
+  .play-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+  }
   .devlog-grid, .projects-grid, .pricing-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   .filter-bar {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.6rem;
+  }
+  .tag-filters {
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter-chip {
+    white-space: nowrap;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.76rem;
   }
   .search-input {
     width: 100%;
     min-width: unset;
   }
   .timeline {
-    padding-left: 1.25rem;
+    padding-left: 1.15rem;
+  }
+  .release-card {
+    padding: 1rem;
   }
   .release-card::before {
-    left: -1.75rem;
+    left: -1.65rem;
+    width: 10px;
+    height: 10px;
   }
-  .featured-devlog-hero {
-    padding: 1.25rem;
+  .release-ver {
+    font-size: 1rem;
+  }
+  .release-sub {
+    font-size: 0.88rem;
+  }
+  .release-sections {
+    column-count: 1;
+  }
+  .modal-box {
+    padding: 1.15rem;
+    width: 95%;
   }
 }
