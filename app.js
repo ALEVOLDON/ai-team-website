@@ -14,6 +14,9 @@
   // i18n Dictionary
   const I18N = {
     ru: {
+      devlog_show_all: "Показать все 14 обзоров релиза ↓",
+      devlog_show_less: "Свернуть до 3 свежих обзоров ↑",
+      featured_badge: "🔥 СВЕЖИЙ РЕЛИЗ СТУДИИ",
       nav_demo: "Интерактивное демо",
       nav_devlog: "🎙️ Голосовые обзоры",
       nav_changelog: "📜 История версий",
@@ -102,6 +105,9 @@
       author_name: "Vladimir Rybalsky",
     },
     en: {
+      devlog_show_all: "Show all 14 release reviews ↓",
+      devlog_show_less: "Collapse to 3 latest reviews ↑",
+      featured_badge: "🔥 LATEST STUDIO RELEASE",
       nav_demo: "Interactive Demo",
       nav_devlog: "🎙️ Voice Devlog",
       nav_changelog: "📜 Changelog",
@@ -198,6 +204,7 @@
   let currentChangelogTag = "ALL";
   let currentProjectFilter = "all";
   let demoTimer = null;
+  let devlogExpanded = false;
 
   // Recording
   let mediaRecorder = null;
@@ -284,8 +291,13 @@
   }
 
   /* ========================================================================
-     1. Devlog Rendering (Bilingual)
+     1. Devlog Rendering (Featured Card + Grid + Expand)
      ======================================================================== */
+  window.toggleDevlogExpand = function () {
+    devlogExpanded = !devlogExpanded;
+    renderDevlog();
+  };
+
   function renderDevlog() {
     const container = document.getElementById("devlog-container");
     if (!container) return;
@@ -298,68 +310,105 @@
       return;
     }
 
-    container.innerHTML = posts
+    const featured = posts[0];
+    const restPosts = posts.slice(1);
+    const visibleRest = devlogExpanded ? restPosts : restPosts.slice(0, 3);
+
+    // 1. Рендерим главный Featured-блок свежего релиза
+    const featPlayerId = "player-feat-0";
+    const featBars = Array.from({ length: 32 })
+      .map((_, i) => `<span class="wave-bar" style="height:${30 + ((i * 19) % 65)}%"></span>`)
+      .join("");
+    const featTitle = currentLang === "en" && featured.title_en ? featured.title_en : featured.title;
+    const featSummary = currentLang === "en" && featured.summary_en ? featured.summary_en : featured.summary;
+    const featHighlights = currentLang === "en" && featured.highlights_en ? featured.highlights_en : (featured.highlights || []);
+    const featScript = currentLang === "en" && featured.voice_script_en ? featured.voice_script_en : (featured.voice_script || featSummary);
+
+    const featHighlightsHtml = featHighlights.length
+      ? `<ul class="devlog-highlights" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.5rem; margin-top:0.5rem;">
+          ${featHighlights.map((h) => `<li>${formatMarkdownInline(h)}</li>`).join("")}
+         </ul>`
+      : "";
+
+    const featHtml = `
+      <div class="featured-devlog-hero">
+        <div class="featured-top-row">
+          <span class="featured-badge">${t("featured_badge")}</span>
+          <span class="devlog-date">${escapeHtml(featured.date)} • v${escapeHtml(featured.version || DATA.meta.version)}</span>
+        </div>
+        <h3 class="featured-title">${escapeHtml(featTitle)}</h3>
+        <div class="voice-player" id="${featPlayerId}">
+          <button class="play-btn" title="Listen"
+            onclick="toggleVoicePlayer('${featPlayerId}', '${featured.audio_url ? encodeURIComponent(featured.audio_url) : ""}', '${encodeURIComponent(featScript)}')">
+            <span class="play-icon" id="icon-${featPlayerId}">▶</span>
+          </button>
+          <div class="voice-waveform">
+            <div class="wave-bars">${featBars}</div>
+            <div class="voice-meta-row">
+              <span id="status-${featPlayerId}">🎵 ${currentLang === "ru" ? "Голосовой обзор релиза" : "Spoken Release Digest"}</span>
+              <span>${currentLang === "ru" ? "Автор:" : "By:"} Vladimir Rybalsky</span>
+            </div>
+          </div>
+          <button class="speed-btn" onclick="cyclePlaybackSpeed(this)">${playbackSpeed}x</button>
+        </div>
+        <p class="devlog-summary" style="font-size:0.95rem;">${formatMarkdownInline(featSummary)}</p>
+        ${featHighlightsHtml}
+      </div>
+    `;
+
+    // 2. Рендерим остальные карточки в красивой сетке
+    const gridHtml = visibleRest
       .map((post, idx) => {
-        const playerId = `player-devlog-${idx}`;
-        const barsHtml = Array.from({ length: 24 })
-          .map((_, i) => {
-            const h = 25 + ((i * 17 + idx * 13) % 65);
-            return `<span class="wave-bar" style="height:${h}%"></span>`;
-          })
+        const playerId = `player-devlog-${idx + 1}`;
+        const barsHtml = Array.from({ length: 22 })
+          .map((_, i) => `<span class="wave-bar" style="height:${25 + ((i * 17 + idx * 11) % 65)}%"></span>`)
           .join("");
 
-        // Двуязычные поля
         const title = currentLang === "en" && post.title_en ? post.title_en : post.title;
         const summary = currentLang === "en" && post.summary_en ? post.summary_en : post.summary;
         const badge = currentLang === "en" && post.badge_en ? post.badge_en : (post.badge || "🎙️ Devlog");
-        const highlights = currentLang === "en" && post.highlights_en ? post.highlights_en : (post.highlights || []);
         const script = currentLang === "en" && post.voice_script_en ? post.voice_script_en : (post.voice_script || summary);
-
-        const highlightsHtml = highlights.length
-          ? `<ul class="devlog-highlights">
-              ${highlights.map((h) => `<li>${formatMarkdownInline(h)}</li>`).join("")}
-             </ul>`
-          : "";
-
-        const modeLabel = post.audio_url
-          ? `🎵 ${currentLang === "ru" ? "Аудиозапись" : "Audio Note"} (${post.duration || "WAV/MP3"})`
-          : `🎙️ ${currentLang === "ru" ? "ИИ-озвучка" : "AI Voice Digest"} (${post.duration || "TTS"})`;
-
-        const encodedScript = encodeURIComponent(script);
-        const encodedAudio = post.audio_url ? encodeURIComponent(post.audio_url) : "";
 
         return `
         <article class="devlog-card">
-          <div class="devlog-top">
-            <span class="devlog-badge">${escapeHtml(badge)}</span>
-            <span class="devlog-date">${escapeHtml(post.date)} • v${escapeHtml(post.version || DATA.meta.version)}</span>
+          <div>
+            <div class="devlog-top">
+              <span class="devlog-badge">${escapeHtml(badge)}</span>
+              <span class="devlog-date">${escapeHtml(post.date)} • v${escapeHtml(post.version || DATA.meta.version)}</span>
+            </div>
+            <h3 class="devlog-title" style="margin-top:0.6rem;">${escapeHtml(title)}</h3>
           </div>
 
-          <h3 class="devlog-title">${escapeHtml(title)}</h3>
-
-          <!-- Voice player -->
           <div class="voice-player" id="${playerId}">
-            <button class="play-btn" title="${currentLang === "ru" ? "Прослушать обзор" : "Listen to review"}"
-              onclick="toggleVoicePlayer('${playerId}', '${encodedAudio}', '${encodedScript}')">
+            <button class="play-btn" title="Listen"
+              onclick="toggleVoicePlayer('${playerId}', '${post.audio_url ? encodeURIComponent(post.audio_url) : ""}', '${encodeURIComponent(script)}')">
               <span class="play-icon" id="icon-${playerId}">▶</span>
             </button>
             <div class="voice-waveform">
               <div class="wave-bars">${barsHtml}</div>
               <div class="voice-meta-row">
-                <span id="status-${playerId}">${modeLabel}</span>
+                <span id="status-${playerId}">🎙️ Voice Digest</span>
                 <span>${currentLang === "ru" ? "Автор:" : "By:"} ${escapeHtml(post.author || "Vladimir Rybalsky")}</span>
               </div>
             </div>
-            <button class="speed-btn" onclick="cyclePlaybackSpeed(this)" title="Speed">
-              ${playbackSpeed}x
-            </button>
+            <button class="speed-btn" onclick="cyclePlaybackSpeed(this)">${playbackSpeed}x</button>
           </div>
 
           <p class="devlog-summary">${formatMarkdownInline(summary)}</p>
-          ${highlightsHtml}
         </article>`;
       })
       .join("");
+
+    // Кнопка показать больше / свернуть
+    const moreBtnHtml = restPosts.length > 3
+      ? `<div class="devlog-more-wrapper">
+          <button class="btn btn-secondary" onclick="toggleDevlogExpand()">
+            ${devlogExpanded ? t("devlog_show_less") : t("devlog_show_all")}
+          </button>
+         </div>`
+      : "";
+
+    container.innerHTML = featHtml + `<div class="devlog-grid">${gridHtml}</div>` + moreBtnHtml;
   }
 
   /* ========================================================================
