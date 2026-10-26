@@ -622,6 +622,10 @@
           )
           .join("");
 
+        const relAudio = currentLang === "en" && (rel.audio_file_en || rel.audio_url_en)
+          ? (rel.audio_file_en || rel.audio_url_en)
+          : (rel.audio_file || rel.audio_url);
+
         return `
         <div class="release-card ${rel.is_latest ? "latest" : ""} ${isCollapsed ? "collapsed" : ""}" id="rel-card-${idx}">
           <div class="release-header" onclick="toggleReleaseCard(${idx})">
@@ -632,11 +636,6 @@
               ${rel.is_latest ? `<span class="devlog-badge" style="background:rgba(16,185,129,0.18); color:#34d399; border-color:rgba(16,185,129,0.4);">LATEST</span>` : ""}
             </div>
             <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;" onclick="event.stopPropagation()">
-              const relAudio = currentLang === "en" && (rel.audio_file_en || rel.audio_url_en)
-                ? (rel.audio_file_en || rel.audio_url_en)
-                : (rel.audio_file || rel.audio_url);
-
-              return `
               ${tagsHtml}
               <button class="btn btn-secondary btn-sm" id="${playerId}"
                 onclick="toggleVoicePlayer('${playerId}', '${relAudio ? encodeURIComponent(relAudio) : ""}', '${encodedVoice}')">
