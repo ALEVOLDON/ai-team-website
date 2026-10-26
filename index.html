@@ -276,7 +276,7 @@
         </div>
 
         <button class="btn btn-secondary btn-sm" onclick="openRecorderModal()" data-i18n="nav_add_review" style="display: none;">
-          🎙️ Добавить обзор
+          Записать обзор
         </button>
         <a href="#pricing" class="btn btn-primary btn-sm" data-i18n="nav_get_pro">
           Studio Pro
@@ -284,7 +284,7 @@
 
         <!-- Мобильный гамбургер -->
         <button class="mobile-toggle" id="mobile-hamburger" aria-label="Toggle navigation menu">
-          ☰
+          Menu
         </button>
       </div>
     </div>
@@ -298,7 +298,7 @@
       <a href="#pricing"><svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-i18n="nav_pricing">Тарифы</span></a>
       <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
         <button class="btn btn-secondary btn-sm" style="flex:1;" onclick="openRecorderModal()" data-i18n="nav_add_review">
-          🎙️ Добавить обзор
+          Записать обзор
         </button>
       </div>
     </div>
@@ -369,12 +369,12 @@
             <span class="win-dot yellow"></span>
             <span class="win-dot green"></span>
             <span class="window-title" style="margin-left: 0.4rem;" data-i18n="win_title">
-              ⚡ AI-Team Desktop Studio (WebView2) — Кликните на агента или запустите демо
+              AI-Team Desktop Studio (WebView2) — Кликните на агента или запустите демо
             </span>
           </div>
           <div class="studio-controls">
             <button class="btn btn-secondary btn-sm" onclick="runDemoSimulation()" id="sim-btn" data-i18n="win_run_btn">
-              ▶️ Запустить рабочий цикл
+              Запустить симуляцию
             </button>
           </div>
         </div>
@@ -579,13 +579,13 @@
               <div class="log-line">
                 <span class="log-time">[23:30:17]</span>
                 <span class="log-tag reviewer">[REVIEWER]</span>
-                <span>Verdict 5D Matrix: 9.6/10 (APPROVE) ➔ git commit feat(TASK-01)</span>
+                <span>Verdict 5D Matrix: 9.6/10 (APPROVE) -> git commit feat(TASK-01)</span>
               </div>
             </div>
 
             <div class="scorecard-5d">
               <div class="scorecard-header">
-                <span>🎯 5D Tech Lead Scorecard</span>
+                <span>5D Tech Lead Scorecard</span>
                 <span style="color: #34d399;" id="demo-verdict">VERDICT: APPROVE (9.6 / 10)</span>
               </div>
               <div class="score-bars">
@@ -600,8 +600,8 @@
         </div>
 
         <div class="window-statusbar">
-          <span data-i18n="win_status_1">🟢 Studio Ready • Preset: Gemini Conductor (Hybrid Local GPU + Cloud)</span>
-          <span data-i18n="win_status_2">⚡ Speed: 48.6 tok/s • Cost: $0.000 (Local / Free Tier) • Voice: Gemini 3.8 Flash TTS 🎙️</span>
+          <span data-i18n="win_status_1">Studio Ready • Preset: Gemini Conductor (Hybrid Local GPU + Cloud)</span>
+          <span data-i18n="win_status_2"> Speed: 48.6 tok/s • Cost: $0.000 (Local / Free Tier) • Voice: Gemini 3.8 Flash TTS </span>
         </div>
       </div>
     </section>
@@ -614,7 +614,7 @@
           <p data-i18n="devlog_sub">Свежие сводки о том, как обстоят дела в студии: слушайте в формате аудио-дайджеста или читайте текстовый разбор</p>
         </div>
         <button class="btn btn-secondary btn-sm" onclick="openRecorderModal()" data-i18n="devlog_btn_new">
-          🎙️ Записать новый обзор
+          Записать обзор
         </button>
       </div>
 
@@ -639,13 +639,13 @@
       <div class="filter-bar">
         <div class="tag-filters" id="changelog-tags">
           <button class="filter-chip active" onclick="filterChangelog('ALL', this)" data-i18n="changelog_all_tags">Все релизы</button>
-          <button class="filter-chip" onclick="filterChangelog('UI & Desktop', this)">🖥️ UI & Desktop</button>
-          <button class="filter-chip" onclick="filterChangelog('Voice AI', this)">🎙️ Voice AI</button>
-          <button class="filter-chip" onclick="filterChangelog('LLM & Models', this)">🧠 LLM & Models</button>
-          <button class="filter-chip" onclick="filterChangelog('Security & Sandbox', this)">🔒 Sandbox</button>
-          <button class="filter-chip" onclick="filterChangelog('Multi-Stack', this)">🌐 Multi-Stack</button>
+          <button class="filter-chip" onclick="filterChangelog('UI & Desktop', this)">UI & Desktop</button>
+          <button class="filter-chip" onclick="filterChangelog('Voice AI', this)">Voice AI</button>
+          <button class="filter-chip" onclick="filterChangelog('LLM & Models', this)">LLM & Models</button>
+          <button class="filter-chip" onclick="filterChangelog('Security & Sandbox', this)">Sandbox</button>
+          <button class="filter-chip" onclick="filterChangelog('Multi-Stack', this)">Multi-Stack</button>
         </div>
-        <input type="text" class="search-input" id="changelog-search" placeholder="🔍 Поиск по версиям и фичам..." data-i18n-ph="changelog_search_ph" oninput="renderChangelog()" />
+        <input type="text" class="search-input" id="changelog-search" placeholder="Поиск по версиям и фичам..." data-i18n-ph="changelog_search_ph" oninput="renderChangelog()" />
       </div>
 
       <div class="timeline" id="changelog-timeline">
@@ -662,8 +662,8 @@
         </div>
         <div class="tag-filters">
           <button class="filter-chip active" onclick="filterProjects('all', this)" data-i18n="showcase_all">Все стеки (7)</button>
-          <button class="filter-chip" onclick="filterProjects('python', this)" data-i18n="showcase_py">🐍 Python (6)</button>
-          <button class="filter-chip" onclick="filterProjects('javascript', this)" data-i18n="showcase_node">🟨 Node.js (1)</button>
+          <button class="filter-chip" onclick="filterProjects('python', this)" data-i18n="showcase_py">Python (6)</button>
+          <button class="filter-chip" onclick="filterProjects('javascript', this)" data-i18n="showcase_node">Node.js (1)</button>
         </div>
       </div>
 
@@ -693,10 +693,10 @@
             <div class="price-amount" data-i18n="pricing_tier1_price">$0 <span data-i18n="pricing_tier1_unit">/ открытый доступ</span></div>
           </div>
           <ul class="price-features">
-            <li data-i18n="pricing_tier1_f1">✅ Доступ ко всем голосовым и текстовым обзорам</li>
-            <li data-i18n="pricing_tier1_f2">✅ Полный Changelog и архитектурные разборы</li>
-            <li data-i18n="pricing_tier1_f3">✅ Примеры сгенерированных боевых проектов</li>
-            <li data-i18n="pricing_tier1_f4">✅ Уведомления о выходе новых версий</li>
+            <li data-i18n="pricing_tier1_f1">Доступ ко всем голосовым и текстовым обзорам</li>
+            <li data-i18n="pricing_tier1_f2">Полный Changelog и архитектурные разборы</li>
+            <li data-i18n="pricing_tier1_f3">Примеры сгенерированных боевых проектов</li>
+            <li data-i18n="pricing_tier1_f4">Уведомления о выходе новых версий</li>
           </ul>
           <a href="#devlog" class="btn btn-secondary" style="justify-content:center;" data-i18n="pricing_tier1_btn">Читать дневник</a>
         </div>
@@ -713,15 +713,15 @@
             <div class="price-amount" data-i18n="pricing_tier2_price">$19 <span data-i18n="pricing_tier2_unit">разово (вместо $29)</span></div>
           </div>
           <ul class="price-features">
-            <li data-i18n="pricing_tier2_f1">✅ Нативное Desktop GUI приложение (WebView2)</li>
-            <li data-i18n="pricing_tier2_f2">✅ Все 5 агентов (Planner, Designer, Coder, QA, Reviewer)</li>
-            <li data-i18n="pricing_tier2_f3">✅ Голосовой чат Push-to-Talk (Gemini 3.8 Flash TTS)</li>
-            <li data-i18n="pricing_tier2_f4">✅ 100% приватная работа на локальном GPU (LM Studio / Ollama)</li>
-            <li data-i18n="pricing_tier2_f5">✅ Пресеты Gemini Conductor, NVIDIA Nemotron, DeepSeek</li>
-            <li data-i18n="pricing_tier2_f6">✅ Все обновления студии включены</li>
+            <li data-i18n="pricing_tier2_f1">Нативное Desktop GUI приложение (WebView2)</li>
+            <li data-i18n="pricing_tier2_f2">Все 5 агентов (Planner, Designer, Coder, QA, Reviewer)</li>
+            <li data-i18n="pricing_tier2_f3">Голосовой чат Push-to-Talk (Gemini 3.8 Flash TTS)</li>
+            <li data-i18n="pricing_tier2_f4">100% приватная работа на локальном GPU (LM Studio / Ollama)</li>
+            <li data-i18n="pricing_tier2_f5">Пресеты Gemini Conductor, NVIDIA Nemotron, DeepSeek</li>
+            <li data-i18n="pricing_tier2_f6">Все обновления студии включены</li>
           </ul>
           <button class="btn btn-primary" style="justify-content:center;" onclick="alert('Early Bird Access: Vladimir Rybalsky')" data-i18n="pricing_tier2_btn">
-            🚀 Забронировать Early Bird ($19)
+            Получить Studio Pro ($19)
           </button>
         </div>
 
@@ -736,10 +736,10 @@
             <div class="price-amount" data-i18n="pricing_tier3_price">$49 <span data-i18n="pricing_tier3_unit">/ пожизненно</span></div>
           </div>
           <ul class="price-features">
-            <li data-i18n="pricing_tier3_f1">✅ Всё из тарифа Pro Studio</li>
-            <li data-i18n="pricing_tier3_f2">✅ Мульти-стек (Python, Node.js, Web + будущие Go/Rust)</li>
-            <li data-i18n="pricing_tier3_f3">✅ Настройка собственных системных промптов и ролей</li>
-            <li data-i18n="pricing_tier3_f4">✅ Приоритетная поддержка от создателя студии</li>
+            <li data-i18n="pricing_tier3_f1">Всё из тарифа Pro Studio</li>
+            <li data-i18n="pricing_tier3_f2">Мульти-стек (Python, Node.js, Web + будущие Go/Rust)</li>
+            <li data-i18n="pricing_tier3_f3">Настройка собственных системных промптов и ролей</li>
+            <li data-i18n="pricing_tier3_f4">Приоритетная поддержка от создателя студии</li>
           </ul>
           <button class="btn btn-secondary" style="justify-content:center;" onclick="alert('Team License: Vladimir Rybalsky')" data-i18n="pricing_tier3_btn">
             Связаться с автором
@@ -753,7 +753,7 @@
   <div class="modal-backdrop" id="recorder-modal">
     <div class="modal-box">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-        <h3 data-i18n="modal_title">🎙️ Студия записи обзора (Devlog Creator)</h3>
+        <h3 data-i18n="modal_title">Студия записи обзора</h3>
         <button class="btn btn-secondary btn-sm" onclick="closeRecorderModal()">✕</button>
       </div>
       <p style="color:var(--text-secondary); font-size:0.84rem; margin-bottom:0.9rem;" data-i18n="modal_desc">
@@ -776,13 +776,13 @@
         </div>
         <div style="display:flex; justify-content:center; gap:0.6rem; flex-wrap:wrap;">
           <button class="btn btn-primary btn-sm" id="btn-start-rec" onclick="startBrowserRecording()" data-i18n="modal_btn_start">
-            🔴 Начать запись голоса
+            Начать запись голоса
           </button>
           <button class="btn btn-secondary btn-sm" id="btn-stop-rec" onclick="stopBrowserRecording()" style="display:none;" data-i18n="modal_btn_stop">
-            ⏹️ Остановить запись
+            Остановить запись
           </button>
           <a id="download-audio-link" class="btn btn-secondary btn-sm" style="display:none;" data-i18n="modal_btn_dl">
-            💾 Скачать аудиофайл
+            Скачать аудиофайл
           </a>
         </div>
         <audio id="recorded-audio-preview" controls style="margin-top:0.75rem; width:100%; display:none;"></audio>
@@ -790,7 +790,7 @@
 
       <div style="display:flex; justify-content:flex-end; gap:0.6rem;">
         <button class="btn btn-secondary btn-sm" onclick="closeRecorderModal()" data-i18n="modal_btn_cancel">Отмена</button>
-        <button class="btn btn-primary btn-sm" onclick="publishLocalPost()" data-i18n="modal_btn_publish">✨ Добавить обзор</button>
+        <button class="btn btn-primary btn-sm" onclick="publishLocalPost()" data-i18n="modal_btn_publish">Добавить обзор</button>
       </div>
     </div>
   </div>
@@ -804,9 +804,9 @@
             <span class="footer-status-dot"></span>
             <span data-i18n="footer_status_label">СИСТЕМНЫЙ СТАТУС: В СЕТИ</span>
           </div>
-          <span class="footer-badge-pill">🔒 100% Offline / Local LLM</span>
-          <span class="footer-badge-pill">⚡ Pytest 197/197 Passed</span>
-          <span class="footer-badge-pill">🛡️ Zero Data Leakage</span>
+          <span class="footer-badge-pill">100% Offline / Local LLM</span>
+          <span class="footer-badge-pill">Pytest 197/197 Passed</span>
+          <span class="footer-badge-pill">Zero Data Leakage</span>
         </div>
         <div class="footer-status-right">
           <span>AI-Team Studio v0.13.0 Stable • Windows WebView2</span>
@@ -832,7 +832,7 @@
             </div>
           </div>
           <div class="footer-security-note" data-i18n="footer_dual_repo">
-            🛡️ Dual-Repo изоляция: Исходный код ядра студии полностью защищен от публикации в открытый веб.
+            Dual-Repo изоляция: Исходный код ядра студии полностью защищен от публикации в открытый веб.
           </div>
         </div>
 
@@ -840,11 +840,11 @@
         <div class="footer-col">
           <div class="footer-col-heading" data-i18n="footer_col_product">Продукт</div>
           <ul class="footer-link-list" style="list-style:none; padding:0; margin:0;">
-            <li style="list-style:none;"><a href="#studio-demo" data-i18n="footer_nav_demo" style="text-decoration:none;">🕹️ Интерактивная песочница</a></li>
-            <li style="list-style:none;"><a href="#devlog" data-i18n="footer_nav_devlog" style="text-decoration:none;">🎙️ Голосовой девлог релизов</a></li>
-            <li style="list-style:none;"><a href="#changelog" data-i18n="footer_nav_changelog" style="text-decoration:none;">📜 Журнал всех 14 версий</a></li>
-            <li style="list-style:none;"><a href="#showcase" data-i18n="footer_nav_showcase" style="text-decoration:none;">🎮 Готовые проекты студии</a></li>
-            <li style="list-style:none;"><a href="#pricing" data-i18n="footer_nav_pricing" style="text-decoration:none;">💎 Early Bird Лицензии</a></li>
+            <li style="list-style:none;"><a href="#studio-demo" data-i18n="footer_nav_demo" style="text-decoration:none;">Интерактивная песочница</a></li>
+            <li style="list-style:none;"><a href="#devlog" data-i18n="footer_nav_devlog" style="text-decoration:none;">Голосовой девлог релизов</a></li>
+            <li style="list-style:none;"><a href="#changelog" data-i18n="footer_nav_changelog" style="text-decoration:none;">Журнал всех 14 версий</a></li>
+            <li style="list-style:none;"><a href="#showcase" data-i18n="footer_nav_showcase" style="text-decoration:none;">Готовые проекты студии</a></li>
+            <li style="list-style:none;"><a href="#pricing" data-i18n="footer_nav_pricing" style="text-decoration:none;">Early Bird Лицензии</a></li>
           </ul>
         </div>
 
@@ -854,31 +854,31 @@
           <ul class="footer-link-list" style="list-style:none; padding:0; margin:0;">
             <li style="list-style:none;">
               <a href="#studio-demo" onclick="if(window.selectDemoAgent) window.selectDemoAgent('planner');" style="text-decoration:none;">
-                <span data-i18n="footer_agent_planner">🧠 Lead Architect (Planner)</span>
+                <span data-i18n="footer_agent_planner">Lead Architect (Planner)</span>
                 <span class="footer-agent-pill">DAG</span>
               </a>
             </li>
             <li style="list-style:none;">
               <a href="#studio-demo" onclick="if(window.selectDemoAgent) window.selectDemoAgent('designer');" style="text-decoration:none;">
-                <span data-i18n="footer_agent_designer">🎨 UI/UX Designer</span>
+                <span data-i18n="footer_agent_designer">UI/UX Designer</span>
                 <span class="footer-agent-pill">CSS/UI</span>
               </a>
             </li>
             <li style="list-style:none;">
               <a href="#studio-demo" onclick="if(window.selectDemoAgent) window.selectDemoAgent('coder');" style="text-decoration:none;">
-                <span data-i18n="footer_agent_coder">💻 Senior Implementation Coder</span>
+                <span data-i18n="footer_agent_coder">Senior Implementation Coder</span>
                 <span class="footer-agent-pill">Code</span>
               </a>
             </li>
             <li style="list-style:none;">
               <a href="#studio-demo" onclick="if(window.selectDemoAgent) window.selectDemoAgent('tester');" style="text-decoration:none;">
-                <span data-i18n="footer_agent_tester">🧪 QA Sandbox Tester</span>
+                <span data-i18n="footer_agent_tester">QA Sandbox Tester</span>
                 <span class="footer-agent-pill">Pytest</span>
               </a>
             </li>
             <li style="list-style:none;">
               <a href="#studio-demo" onclick="if(window.selectDemoAgent) window.selectDemoAgent('reviewer');" style="text-decoration:none;">
-                <span data-i18n="footer_agent_reviewer">🛡️ Tech Lead Code Reviewer</span>
+                <span data-i18n="footer_agent_reviewer">Tech Lead Code Reviewer</span>
                 <span class="footer-agent-pill">Gate</span>
               </a>
             </li>
@@ -889,11 +889,11 @@
         <div class="footer-col">
           <div class="footer-col-heading" data-i18n="footer_col_ecosystem">Экосистема & Код</div>
           <ul class="footer-link-list" style="list-style:none; padding:0; margin:0;">
-            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_repo" style="text-decoration:none;">🌐 GitHub репозиторий витрины</a></li>
-            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website#readme" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_readme" style="text-decoration:none;">📄 Публичная документация (README)</a></li>
-            <li style="list-style:none;"><a href="#changelog" data-i18n="footer_eco_sync" style="text-decoration:none;">🔄 Скрипт синхронизации (sync_website.py)</a></li>
-            <li style="list-style:none;"><a href="#pricing" data-i18n="footer_eco_author" style="text-decoration:none;">👤 Связаться с создателем (Rybalsky)</a></li>
-            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_mit" style="text-decoration:none;">📜 Лицензия витрины: MIT Open Showcase</a></li>
+            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_repo" style="text-decoration:none;">GitHub репозиторий витрины</a></li>
+            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website#readme" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_readme" style="text-decoration:none;">Публичная документация (README)</a></li>
+            <li style="list-style:none;"><a href="#changelog" data-i18n="footer_eco_sync" style="text-decoration:none;">Скрипт синхронизации (sync_website.py)</a></li>
+            <li style="list-style:none;"><a href="#pricing" data-i18n="footer_eco_author" style="text-decoration:none;">Связаться с автором (Rybalsky)</a></li>
+            <li style="list-style:none;"><a href="https://github.com/ALEVOLDON/ai-team-website/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-i18n="footer_eco_mit" style="text-decoration:none;">Лицензия витрины: MIT Open Showcase</a></li>
           </ul>
         </div>
       </div>
