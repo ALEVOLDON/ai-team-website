@@ -18,7 +18,7 @@
       "JavaScript (Node.js)",
       "Static Web (HTML/CSS/JS)"
     ],
-    "last_synced": "2026-10-22 01:24"
+    "last_synced": "2026-10-26 17:38"
   },
   "devlog": [
     {
@@ -31,7 +31,7 @@
       "type": "voice_and_text",
       "badge": "🚀 Новый релиз",
       "badge_en": "🚀 New Release",
-      "audio_url": null,
+      "audio_url": "audio/v0.13.0.wav",
       "duration": "01:45",
       "voice_script": "Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: **Разделение монолитного шаблона на 3 чистых модуля**: 💰 Универсальный биллинг моделей & Защита бюджета: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: 🪟 Нативный UTF-8 Sandbox для Windows: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
       "voice_script_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Decoupled monolithic template into 3 clean modules**: Multi-Provider Model Pricing & Budget Guard: **Multi-provider pricing table `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
@@ -602,7 +602,7 @@
       ],
       "voice_summary": "Версия 0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Дата выхода: 2026-10-21. 🧩 Модульная архитектура UI: **Разделение монолитного шаблона на 3 чистых модуля**: 💰 Универсальный биллинг моделей & Защита бюджета: **Мультипровайдерная таблица цен `MODEL_PRICING_PER_1M`**: 🪟 Нативный UTF-8 Sandbox для Windows: **Защита от сбоев кодировки `cp1251` (Charmap Error Prevention)**:",
       "voice_summary_en": "Release v0.13.0, Modular UI, Multi-Provider Pricing, Windows UTF-8 Sandbox & Ergonomic Intervention Inspector. Released on: 2026-10-21. Modular UI Architecture: **Decoupled monolithic template into 3 clean modules**: Multi-Provider Model Pricing & Budget Guard: **Multi-provider pricing table `MODEL_PRICING_PER_1M`**: Native UTF-8 Windows Sandbox: **`cp1251` encoding crash prevention (Charmap Error Prevention)**:",
-      "audio_file": null,
+      "audio_file": "audio/v0.13.0.wav",
       "is_latest": true
     },
     {
