@@ -268,6 +268,7 @@
   }
 
   function setLanguage(lang) {
+    stopAllAudio();
     currentLang = lang;
     localStorage.setItem("ai_team_lang", lang);
     document.querySelectorAll(".lang-btn").forEach((btn) => {
@@ -382,6 +383,10 @@
          </ul>`
       : "";
 
+    const featAudio = currentLang === "en" && (featured.audio_url_en || featured.audio_file_en)
+      ? (featured.audio_url_en || featured.audio_file_en)
+      : (featured.audio_url || featured.audio_file);
+
     const featHtml = `
       <div class="featured-devlog-hero">
         <div class="featured-top-row">
@@ -391,7 +396,7 @@
         <h3 class="featured-title">${escapeHtml(featTitle)}</h3>
         <div class="voice-player" id="${featPlayerId}">
           <button class="play-btn" title="Listen"
-            onclick="toggleVoicePlayer('${featPlayerId}', '${featured.audio_url ? encodeURIComponent(featured.audio_url) : ""}', '${encodeURIComponent(featScript)}')">
+            onclick="toggleVoicePlayer('${featPlayerId}', '${featAudio ? encodeURIComponent(featAudio) : ""}', '${encodeURIComponent(featScript)}')">
             <span class="play-icon" id="icon-${featPlayerId}">▶</span>
           </button>
           <div class="voice-waveform">
@@ -421,6 +426,10 @@
         const badge = currentLang === "en" && post.badge_en ? post.badge_en : (post.badge || "🎙️ Devlog");
         const script = currentLang === "en" && post.voice_script_en ? post.voice_script_en : (post.voice_script || summary);
 
+        const postAudio = currentLang === "en" && (post.audio_url_en || post.audio_file_en)
+          ? (post.audio_url_en || post.audio_file_en)
+          : (post.audio_url || post.audio_file);
+
         return `
         <article class="devlog-card">
           <div>
@@ -433,7 +442,7 @@
 
           <div class="voice-player" id="${playerId}">
             <button class="play-btn" title="Listen"
-              onclick="toggleVoicePlayer('${playerId}', '${post.audio_url ? encodeURIComponent(post.audio_url) : ""}', '${encodeURIComponent(script)}')">
+              onclick="toggleVoicePlayer('${playerId}', '${postAudio ? encodeURIComponent(postAudio) : ""}', '${encodeURIComponent(script)}')">
               <span class="play-icon" id="icon-${playerId}">▶</span>
             </button>
             <div class="voice-waveform">
@@ -623,9 +632,14 @@
               ${rel.is_latest ? `<span class="devlog-badge" style="background:rgba(16,185,129,0.18); color:#34d399; border-color:rgba(16,185,129,0.4);">LATEST</span>` : ""}
             </div>
             <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;" onclick="event.stopPropagation()">
+              const relAudio = currentLang === "en" && (rel.audio_file_en || rel.audio_url_en)
+                ? (rel.audio_file_en || rel.audio_url_en)
+                : (rel.audio_file || rel.audio_url);
+
+              return `
               ${tagsHtml}
               <button class="btn btn-secondary btn-sm" id="${playerId}"
-                onclick="toggleVoicePlayer('${playerId}', '${rel.audio_file ? encodeURIComponent(rel.audio_file) : ""}', '${encodedVoice}')">
+                onclick="toggleVoicePlayer('${playerId}', '${relAudio ? encodeURIComponent(relAudio) : ""}', '${encodedVoice}')">
                 <span id="icon-${playerId}">🔊</span> ${currentLang === "ru" ? "Слушать" : "Listen"}
               </button>
               <button class="btn btn-secondary btn-sm" onclick="toggleReleaseCard(${idx})">↕️</button>
