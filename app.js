@@ -16,7 +16,7 @@
     ru: {
       devlog_show_all: "Показать все 14 обзоров релиза ↓",
       devlog_show_less: "Свернуть до 3 свежих обзоров ↑",
-      featured_badge: "🔥 СВЕЖИЙ РЕЛИЗ СТУДИИ",
+      featured_badge: "СВЕЖИЙ РЕЛИЗ СТУДИИ",
       nav_demo: "Интерактивное демо",
       nav_devlog: "Голосовые обзоры",
       nav_changelog: "История версий",
@@ -38,7 +38,7 @@
       metric_crew: "5 Агентов",
       metric_crew_sub: "Architect • Designer • Coder • QA • Lead",
       metric_cost_sub: "Средняя цена создания проекта",
-      win_title: "⚡ AI-Team Desktop Studio (WebView2) — Кликните на агента или запустите демо",
+      win_title: "AI-Team Desktop Studio (WebView2) — Кликните на агента или запустите демо",
       win_run_btn: "Запустить рабочий цикл",
       win_status_1: "Studio Ready • Пресет: Gemini Conductor (Hybrid Local GPU + Cloud)",
       win_status_2: "Скорость: 48.6 tok/s • Расход: $0.000 (Local / Free Tier) • Озвучка: Gemini 3.8 Flash TTS ",
@@ -133,7 +133,7 @@
     en: {
       devlog_show_all: "Show all 14 release reviews ↓",
       devlog_show_less: "Collapse to 3 latest reviews ↑",
-      featured_badge: "🔥 LATEST STUDIO RELEASE",
+      featured_badge: "LATEST STUDIO RELEASE",
       nav_demo: "Interactive Demo",
       nav_devlog: "Voice Devlog",
       nav_changelog: "Changelog",
@@ -155,7 +155,7 @@
       metric_crew: "5 Agents",
       metric_crew_sub: "Architect • Designer • Coder • QA • Lead",
       metric_cost_sub: "Average Cost per Project",
-      win_title: "⚡ AI-Team Desktop Studio (WebView2) — Click any agent or start demo loop",
+      win_title: "AI-Team Desktop Studio (WebView2) — Click any agent or start demo loop",
       win_run_btn: "Run Workflow Loop",
       win_status_1: "Studio Ready • Preset: Gemini Conductor (Hybrid Local GPU + Cloud)",
       win_status_2: "Speed: 48.6 tok/s • Cost: $0.000 (Local / Free Tier) • Voice: Gemini 3.8 Flash TTS ",
@@ -402,7 +402,7 @@
           <div class="voice-waveform">
             <div class="wave-bars">${featBars}</div>
             <div class="voice-meta-row">
-              <span id="status-${featPlayerId}">🎵 ${currentLang === "ru" ? "Голосовой обзор релиза" : "Spoken Release Digest"}</span>
+              <span id="status-${featPlayerId}">${currentLang === "ru" ? "Голосовой обзор релиза" : "Spoken Release Digest"}</span>
               <span>${currentLang === "ru" ? "Автор:" : "By:"} Vladimir Rybalsky</span>
             </div>
           </div>
@@ -493,7 +493,7 @@
 
     if (playerEl) playerEl.classList.add("playing");
     if (iconEl) iconEl.textContent = "⏸";
-    if (statusEl) statusEl.textContent = currentLang === "ru" ? "🔊 Воспроизведение..." : "🔊 Playing voice review...";
+    if (statusEl) statusEl.textContent = currentLang === "ru" ? "Воспроизведение..." : "Playing voice review...";
 
     if (audioUrl) {
       activeAudioElement = new Audio(audioUrl);
@@ -641,7 +641,7 @@
                 onclick="toggleVoicePlayer('${playerId}', '${relAudio ? encodeURIComponent(relAudio) : ""}', '${encodedVoice}')">
                 <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg> ${currentLang === "ru" ? "Слушать" : "Listen"}
               </button>
-              <button class="btn btn-secondary btn-sm" onclick="toggleReleaseCard(${idx})">↕️</button>
+              <button class="btn btn-secondary btn-sm" onclick="toggleReleaseCard(${idx})">▼</button>
             </div>
           </div>
           <div class="release-sections">
@@ -718,14 +718,14 @@
       { role: "designer", tag: "[DESIGNER]", msg: "Генерация UI дизайн-токенов, палитры и чистых векторных SVG...", verdict: "STAGE 2/5: UI/UX DESIGN" },
       { role: "coder", tag: "[CODER]", msg: "Запись рабочего кода через edit_protocol в изолированную песочницу...", verdict: "STAGE 3/5: IMPLEMENTATION" },
       { role: "tester", tag: "[TESTER]", msg: "Запуск pytest в нативном UTF-8 Sandbox: 24/24 passed (100% Green)!", verdict: "STAGE 4/5: QA VERIFICATION" },
-      { role: "reviewer", tag: "[REVIEWER]", msg: "5D Scorecard: 9.6/10 (APPROVE) ➔ Scoped Git Commit выполнен!", verdict: "VERDICT: APPROVE (9.6 / 10)" },
+      { role: "reviewer", tag: "[REVIEWER]", msg: "5D Scorecard: 9.6/10 (APPROVE) -> Scoped Git Commit выполнен!", verdict: "VERDICT: APPROVE (9.6 / 10)" },
     ],
     en: [
       { role: "planner", tag: "[PLANNER]", msg: "Decomposing goal into atomic Directed Acyclic Graph (DAG: 4 nodes)...", verdict: "STAGE 1/5: PLANNING DAG" },
       { role: "designer", tag: "[DESIGNER]", msg: "Generating UI tokens, aesthetics and Anti-Slop vector SVG icons...", verdict: "STAGE 2/5: UI/UX DESIGN" },
       { role: "coder", tag: "[CODER]", msg: "Writing idiomatic code through atomic edit_protocol in isolated sandbox...", verdict: "STAGE 3/5: IMPLEMENTATION" },
       { role: "tester", tag: "[TESTER]", msg: "Running pytest in UTF-8 sandbox: 24/24 passed (100% Green) + Launch OK!", verdict: "STAGE 4/5: QA VERIFICATION" },
-      { role: "reviewer", tag: "[REVIEWER]", msg: "5D Scorecard: 9.6/10 (APPROVE) ➔ Scoped Git Commit staged!", verdict: "VERDICT: APPROVE (9.6 / 10)" },
+      { role: "reviewer", tag: "[REVIEWER]", msg: "5D Scorecard: 9.6/10 (APPROVE) -> Scoped Git Commit staged!", verdict: "VERDICT: APPROVE (9.6 / 10)" },
     ],
   };
 
@@ -829,11 +829,11 @@
       };
 
       mediaRecorder.start();
-      setText("rec-status", currentLang === "ru" ? "🔴 Идёт запись с микрофона..." : "🔴 Recording microphone audio...");
+      setText("rec-status", currentLang === "ru" ? "Идёт запись с микрофона..." : "Recording microphone audio...");
       document.getElementById("btn-start-rec").style.display = "none";
       document.getElementById("btn-stop-rec").style.display = "inline-flex";
     } catch (err) {
-      setText("rec-status", "⚠️ Mic error: " + err.message);
+      setText("rec-status", "Note: Mic error: " + err.message);
     }
   };
 
